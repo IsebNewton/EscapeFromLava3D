@@ -1,0 +1,64 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+[ExecuteInEditMode()]
+public class ProgressBar : MonoBehaviour
+{
+
+    public int maximum = 100;
+    public float playerCurrent;
+    public float lavaCurrent;
+    public Image playerMask;
+    public Image lavaMask;
+
+    public bool gameOver;
+    public GameObject gameOverObject;
+
+    private GameObject player;
+    public PlayerController playerController;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        gameOver = false;
+        player = GameObject.Find("Player");
+        playerController = GameObject.Find("Player").GetComponent<PlayerController>();
+        lavaCurrent = -2;
+
+        Debug.Log(gameOverObject);
+        gameOverObject.SetActive(false);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if(gameOver == false)
+        {
+            playerCurrent = player.transform.position.z / 10;
+            GetCurrentFillPlayer();
+            lavaCurrent += 0.5f * Time.deltaTime;
+            GetCurrentFillLava();
+        }
+        if (playerCurrent < lavaCurrent)
+        {
+            gameOver = true;
+            playerController.playerMovementSpeed = 0;
+
+            gameOverObject.SetActive(true); //Gameobject üver editor setzen
+        }
+    }
+
+    void GetCurrentFillPlayer()
+    {
+        float fillAmount = (float)playerCurrent / (float)maximum;
+        playerMask.fillAmount = fillAmount;
+    }
+
+    void GetCurrentFillLava()
+    {
+        float fillAmount = (float)lavaCurrent / (float)maximum;
+        lavaMask.fillAmount = fillAmount;
+    }
+}
