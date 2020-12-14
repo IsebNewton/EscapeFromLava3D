@@ -8,6 +8,7 @@ public class LevelManager : MonoBehaviour
     private GameObject player;
     public int playerLevel = 1;
     public GameObject[] levels;
+    public float levelPosition = 200;
 
     // Start is called before the first frame update
     void Start()
@@ -19,10 +20,11 @@ public class LevelManager : MonoBehaviour
     void Update()
     {
          
-        if(player.transform.position.z >= (playerLevel * 100) * 2)
+        if(player.transform.position.z >= levelPosition)
         {
             playerLevel++;
-            Object.Instantiate(levels[playerLevel-1], new Vector3(0, 0, (playerLevel*100) * 2), levels[playerLevel].transform.rotation);
+            Object.Instantiate(levels[playerLevel-1], new Vector3(0, 0, (levelPosition+100)), levels[playerLevel].transform.rotation);
+            levelPosition += 200;
         }
 
 

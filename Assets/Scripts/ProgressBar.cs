@@ -46,7 +46,7 @@ public class ProgressBar : MonoBehaviour
             gameOver = true;
             playerController.playerMovementSpeed = 0;
 
-            gameOverObject.SetActive(true); //Gameobject üver editor setzen
+            gameOverObject.SetActive(true);
         }
     }
 

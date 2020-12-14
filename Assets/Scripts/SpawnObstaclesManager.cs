@@ -16,6 +16,8 @@ public class SpawnObstaclesManager : MonoBehaviour
     private int levelLength = 200;
     private float spawnPositionZ = 20;
 
+    private float spawnRange = 180;
+
     private LevelManager levelManager;
     private PlayerController playerController;
     
@@ -39,8 +41,16 @@ public class SpawnObstaclesManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (spawnPositionZ <= levelLength*levelManager.playerLevel)
+
+        if (playerController.playerZPosition > 200)
         {
+            spawnRange += 200;
+            spawnPositionZ += 30;
+        }
+
+        if (spawnPositionZ <= spawnRange)
+        {
+
             SpawnObstacle();
             DestroyFirstObstacle();
         }
@@ -50,7 +60,8 @@ public class SpawnObstaclesManager : MonoBehaviour
     private void SpawnObstacle()
     {
         int rand = Random.Range(0, obstacles[levelManager.playerLevel].Length);
-        visibleObstacles.Add(Instantiate(obstacles[levelManager.playerLevel][rand], new Vector3(0,1.5f,spawnPositionZ), obstacles[levelManager.playerLevel][rand].transform.rotation));
+        int randX = Random.Range(-5, 5);
+        visibleObstacles.Add(Instantiate(obstacles[levelManager.playerLevel][rand], new Vector3(randX,1.5f,spawnPositionZ), obstacles[levelManager.playerLevel][rand].transform.rotation));
         spawnPositionZ += 10;
     }
 
