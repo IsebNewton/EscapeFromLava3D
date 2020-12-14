@@ -14,13 +14,13 @@ public class SpawnObstaclesManager : MonoBehaviour
     public GameObject[] levelFourObstacles;
 
     private int levelLength = 200;
-    private float spawnPositionZ = 20;
-
-    private float spawnRange = 180;
+    private int firstObstacleInLevelPosition = 20;
+    private int obstacleDistance = 10;
 
     private LevelManager levelManager;
     private PlayerController playerController;
-    
+    private int currentPlayerLevel = -1;
+
 
     // Start is called before the first frame update
     void Start()
@@ -30,9 +30,9 @@ public class SpawnObstaclesManager : MonoBehaviour
 
         obstacles = new List<GameObject[]>();
         obstacles.Add(levelOneObstacles);
-        obstacles.Add(levelOneObstacles);
         obstacles.Add(levelTwoObstacles);
         obstacles.Add(levelThreeObstacles);
+        obstacles.Add(levelFourObstacles);
         obstacles.Add(levelFourObstacles);
 
         visibleObstacles = new List<GameObject>();
@@ -41,41 +41,31 @@ public class SpawnObstaclesManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (playerController.playerZPosition > 200)
+        if (currentPlayerLevel != levelManager.playerLevel)
         {
-            spawnRange += 200;
-            spawnPositionZ += 30;
+            currentPlayerLevel = levelManager.playerLevel;
+            DestroyAllVisibleObstacles();
+            SpawnObstaclesForLevel(currentPlayerLevel);
         }
-
-        if (spawnPositionZ <= spawnRange)
+    }
+    private void SpawnObstaclesForLevel(int level)
+    {
+        GameObject[] currentLevelObstacles = obstacles[level];
+        for (int i = (int)playerController.playerZPosition + firstObstacleInLevelPosition; i < playerController.playerZPosition + levelLength - obstacleDistance; i+= obstacleDistance)
         {
-
-            SpawnObstacle();
-            DestroyFirstObstacle();
+            int rand = Random.Range(0, currentLevelObstacles.Length);
+            int randX = Random.Range(-5, 5);
+            visibleObstacles.Add(Instantiate(currentLevelObstacles[rand], new Vector3(randX, 1.5f, i), currentLevelObstacles[rand].transform.rotation));
         }
     }
 
-
-    private void SpawnObstacle()
+    private void DestroyAllVisibleObstacles()
     {
-        int rand = Random.Range(0, obstacles[levelManager.playerLevel].Length);
-        int randX = Random.Range(-5, 5);
-        visibleObstacles.Add(Instantiate(obstacles[levelManager.playerLevel][rand], new Vector3(randX,1.5f,spawnPositionZ), obstacles[levelManager.playerLevel][rand].transform.rotation));
-        spawnPositionZ += 10;
-    }
-
-    // Remove first obstacle if unvisible
-    private void DestroyFirstObstacle()
-    {
-        if (visibleObstacles != null && visibleObstacles.Count > 0)
+        for (int i = 0; i < visibleObstacles.Count; i++)
         {
             GameObject firstObstacle = visibleObstacles.First();
-            if (firstObstacle.transform.position.z < playerController.playerZPosition - 10)
-            {
-                visibleObstacles.Remove(firstObstacle);
-                Destroy(firstObstacle);
-            }
+            visibleObstacles.Remove(firstObstacle);
+            Destroy(firstObstacle);
         }
     }
 }
