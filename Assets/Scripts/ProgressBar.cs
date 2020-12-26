@@ -36,9 +36,9 @@ public class ProgressBar : MonoBehaviour
     {
         if(gameOver == false)
         {
-            playerCurrent = player.transform.position.z / 10;
+            playerCurrent = player.transform.position.z/20;
             GetCurrentFillPlayer();
-            lavaCurrent += 0.5f * Time.deltaTime;
+            lavaCurrent += 0.45f * Time.deltaTime;
             GetCurrentFillLava();
         }
         if (playerCurrent < lavaCurrent)

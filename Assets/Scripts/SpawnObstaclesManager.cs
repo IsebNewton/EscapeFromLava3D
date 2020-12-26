@@ -15,11 +15,16 @@ public class SpawnObstaclesManager : MonoBehaviour
 
     private int levelLength = 200;
     private int firstObstacleInLevelPosition = 20;
-    private int obstacleDistance = 10;
+    public float obstacleDistance;
+    private int splitDifference = 10;
 
     private LevelManager levelManager;
     private PlayerController playerController;
     private int currentPlayerLevel = -1;
+
+    public DifficulyManager difficulyManager;
+    public float startDifficulty = 1;
+    public float difficulty;
 
 
     // Start is called before the first frame update
@@ -27,6 +32,11 @@ public class SpawnObstaclesManager : MonoBehaviour
     {
         levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
+        difficulyManager = GameObject.FindGameObjectWithTag("DifficultyManager").GetComponent<DifficulyManager>();
+
+        startDifficulty = difficulyManager.difficulty;
+
+        
 
         obstacles = new List<GameObject[]>();
         obstacles.Add(levelOneObstacles);
@@ -41,17 +51,23 @@ public class SpawnObstaclesManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        difficulty = (levelManager.difLevel * 0.25f) * startDifficulty;
+
+
         if (currentPlayerLevel != levelManager.playerLevel)
         {
             currentPlayerLevel = levelManager.playerLevel;
             DestroyAllVisibleObstacles();
             SpawnObstaclesForLevel(currentPlayerLevel);
         }
+
+        obstacleDistance = 10 - difficulty;
     }
     private void SpawnObstaclesForLevel(int level)
     {
         GameObject[] currentLevelObstacles = obstacles[level];
-        for (int i = (int)playerController.playerZPosition + firstObstacleInLevelPosition; i < playerController.playerZPosition + levelLength - obstacleDistance; i+= obstacleDistance)
+        for (float i = (int)playerController.playerZPosition + firstObstacleInLevelPosition; i < playerController.playerZPosition + levelLength - splitDifference; i+= obstacleDistance)
         {
             int rand = Random.Range(0, currentLevelObstacles.Length);
             int randX = Random.Range(-5, 5);
@@ -68,4 +84,8 @@ public class SpawnObstaclesManager : MonoBehaviour
             Destroy(firstObstacle);
         }
     }
+
+
+
+
 }

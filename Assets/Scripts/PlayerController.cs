@@ -12,7 +12,6 @@ public class PlayerController : MonoBehaviour
     public float playerStrafeSpeed = 7;
     private float horizontalInput;
 
-    private bool touchingWall = false;
     public bool jump = false;
 
     private Rigidbody playerRb;
