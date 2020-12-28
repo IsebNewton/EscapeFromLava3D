@@ -184,7 +184,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 1
-  m_FillAmount: 0.00048184564
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -1024,10 +1024,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximum: 100
   playerCurrent: 0
-  lavaCurrent: 0.048184562
+  lavaCurrent: -1.8410001
   playerMask: {fileID: 874128881}
   lavaMask: {fileID: 12821512}
-  gameOver: 1
+  gameOver: 0
   gameOverObject: {fileID: 1592965205}
   playerController: {fileID: 887847406}
 --- !u!1 &769340826
@@ -1604,7 +1604,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1215167055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2160,7 +2160,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1592965206
 Transform:
   m_ObjectHideFlags: 0
