@@ -123,7 +123,7 @@ public class SpawnObstaclesManager : MonoBehaviour
     void Update()
     {
 
-        difficulty = (levelManager.difLevel * 0.25f) * startDifficulty;
+        difficulty = ((levelManager.difLevel * 0.25f) * startDifficulty) * levelManager.hardLevel;
 
 
         if (currentPlayerLevel != levelManager.playerLevel)
