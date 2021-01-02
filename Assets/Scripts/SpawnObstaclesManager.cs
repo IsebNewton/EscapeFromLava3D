@@ -76,11 +76,11 @@ public class SpawnObstaclesManager : MonoBehaviour
         levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
         spawnPowerupsManager = GameObject.Find("SpawnPowerupsManager").GetComponent<SpawnPowerupsManager>();
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
-        difficulyManager = GameObject.FindGameObjectWithTag("DifficultyManager").GetComponent<DifficulyManager>();
+        //difficulyManager = GameObject.FindGameObjectWithTag("DifficultyManager").GetComponent<DifficulyManager>();
 
-        startDifficulty = difficulyManager.difficulty;
+        startDifficulty = 1; /*difficulyManager.difficulty;*/
 
-        
+
 
         obstacles = new List<GameObject[]>();
         obstacles.Add(levelOneObstacles);
@@ -130,7 +130,7 @@ public class SpawnObstaclesManager : MonoBehaviour
         {
             currentPlayerLevel = levelManager.playerLevel;
             DestroyAllVisibleObstacles();
-            SpawnObstaclesForLevel(currentPlayerLevel);
+            //SpawnObstaclesForLevel(currentPlayerLevel);
             spawnPowerupsManager.DestroyAllVisiblePowerups();
             spawnPowerupsManager.SpawnPowerupsForLevel(levelLength);
         }
