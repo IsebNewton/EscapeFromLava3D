@@ -24,7 +24,7 @@ public class SplitManager : MonoBehaviour
         {
             Instantiate(split, new Vector3(0, 5, grenze + 195), split.transform.rotation);
             grenze += 200;
-            Debug.Log("Yes");
+            
         }
 
 

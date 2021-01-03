@@ -44,6 +44,9 @@ public class ProgressBar : MonoBehaviour
         if (playerCurrent < lavaCurrent)
         {
             gameOver = true;
+        }
+        if (gameOver == true)
+        {
             playerController.playerMovementSpeed = 0;
 
             gameOverObject.SetActive(true);

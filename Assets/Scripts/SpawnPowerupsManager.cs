@@ -32,7 +32,7 @@ public class SpawnPowerupsManager : MonoBehaviour
 
     public void SpawnPowerupsForLevel(int levelLength)
     {
-        Debug.Log("SpawnPowerupsForLevel...");
+
         if (powerups != null)
         {
             for (int i = 0; i < powerups.Length; i++)
@@ -40,7 +40,7 @@ public class SpawnPowerupsManager : MonoBehaviour
                 int rand = Random.Range(0, 100);
                 if (rand < powerupProbabilities[i])
                 {
-                    int randX = Random.Range(-5, 5);
+                    int randX = Random.Range(-4, 4);
                     int randZ = Random.Range(0, levelLength - 10);
                     visiblePowerups.Add(Instantiate(powerups[i], new Vector3(randX, 1.5f, playerController.playerZPosition + randZ), powerups[i].transform.rotation));
                 }
@@ -51,7 +51,7 @@ public class SpawnPowerupsManager : MonoBehaviour
 
     public void DestroyAllVisiblePowerups()
     {
-        Debug.Log("Destroy...");
+
         if (visiblePowerups != null)
         {
             for (int i = 0; i < visiblePowerups.Count; i++)

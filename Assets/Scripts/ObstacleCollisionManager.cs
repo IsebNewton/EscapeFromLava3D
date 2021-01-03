@@ -12,12 +12,14 @@ public class ObstacleCollisionManager : MonoBehaviour
     private PlayerController playerController;
     public Material white;
     public Material original;
+    private ProgressBar progressBar;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player");
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
+        progressBar = GameObject.Find("ProgressBar").GetComponent<ProgressBar>();
     }
 
     // Update is called once per frame
@@ -49,6 +51,14 @@ public class ObstacleCollisionManager : MonoBehaviour
                 Invoke("Resume", 2);
 
             }
+
+            if(Other.tag == "Lava")
+            {
+                progressBar.gameOver = true;
+            }
+
+
+
         }
 
 
