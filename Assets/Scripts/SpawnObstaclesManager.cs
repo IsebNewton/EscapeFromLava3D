@@ -124,31 +124,37 @@ public class SpawnObstaclesManager : MonoBehaviour
     {
 
         difficulty = ((levelManager.difLevel * 0.25f) * startDifficulty) * levelManager.hardLevel;
-
+        Debug.Log("Sollte vorher was kommen");
 
         if (currentPlayerLevel != levelManager.playerLevel)
         {
             currentPlayerLevel = levelManager.playerLevel;
             DestroyAllVisibleObstacles();
-            //SpawnObstaclesForLevel(currentPlayerLevel);
+            SpawnObstaclesForLevel(currentPlayerLevel);
+            Debug.Log("Sollte vorher was kommen");
             spawnPowerupsManager.DestroyAllVisiblePowerups();
             spawnPowerupsManager.SpawnPowerupsForLevel(levelLength);
         }
 
-        obstacleDistance = 10 - difficulty;
+    obstacleDistance = 10 - difficulty;
     }
     private void SpawnObstaclesForLevel(int level)
     {
-        if (obstacles != null && obstacles.Count > level)
-        {
+        //if (obstacles != null && obstacles.Count > level)
+        //{
             GameObject[] currentLevelObstacles = obstacles[level];
-            for (float i = (int)playerController.playerZPosition + firstObstacleInLevelPosition; i < playerController.playerZPosition + levelLength - splitDifference; i += obstacleDistance)
-            {
-                int rand = Random.Range(0, currentLevelObstacles.Length);
-                int randX = Random.Range(-5, 5);
-                visibleObstacles.Add(Instantiate(currentLevelObstacles[rand], new Vector3(randX, 1.5f, i), currentLevelObstacles[rand].transform.rotation));
-            }
-        }
+            Debug.Log("int i = " + playerController.playerZPosition + firstObstacleInLevelPosition);
+            Debug.Log("i < = " + (playerController.playerZPosition + levelLength - splitDifference));
+            Debug.Log("i ++ = " + obstacleDistance);
+
+
+            //for (float i = (int)playerController.playerZPosition + firstObstacleInLevelPosition; i < playerController.playerZPosition + levelLength - splitDifference; i += obstacleDistance)
+            //{
+                //    int rand = Random.Range(0, currentLevelObstacles.Length);
+                //    int randX = Random.Range(-5, 5);
+                //    visibleObstacles.Add(Instantiate(currentLevelObstacles[rand], new Vector3(randX, 1.5f, i), currentLevelObstacles[rand].transform.rotation));
+            //}
+        //}
     }
 
     private void DestroyAllVisibleObstacles()

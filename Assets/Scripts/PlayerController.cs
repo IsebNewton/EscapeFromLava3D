@@ -20,10 +20,17 @@ public class PlayerController : MonoBehaviour
     private PowerupManager powerupManager;
     private ObstacleCollisionManager obstacleCollisionManager;
 
+    public GameObject trail1;
+    public GameObject trail2;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        trail1.SetActive(false);
+        trail2.SetActive(false);
+
+
         playerRb = GetComponent<Rigidbody>();
         splitManager = GameObject.Find("SplitManager").GetComponent<SplitManager>();
         powerupManager = GameObject.Find("PowerupManager").GetComponent<PowerupManager>();

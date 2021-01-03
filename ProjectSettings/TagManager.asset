@@ -9,6 +9,7 @@ TagManager:
   - Obstacle
   - SplitLeft
   - SplitRight
+  - PowerupInvincibility
   layers:
   - Default
   - TransparentFX
