@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
     public GameObject trail1;
     public GameObject trail2;
 
+    public Animator animator;
+
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +42,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
 
         playerZPosition = transform.position.z;
 
@@ -59,7 +63,8 @@ public class PlayerController : MonoBehaviour
 
             }
         }
-
+    
+        animator.SetFloat("JumpVelocity", playerRb.velocity.y);
     }
 
 

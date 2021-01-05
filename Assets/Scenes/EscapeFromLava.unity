@@ -1619,7 +1619,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximum: 100
   playerCurrent: -0.12467804
-  lavaCurrent: -1.8410001
+  lavaCurrent: -1.6910001
   playerMask: {fileID: 874128881}
   lavaMask: {fileID: 12821512}
   gameOver: 0
@@ -3404,6 +3404,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1196003459187215950}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &919132149224836531 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 919132149224836531, guid: 081eb6d683cf010478104a423ed9bcae,
+    type: 3}
+  m_PrefabInstance: {fileID: 1196003459187215950}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1196003459187215950
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3421,6 +3427,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.575
       objectReference: {fileID: 0}
+    - target: {fileID: 1196003460061514736, guid: 081eb6d683cf010478104a423ed9bcae,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 919132149224836531}
     - target: {fileID: 1662874663711037766, guid: 081eb6d683cf010478104a423ed9bcae,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -14,6 +14,7 @@ public class ObstacleCollisionManager : MonoBehaviour
     public Material original;
     private ProgressBar progressBar;
     public GameObject ending;
+    public Animator playerAnim;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,7 @@ public class ObstacleCollisionManager : MonoBehaviour
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         progressBar = GameObject.Find("ProgressBar").GetComponent<ProgressBar>();
         ending.SetActive(false);
+        playerAnim = GameObject.Find("Player").GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -49,8 +51,10 @@ public class ObstacleCollisionManager : MonoBehaviour
                 playerController.playerStrafeSpeed = 0;
                 playerController.jump = true;
                 player.GetComponent<Renderer>().material = white;
+                playerAnim.SetBool("HitObstacle", true);
 
-                Invoke("Resume", 2);
+                Invoke("ResetHitObstacle", 1);
+                Invoke("Resume", 4);
 
             }
 
@@ -76,11 +80,13 @@ public class ObstacleCollisionManager : MonoBehaviour
 
     public void Resume()
     {
+        
         invulnerability = true;
         playerController.playerMovementSpeed = savedSpeed;
         playerController.playerStrafeSpeed = 7;
         playerController.jump = false;
         saved = false;
+        
 
         Invoke("SetVulnerability", 5);
     }
@@ -91,5 +97,10 @@ public class ObstacleCollisionManager : MonoBehaviour
         player.GetComponent<Renderer>().material = original;
         invulnerability = false;
         
+    }
+
+    public void ResetHitObstacle()
+    {
+        playerAnim.SetBool("HitObstacle", false);
     }
 }

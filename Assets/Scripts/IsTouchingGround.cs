@@ -17,6 +17,13 @@ public class IsTouchingGround : MonoBehaviour
         
     }
 
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Ground")
+        {
+            playerController.jump = true;
+        }
+    }
 
     public void OnTriggerEnter(Collider other)
     {
@@ -26,12 +33,14 @@ public class IsTouchingGround : MonoBehaviour
         }
     }
 
-    public void OnTriggerExit(Collider other)
+    public void OnTriggerStay(Collider other)
     {
         if (other.tag == "Ground")
         {
-            playerController.jump = true;
+            playerController.jump = false;
         }
     }
+
+
 
 }

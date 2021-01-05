@@ -1,8 +1,11 @@
 fileFormatVersion: 2
-guid: 9f6510faf9da6d44cb877f8006504146
+guid: 0c6e56843b51d5c4fb91d9557c08927b
 ModelImporter:
   serializedVersion: 19301
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -203655887218126122
+    second: mixamo.com
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -68,15 +71,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips:
-  - cebba75cfbd73f447916ff808172df33
-  - bc4b15b83ea048b43bf5adf568fa2c1b
-  - 7ec9cc8ac43ca5846967ae3aef0a320b
-  - b24d78f1ca07af148be1b9d404281611
-  - 15a74b3514c72184ab850fa4cfcc44c3
-  - 53d15aabfcc58b84aac7d453faa18d51
-  - 0c6e56843b51d5c4fb91d9557c08927b
-  - 52f61b21d86115e47bf51e24005b2f63
+  referencedClips: []
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
