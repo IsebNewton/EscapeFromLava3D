@@ -55,6 +55,7 @@ public class ObstacleCollisionManager : MonoBehaviour
             if(Other.tag == "Lava")
             {
                 progressBar.gameOver = true;
+                Debug.Log("GameOver");
             }
 
 

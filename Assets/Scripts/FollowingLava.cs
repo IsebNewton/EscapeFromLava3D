@@ -25,6 +25,8 @@ public class FollowingLava : MonoBehaviour
 
         float difference = progressBar.playerCurrent - progressBar.lavaCurrent;
 
+
+        //Falls Formel einfällt, ersetzen
         if(difference < 0.1)
         {
             distance = 0;
