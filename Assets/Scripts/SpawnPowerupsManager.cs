@@ -26,7 +26,7 @@ public class SpawnPowerupsManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("playerController.playerZPosition: " + playerController.playerZPosition);
+       
         //SpawnRandomPowerup();
     }
 

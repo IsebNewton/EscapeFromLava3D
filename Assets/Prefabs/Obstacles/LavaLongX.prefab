@@ -4769,7 +4769,7 @@ GameObject:
   - component: {fileID: 2315597598761872517}
   m_Layer: 0
   m_Name: Lava
-  m_TagString: Untagged
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4880,7 +4880,7 @@ GameObject:
   - component: {fileID: 4958937927244342179}
   m_Layer: 0
   m_Name: LongXObstacle (1)
-  m_TagString: Untagged
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

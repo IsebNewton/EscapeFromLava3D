@@ -81,6 +81,7 @@ public class PowerupManager : MonoBehaviour
     private void PowerupInvincibilityReturnNormal()
     { 
         obstacleCollisionManager.invulnerability = false;
+        Debug.Log("Yes");
         player.GetComponent<Renderer>().material = original;
     }
     private void SetInvincibiltyMaterialNormal()

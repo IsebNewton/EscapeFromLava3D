@@ -12,6 +12,9 @@ TagManager:
   - PowerupInvincibility
   - Lava
   - FollowingLava
+  - Ground
+  - DifficultyManager
+  - Ending
   layers:
   - Default
   - TransparentFX

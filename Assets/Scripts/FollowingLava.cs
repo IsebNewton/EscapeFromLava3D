@@ -76,7 +76,7 @@ public class FollowingLava : MonoBehaviour
             distance = 2;
         }
 
-        Debug.Log(difference);
+       
 
 
 

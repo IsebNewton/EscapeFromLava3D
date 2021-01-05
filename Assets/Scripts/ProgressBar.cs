@@ -19,6 +19,8 @@ public class ProgressBar : MonoBehaviour
     private GameObject player;
     public PlayerController playerController;
 
+    public float lavaSpeed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,8 +28,9 @@ public class ProgressBar : MonoBehaviour
         player = GameObject.Find("Player");
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         lavaCurrent = -2;
+        lavaSpeed = 0.45f;
 
-        Debug.Log(gameOverObject);
+     
         gameOverObject.SetActive(false);
     }
 
@@ -38,7 +41,7 @@ public class ProgressBar : MonoBehaviour
         {
             playerCurrent = player.transform.position.z/20;
             GetCurrentFillPlayer();
-            lavaCurrent += 0.45f * Time.deltaTime;
+            lavaCurrent += lavaSpeed * Time.deltaTime;
             GetCurrentFillLava();
         }
         if (playerCurrent < lavaCurrent)
