@@ -211,8 +211,9 @@ GameObject:
   - component: {fileID: 226960185}
   - component: {fileID: 226960184}
   - component: {fileID: 226960183}
+  - component: {fileID: 226960186}
   m_Layer: 5
-  m_Name: Button
+  m_Name: HardButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -281,15 +282,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 226960186}
+        m_MethodName: SetDifficulty
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: hard
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &226960184
@@ -329,6 +330,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226960181}
   m_CullTransparentMesh: 0
+--- !u!114 &226960186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226960181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b858fed36fbd3741b0642a9042f3e9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &283596216
 GameObject:
   m_ObjectHideFlags: 0
@@ -1202,8 +1215,9 @@ GameObject:
   - component: {fileID: 802276968}
   - component: {fileID: 802276967}
   - component: {fileID: 802276966}
+  - component: {fileID: 802276969}
   m_Layer: 5
-  m_Name: Button
+  m_Name: MediumButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1272,15 +1286,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 802276969}
+        m_MethodName: SetDifficulty
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: DifficultyMedium
+          m_StringArgument: medium
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &802276967
@@ -1320,6 +1334,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 802276964}
   m_CullTransparentMesh: 0
+--- !u!114 &802276969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802276964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b858fed36fbd3741b0642a9042f3e9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &932424445
 GameObject:
   m_ObjectHideFlags: 0
@@ -1868,13 +1894,13 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1399229792}
         m_MethodName: SetDifficulty
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: DifficultyEasy
+          m_StringArgument: easy
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1399229790
@@ -1938,8 +1964,9 @@ GameObject:
   - component: {fileID: 1462894844}
   - component: {fileID: 1462894843}
   - component: {fileID: 1462894842}
+  - component: {fileID: 1462894845}
   m_Layer: 5
-  m_Name: Button
+  m_Name: NightmareButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2008,15 +2035,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: DifficultyNightmare
-        m_Mode: 1
+      - m_Target: {fileID: 1462894845}
+        m_MethodName: SetDifficulty
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: nightmare
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1462894843
@@ -2056,6 +2083,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1462894840}
   m_CullTransparentMesh: 0
+--- !u!114 &1462894845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462894840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b858fed36fbd3741b0642a9042f3e9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1544206687
 GameObject:
   m_ObjectHideFlags: 0
