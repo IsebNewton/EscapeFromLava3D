@@ -2,17 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DifficulyManager : MonoBehaviour
+public sealed class DifficultyManager
 {
+    private static readonly DifficultyManager instance = new DifficultyManager();
 
-    public float difficulty = 1;
-
-    private void Awake()
+    static DifficultyManager()
     {
-        DontDestroyOnLoad(this.gameObject);
     }
 
+    private DifficultyManager()
+    {
+    }
 
+    public static DifficultyManager Instance
+    {
+        get
+        {
+            return instance;
+        }
+    }
+
+    public float difficulty = 1;
 
     // Start is called before the first frame update
     void Start()

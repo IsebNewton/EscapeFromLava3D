@@ -65,7 +65,7 @@ public class SpawnObstaclesManager : MonoBehaviour
     private PlayerController playerController;
     private int currentPlayerLevel = -1;
 
-    public DifficulyManager difficulyManager;
+    public DifficultyManager difficultyManager;
     public float startDifficulty = 1;
     public float difficulty;
 
@@ -77,9 +77,11 @@ public class SpawnObstaclesManager : MonoBehaviour
         levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
         spawnPowerupsManager = GameObject.Find("SpawnPowerupsManager").GetComponent<SpawnPowerupsManager>();
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
-        difficulyManager = GameObject.FindGameObjectWithTag("DifficultyManager").GetComponent<DifficulyManager>();
+        difficultyManager = DifficultyManager.Instance;
 
-        startDifficulty = difficulyManager.difficulty;
+        startDifficulty = difficultyManager.difficulty;
+
+        Debug.Log("difficulty: " + startDifficulty);
 
 
 
