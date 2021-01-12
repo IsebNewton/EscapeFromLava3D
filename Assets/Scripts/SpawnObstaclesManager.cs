@@ -160,7 +160,7 @@ public class SpawnObstaclesManager : MonoBehaviour
             for (float i = (int)playerController.playerZPosition + firstObstacleInLevelPosition; i < playerController.playerZPosition + levelLength - splitDifference; i += obstacleDistance)
             {
                 int rand = Random.Range(0, currentLevelObstacles.Length);
-                int randX = Random.Range(-5, 5);
+                float randX = Random.Range(-4.5f, 4.5f);
                 visibleObstacles.Add(Instantiate(currentLevelObstacles[rand], new Vector3(randX, 1.5f, i), currentLevelObstacles[rand].transform.rotation));
                 Debug.Log(currentLevelObstacles[rand]);
             }
