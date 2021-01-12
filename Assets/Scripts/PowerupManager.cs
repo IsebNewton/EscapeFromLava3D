@@ -33,7 +33,10 @@ public class PowerupManager : MonoBehaviour
         if(other.tag == "PowerupSpeed")
         {
             Destroy(other.gameObject);
-            playerController.playerMovementSpeed *= 2;
+            float clampSpeed = playerController.playerMovementSpeed * 1.5f;
+            Mathf.Clamp(clampSpeed, 10, 12);
+            playerController.playerMovementSpeed = clampSpeed;
+
             playerController.trail1.SetActive(true);
             playerController.trail2.SetActive(true);
             Invoke("PowerupSpeedReturnNormal", 5);
@@ -71,6 +74,7 @@ public class PowerupManager : MonoBehaviour
 
     private void PowerupSpeedReturnNormal()
     {
+    
         playerController.playerMovementSpeed /= 2;
         playerController.trail1.SetActive(false);
         playerController.trail2.SetActive(false);

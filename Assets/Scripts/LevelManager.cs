@@ -6,7 +6,7 @@ public class LevelManager : MonoBehaviour
 {
 
     private GameObject player;
-    public int playerLevel = 1;
+    public int playerLevel = -1;
     public GameObject[] levels;
     public float levelPosition = 200;
     public float difLevel;
@@ -27,6 +27,7 @@ public class LevelManager : MonoBehaviour
             playerLevel++;
             Object.Instantiate(levels[playerLevel-1], new Vector3(0, 0, (levelPosition+100)), levels[playerLevel].transform.rotation);
             levelPosition += 200;
+            Debug.Log(playerLevel);
         }
 
         switch (playerLevel)

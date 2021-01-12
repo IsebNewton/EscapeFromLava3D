@@ -49,10 +49,10 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void Update()
+    public void LateUpdate()
     {
 
-
+        Mathf.Clamp(playerMovementSpeed, 10, 12);
 
         playerZPosition = transform.position.z;
 

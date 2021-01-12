@@ -69,11 +69,12 @@ public class SpawnObstaclesManager : MonoBehaviour
     public float startDifficulty = 1;
     public float difficulty;
 
+    public bool spawned = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        obstacleDistance = 15;
+ 
         levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
         spawnPowerupsManager = GameObject.Find("SpawnPowerupsManager").GetComponent<SpawnPowerupsManager>();
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
@@ -128,17 +129,27 @@ public class SpawnObstaclesManager : MonoBehaviour
 
         difficulty = ((levelManager.difLevel * 0.25f) * startDifficulty) * levelManager.hardLevel;
 
+        obstacleDistance = 15 - difficulty;
+        Mathf.Clamp(obstacleDistance, 3f, 15f);
 
         if (currentPlayerLevel != levelManager.playerLevel)
         {
             currentPlayerLevel = levelManager.playerLevel;
-            DestroyAllVisibleObstacles();
-            SpawnObstaclesForLevel(currentPlayerLevel);
-            spawnPowerupsManager.DestroyAllVisiblePowerups();
-            spawnPowerupsManager.SpawnPowerupsForLevel(levelLength);
+            if (spawned == false)
+            {
+                
+                DestroyAllVisibleObstacles();
+                SpawnObstaclesForLevel(currentPlayerLevel);
+                Debug.Log("Aufruf Test");
+                spawnPowerupsManager.DestroyAllVisiblePowerups();
+                spawnPowerupsManager.SpawnPowerupsForLevel(levelLength);
+                spawned = true;
+                Invoke("SetSpawnedFalse", 2f);
+            }
         }
 
-    obstacleDistance = 15 - difficulty;
+
+        
     }
     private void SpawnObstaclesForLevel(int level)
     {
@@ -168,7 +179,10 @@ public class SpawnObstaclesManager : MonoBehaviour
         }
     }
 
-
+    public void SetSpawnedFalse()
+    {
+        spawned = false;
+    }
 
 
 }

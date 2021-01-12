@@ -82,7 +82,7 @@ public class ObstacleCollisionManager : MonoBehaviour
     {
         
         invulnerability = true;
-        playerController.playerMovementSpeed = savedSpeed;
+        playerController.playerMovementSpeed = 10;
         playerController.playerStrafeSpeed = 7;
         playerController.jump = false;
         saved = false;
