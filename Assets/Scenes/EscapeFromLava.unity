@@ -1678,10 +1678,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximum: 100
   playerCurrent: -0.12467804
-  lavaCurrent: -0.030835215
+  lavaCurrent: -1.991
   playerMask: {fileID: 874128881}
   lavaMask: {fileID: 12821512}
-  gameOver: 1
+  gameOver: 0
   gameOverObject: {fileID: 1592965205}
   playerController: {fileID: 1575273918}
   lavaSpeed: 0.45
@@ -3107,6 +3107,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499544078}
   m_CullTransparentMesh: 0
+--- !u!1 &1572427665 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5008588684699672943, guid: 081eb6d683cf010478104a423ed9bcae,
+    type: 3}
+  m_PrefabInstance: {fileID: 1196003459187215950}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1575273918 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1196003460061514736, guid: 081eb6d683cf010478104a423ed9bcae,
@@ -3134,7 +3140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1592965206
 Transform:
   m_ObjectHideFlags: 0
@@ -3391,6 +3397,10 @@ MonoBehaviour:
   original: {fileID: 2100000, guid: a0236fe3bc5f6934b9f276034158dd28, type: 2}
   clampSpeedFast: 0
   clampSpeedSlow: 0
+  hitMaterial: {fileID: 2100000, guid: 086bf6d374dc74d48ac6564a43e9a169, type: 2}
+  normalMaterial: {fileID: -4565884009001823619, guid: 9f6510faf9da6d44cb877f8006504146,
+    type: 3}
+  playerBodyForColorChange: {fileID: 1572427665}
 --- !u!1 &1921263250
 GameObject:
   m_ObjectHideFlags: 0
@@ -3687,6 +3697,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 218851077283299347, guid: 081eb6d683cf010478104a423ed9bcae,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -840037777384891287, guid: 9f6510faf9da6d44cb877f8006504146,
+        type: 3}
     - target: {fileID: 1196003459722017248, guid: 081eb6d683cf010478104a423ed9bcae,
         type: 3}
       propertyPath: m_Radius
@@ -3696,6 +3712,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.575
+      objectReference: {fileID: 0}
+    - target: {fileID: 1196003460061514636, guid: 081eb6d683cf010478104a423ed9bcae,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1196003460061514736, guid: 081eb6d683cf010478104a423ed9bcae,
         type: 3}
