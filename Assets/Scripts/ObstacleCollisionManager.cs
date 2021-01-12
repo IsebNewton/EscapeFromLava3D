@@ -15,6 +15,7 @@ public class ObstacleCollisionManager : MonoBehaviour
     private ProgressBar progressBar;
     public GameObject ending;
     public Animator playerAnim;
+    public float invincibilityTimer;
 
     // Start is called before the first frame update
     void Start()
@@ -24,12 +25,28 @@ public class ObstacleCollisionManager : MonoBehaviour
         progressBar = GameObject.Find("ProgressBar").GetComponent<ProgressBar>();
         ending.SetActive(false);
         playerAnim = GameObject.Find("Player").GetComponent<Animator>();
+        invincibilityTimer = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+       if(invincibilityTimer > 0)
+        {
+            invincibilityTimer -= Time.deltaTime;
+        }
+
+
+       if(invincibilityTimer > 0.1f)
+        {
+            invulnerability = true;
+        }
+       else if(invincibilityTimer < 0.1f)
+        {
+            invulnerability = false;
+        }
+
+
     }
 
 
@@ -80,24 +97,24 @@ public class ObstacleCollisionManager : MonoBehaviour
 
     public void Resume()
     {
-        
-        invulnerability = true;
+
+        invincibilityTimer = 5;
         playerController.playerMovementSpeed = 10;
         playerController.playerStrafeSpeed = 7;
         playerController.jump = false;
         saved = false;
         
 
-        Invoke("SetVulnerability", 5);
+        //Invoke("SetVulnerability", 5);
     }
 
 
-    public void SetVulnerability()
-    {
-        player.GetComponent<Renderer>().material = original;
-        invulnerability = false;
+    //public void SetVulnerability()
+    //{
+    //    player.GetComponent<Renderer>().material = original;
+    //    invulnerability = false;
         
-    }
+    //}
 
     public void ResetHitObstacle()
     {

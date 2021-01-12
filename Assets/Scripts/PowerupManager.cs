@@ -10,6 +10,8 @@ public class PowerupManager : MonoBehaviour
     private GameObject player;
     public Material white;
     public Material original;
+    public float clampSpeedFast;
+    public float clampSpeedSlow;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +19,8 @@ public class PowerupManager : MonoBehaviour
         player = GameObject.Find("Player");
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         obstacleCollisionManager = GameObject.Find("ObstacleCollisionManager").GetComponent<ObstacleCollisionManager>();
-
+        clampSpeedFast = 20;
+        clampSpeedSlow = 10;
     }
 
     // Update is called once per frame
@@ -33,9 +36,10 @@ public class PowerupManager : MonoBehaviour
         if(other.tag == "PowerupSpeed")
         {
             Destroy(other.gameObject);
-            float clampSpeed = playerController.playerMovementSpeed * 1.5f;
-            Mathf.Clamp(clampSpeed, 10, 12);
-            playerController.playerMovementSpeed = clampSpeed;
+            clampSpeedFast = playerController.playerMovementSpeed * 1.5f;
+            Mathf.Clamp(clampSpeedFast, 10, 12);
+            Debug.Log(clampSpeedFast);
+            playerController.playerMovementSpeed = clampSpeedFast;
 
             playerController.trail1.SetActive(true);
             playerController.trail2.SetActive(true);
@@ -48,25 +52,25 @@ public class PowerupManager : MonoBehaviour
         {
             Destroy(other.gameObject);
 
-            obstacleCollisionManager.invulnerability = true;
-            player.GetComponent<Renderer>().material = white;
+            obstacleCollisionManager.invincibilityTimer = 5;
+            //player.GetComponent<Renderer>().material = white;
 
-            Invoke("PowerupInvincibilityReturnNormal", 10);
+            //Invoke("PowerupInvincibilityReturnNormal", 10);
 
-            Invoke("SetInvincibiltyMaterialNormal", 6.5f);
-            Invoke("SetInvincibiltyMaterialWhite", 7.0f); 
-            Invoke("SetInvincibiltyMaterialNormal", 7.5f);
-            Invoke("SetInvincibiltyMaterialWhite", 8.0f);
+            //Invoke("SetInvincibiltyMaterialNormal", 6.5f);
+            //Invoke("SetInvincibiltyMaterialWhite", 7.0f); 
+            //Invoke("SetInvincibiltyMaterialNormal", 7.5f);
+            //Invoke("SetInvincibiltyMaterialWhite", 8.0f);
 
-            Invoke("SetInvincibiltyMaterialNormal", 8.4f);
-            Invoke("SetInvincibiltyMaterialWhite", 8.7f);
-            Invoke("SetInvincibiltyMaterialNormal", 9.0f);
-            Invoke("SetInvincibiltyMaterialWhite", 9.3f);
+            //Invoke("SetInvincibiltyMaterialNormal", 8.4f);
+            //Invoke("SetInvincibiltyMaterialWhite", 8.7f);
+            //Invoke("SetInvincibiltyMaterialNormal", 9.0f);
+            //Invoke("SetInvincibiltyMaterialWhite", 9.3f);
 
-            Invoke("SetInvincibiltyMaterialNormal", 9.6f);
-            Invoke("SetInvincibiltyMaterialWhite", 9.7f);
-            Invoke("SetInvincibiltyMaterialNormal", 9.8f);
-            Invoke("SetInvincibiltyMaterialWhite", 9.9f);
+            //Invoke("SetInvincibiltyMaterialNormal", 9.6f);
+            //Invoke("SetInvincibiltyMaterialWhite", 9.7f);
+            //Invoke("SetInvincibiltyMaterialNormal", 9.8f);
+            //Invoke("SetInvincibiltyMaterialWhite", 9.9f);
         }
 
 
@@ -74,28 +78,31 @@ public class PowerupManager : MonoBehaviour
 
     private void PowerupSpeedReturnNormal()
     {
-    
-        playerController.playerMovementSpeed /= 2;
+        
+        playerController.playerMovementSpeed /= 1.5f;
         playerController.trail1.SetActive(false);
         playerController.trail2.SetActive(false);
     }
 
 
 
-    private void PowerupInvincibilityReturnNormal()
-    { 
-        obstacleCollisionManager.invulnerability = false;
-        Debug.Log("Yes");
-        player.GetComponent<Renderer>().material = original;
-    }
-    private void SetInvincibiltyMaterialNormal()
-    {
-        player.GetComponent<Renderer>().material = original;
-    }
-    private void SetInvincibiltyMaterialWhite()
-    {
-        player.GetComponent<Renderer>().material = white;
-    }
+    //private void PowerupInvincibilityReturnNormal()
+    //{ 
+    //    obstacleCollisionManager.invulnerability = false;
+    //    Debug.Log("Yes");
+    //    player.GetComponent<Renderer>().material = original;
+    //}
+
+
+
+    //private void SetInvincibiltyMaterialNormal()
+    //{
+    //    player.GetComponent<Renderer>().material = original;
+    //}
+    //private void SetInvincibiltyMaterialWhite()
+    //{
+    //    player.GetComponent<Renderer>().material = white;
+    //}
 
 
 }
