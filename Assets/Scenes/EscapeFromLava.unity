@@ -1678,10 +1678,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximum: 100
   playerCurrent: -0.12467804
-  lavaCurrent: -1.6789435
+  lavaCurrent: -0.030835215
   playerMask: {fileID: 874128881}
   lavaMask: {fileID: 12821512}
-  gameOver: 0
+  gameOver: 1
   gameOverObject: {fileID: 1592965205}
   playerController: {fileID: 1575273918}
   lavaSpeed: 0.45
@@ -3134,7 +3134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1592965206
 Transform:
   m_ObjectHideFlags: 0
