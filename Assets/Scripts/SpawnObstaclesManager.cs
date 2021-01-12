@@ -162,6 +162,7 @@ public class SpawnObstaclesManager : MonoBehaviour
                 int rand = Random.Range(0, currentLevelObstacles.Length);
                 int randX = Random.Range(-5, 5);
                 visibleObstacles.Add(Instantiate(currentLevelObstacles[rand], new Vector3(randX, 1.5f, i), currentLevelObstacles[rand].transform.rotation));
+                Debug.Log(currentLevelObstacles[rand]);
             }
         }
     }
