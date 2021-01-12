@@ -17,6 +17,11 @@ public class ObstacleCollisionManager : MonoBehaviour
     public Animator playerAnim;
     public float invincibilityTimer;
 
+    public GameObject obstacleBump1Object;
+    public GameObject obstacleBump2Object;
+    public AudioSource obstacleBump1Audio;
+    public AudioSource obstacleBump2Audio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +31,9 @@ public class ObstacleCollisionManager : MonoBehaviour
         ending.SetActive(false);
         playerAnim = GameObject.Find("Player").GetComponent<Animator>();
         invincibilityTimer = 0;
+
+        obstacleBump1Audio = obstacleBump1Object.GetComponent<AudioSource>();
+        obstacleBump2Audio = obstacleBump2Object.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -56,6 +64,19 @@ public class ObstacleCollisionManager : MonoBehaviour
         {
             if (Other.tag == "Obstacle")
             {
+
+                float rand = Random.Range(1, 10);
+                if(rand <= 5)
+                {
+                    obstacleBump1Audio.Play();
+                }
+                else if(rand > 5)
+                {
+                    obstacleBump2Audio.Play();
+                }
+
+
+
                 if (saved == false)
                 {
                     savedSpeed = playerController.playerMovementSpeed;

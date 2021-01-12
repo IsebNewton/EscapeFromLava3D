@@ -16,6 +16,9 @@ public class PowerupManager : MonoBehaviour
     public Material normalMaterial;
     public GameObject playerBodyForColorChange;
 
+    public GameObject collectBingObject;
+    public AudioSource collectBingAudio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +27,8 @@ public class PowerupManager : MonoBehaviour
         obstacleCollisionManager = GameObject.Find("ObstacleCollisionManager").GetComponent<ObstacleCollisionManager>();
         clampSpeedFast = 20;
         clampSpeedSlow = 10;
+
+        collectBingAudio = collectBingObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -59,6 +64,7 @@ public class PowerupManager : MonoBehaviour
         if(other.tag == "PowerupSpeed")
         {
             Destroy(other.gameObject);
+            collectBingAudio.Play();
             clampSpeedFast = playerController.playerMovementSpeed * 1.5f;
             Mathf.Clamp(clampSpeedFast, 10, 12);
             Debug.Log(clampSpeedFast);
@@ -73,6 +79,7 @@ public class PowerupManager : MonoBehaviour
         if (other.tag == "PowerupInvincibility")
         {
             Destroy(other.gameObject);
+            collectBingAudio.Play();
 
             obstacleCollisionManager.invincibilityTimer = 5;
             //player.GetComponent<Renderer>().material = white;
