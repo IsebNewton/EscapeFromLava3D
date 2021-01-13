@@ -29,31 +29,31 @@ public class FollowingLava : MonoBehaviour
         //Falls Formel einfällt, ersetzen
         if(difference < 0.1)
         {
-            distance = 0;
+            distance = 2f;
         }
         if(difference > 0.1 && difference < 0.2)
         {
-            distance = 0.2f;
+            distance = 2.2f;
         }
         if (difference > 0.2 && difference < 0.4)
         {
-            distance = 0.4f;
+            distance = 2.4f;
         }
         if (difference > 0.4 && difference < 0.6)
         {
-            distance = 0.6f;
+            distance = 2.6f;
         }
         if (difference > 0.6 && difference < 1)
         {
-            distance = 0.8f;
+            distance = 2.8f;
         }
         if (difference > 1 && difference < 1.5)
         {
-            distance = 1;
+            distance = 3f;
         }
         if (difference > 1.5 && difference < 2)
         {
-            distance = 1.3f;
+            distance = 3.2f;
         }
         //if (difference > 2 && difference < 2.5)
         //{
@@ -73,7 +73,7 @@ public class FollowingLava : MonoBehaviour
         //}
         if (difference > 2)
         {
-            distance = 2;
+            distance = 5;
         }
 
        

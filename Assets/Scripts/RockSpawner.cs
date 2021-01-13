@@ -5,7 +5,7 @@ using UnityEngine;
 public class RockSpawner : MonoBehaviour
 {
 
-    public GameObject rock;
+    public GameObject[] rocks;
 
     // Start is called before the first frame update
     void Start()
@@ -24,8 +24,10 @@ public class RockSpawner : MonoBehaviour
     {
         float pos = transform.position.x;
 
+        int randRocks = Random.Range(0,rocks.Length);
+
         float rand = Random.Range(pos - 1.5f, pos + 1.5f);
-        Instantiate(rock,new Vector3(rand,transform.position.y,transform.position.z),transform.rotation);
+        Instantiate(rocks[randRocks],new Vector3(rand,transform.position.y,transform.position.z),transform.rotation);
 
     }
 

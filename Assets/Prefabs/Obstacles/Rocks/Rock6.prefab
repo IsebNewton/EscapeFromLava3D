@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7836581124197223400
+--- !u!1 &9190190669276921426
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,46 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7836581124197223405}
-  - component: {fileID: 7836581124197223404}
-  - component: {fileID: 7836581124197223407}
-  - component: {fileID: 257922579}
+  - component: {fileID: 8413231066011952360}
+  - component: {fileID: 4858845791435057997}
+  - component: {fileID: 7244851203496189831}
+  - component: {fileID: 1790405739934892481}
+  - component: {fileID: 1227124013648500748}
+  - component: {fileID: 3367837186670696396}
   m_Layer: 0
-  m_Name: CrashingWall
-  m_TagString: Untagged
+  m_Name: Rock6
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7836581124197223405
+--- !u!4 &8413231066011952360
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7836581124197223400}
+  m_GameObject: {fileID: 9190190669276921426}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.31, z: 0.17}
+  m_LocalPosition: {x: 4.0850444, y: -5.574517, z: 2.4207828}
+  m_LocalScale: {x: 0.05, y: 0.1, z: 0.05}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &7836581124197223404
+--- !u!33 &4858845791435057997
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7836581124197223400}
-  m_Mesh: {fileID: 5244915625381210605, guid: 3bad60fdf1abec149a8b69b8bd2be4cf, type: 3}
---- !u!23 &7836581124197223407
+  m_GameObject: {fileID: 9190190669276921426}
+  m_Mesh: {fileID: -9085331004972601494, guid: cd89e8618cc2bf04fb80e72b3cc3e388, type: 3}
+--- !u!23 &7244851203496189831
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7836581124197223400}
+  m_GameObject: {fileID: 9190190669276921426}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -59,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -8255497921437555292, guid: 3bad60fdf1abec149a8b69b8bd2be4cf, type: 3}
+  - {fileID: -205629353262513385, guid: cd89e8618cc2bf04fb80e72b3cc3e388, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -80,16 +82,44 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &257922579
+--- !u!114 &1790405739934892481
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7836581124197223400}
+  m_GameObject: {fileID: 9190190669276921426}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4b697389d137924c88f603c140c654e, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d729f562ec780947be2567640cf8548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rock: {fileID: 3432549556263185543, guid: 6bb8f886b089a4c4fb9f15a74a8596cf, type: 3}
+--- !u!54 &1227124013648500748
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9190190669276921426}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &3367837186670696396
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9190190669276921426}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.52
+  m_Center: {x: -0.15201141, y: 0.47931498, z: 0.4376201}
