@@ -139,7 +139,7 @@ public class SpawnObstaclesManager : MonoBehaviour
             {
                 
                 DestroyAllVisibleObstacles();
-                SpawnObstaclesForLevel(currentPlayerLevel);
+                SpawnObstaclesForLevel(currentPlayerLevel-1);
                 Debug.Log("Aufruf Test");
                 spawnPowerupsManager.DestroyAllVisiblePowerups();
                 spawnPowerupsManager.SpawnPowerupsForLevel(levelLength);

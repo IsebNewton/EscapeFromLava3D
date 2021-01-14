@@ -6,16 +6,20 @@ public class LevelManager : MonoBehaviour
 {
 
     private GameObject player;
-    public int playerLevel = -1;
+    public int playerLevel = 1;
     public GameObject[] levels;
     public float levelPosition = 200;
     public float difLevel;
     public float hardLevel = 1;
+    public SplitManager splitManager;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player");
+        splitManager = GameObject.Find("SplitManager").GetComponent<SplitManager>();
+        Debug.Log(splitManager);
+        playerLevel = 1;
     }
 
     // Update is called once per frame
@@ -25,9 +29,10 @@ public class LevelManager : MonoBehaviour
         if(player.transform.position.z >= levelPosition)
         {
             playerLevel++;
-            Object.Instantiate(levels[playerLevel-1], new Vector3(0, 0, (levelPosition+100)), levels[playerLevel].transform.rotation);
+            Object.Instantiate(levels[playerLevel-2], new Vector3(0, 0, (levelPosition+100)), levels[playerLevel].transform.rotation);
             levelPosition += 200;
             Debug.Log(playerLevel);
+            splitManager.increased = false;
         }
 
         switch (playerLevel)
