@@ -32,7 +32,7 @@ public class ObstacleCollisionManager : MonoBehaviour
         playerAnim = GameObject.Find("Player").GetComponent<Animator>();
         invincibilityTimer = 0;
 
-        obstacleBump1Audio = obstacleBump1Object.GetComponent<AudioSource>();
+
         obstacleBump2Audio = obstacleBump2Object.GetComponent<AudioSource>();
     }
 
@@ -65,15 +65,9 @@ public class ObstacleCollisionManager : MonoBehaviour
             if (Other.tag == "Obstacle")
             {
 
-                float rand = Random.Range(1, 10);
-                if(rand <= 5)
-                {
-                    obstacleBump1Audio.Play();
-                }
-                else if(rand > 5)
-                {
+
                     obstacleBump2Audio.Play();
-                }
+                
 
 
 

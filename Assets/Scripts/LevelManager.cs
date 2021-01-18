@@ -13,6 +13,9 @@ public class LevelManager : MonoBehaviour
     public float hardLevel = 1;
     public SplitManager splitManager;
 
+    public GameObject musicObject;
+    public AudioSource musicAudio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +23,10 @@ public class LevelManager : MonoBehaviour
         splitManager = GameObject.Find("SplitManager").GetComponent<SplitManager>();
         Debug.Log(splitManager);
         playerLevel = 1;
+        Debug.Log(levels[28]);
+
+        musicAudio = musicObject.GetComponent<AudioSource>();
+        musicAudio.Play();
     }
 
     // Update is called once per frame
@@ -28,7 +35,12 @@ public class LevelManager : MonoBehaviour
          
         if(player.transform.position.z >= levelPosition)
         {
+            Debug.Log("Level vorher =" + playerLevel);
             playerLevel++;
+            Debug.Log("Level danach =" + playerLevel);
+            Debug.Log(levels.Length);
+            Debug.Log(playerLevel - 2);
+            Debug.Log(levels[playerLevel - 2]);
             Object.Instantiate(levels[playerLevel-2], new Vector3(0, 0, (levelPosition+100)), levels[playerLevel].transform.rotation);
             levelPosition += 200;
             Debug.Log(playerLevel);
