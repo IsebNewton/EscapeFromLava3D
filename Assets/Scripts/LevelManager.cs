@@ -41,7 +41,7 @@ public class LevelManager : MonoBehaviour
             Debug.Log(levels.Length);
             Debug.Log(playerLevel - 2);
             Debug.Log(levels[playerLevel - 2]);
-            Object.Instantiate(levels[playerLevel-2], new Vector3(0, 0, (levelPosition+100)), levels[playerLevel].transform.rotation);
+            Object.Instantiate(levels[playerLevel-2], new Vector3(0, 0, (levelPosition+100)), levels[playerLevel-2].transform.rotation);
             levelPosition += 200;
             Debug.Log(playerLevel);
             splitManager.increased = false;

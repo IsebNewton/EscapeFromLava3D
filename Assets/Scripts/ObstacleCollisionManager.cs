@@ -81,7 +81,7 @@ public class ObstacleCollisionManager : MonoBehaviour
 
                 playerController.playerMovementSpeed = 0;
                 playerController.playerStrafeSpeed = 0;
-                playerController.jump = true;
+                playerController.jumpBlocking = true;
                 player.GetComponent<Renderer>().material = white;
                 playerAnim.SetBool("HitObstacle", true);
 
@@ -116,7 +116,7 @@ public class ObstacleCollisionManager : MonoBehaviour
         invincibilityTimer = 5;
         playerController.playerMovementSpeed = 10;
         playerController.playerStrafeSpeed = 7;
-        playerController.jump = false;
+        playerController.jumpBlocking = false;
         saved = false;
         
 

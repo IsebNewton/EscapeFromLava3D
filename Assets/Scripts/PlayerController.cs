@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
 
     public bool jump = false;
+    public bool jumpBlocking = false;
 
     private Rigidbody playerRb;
 
@@ -104,7 +105,7 @@ public class PlayerController : MonoBehaviour
 
     public void Jump()
     {
-        if (jump == false)
+        if (jump == false && jumpBlocking == false)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
