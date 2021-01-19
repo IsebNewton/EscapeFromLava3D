@@ -130,7 +130,7 @@ public class SpawnObstaclesManager : MonoBehaviour
         difficulty = ((levelManager.difLevel * 0.25f) * startDifficulty) * levelManager.hardLevel;
 
         obstacleDistance = 15 - difficulty;
-        Mathf.Clamp(obstacleDistance, 3f, 15f);
+        obstacleDistance = Mathf.Clamp(obstacleDistance, 3f, 15f);
 
         if (currentPlayerLevel != levelManager.playerLevel)
         {

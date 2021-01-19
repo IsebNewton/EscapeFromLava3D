@@ -52,7 +52,7 @@ LightmapSettings:
     m_AlbedoBoost: 1
     m_EnvironmentLightingMode: 0
     m_EnableBakedLightmaps: 1
-    m_EnableRealtimeLightmaps: 0
+    m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
     serializedVersion: 12
     m_Resolution: 2
@@ -1730,7 +1730,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximum: 100
   playerCurrent: -0.12467804
-  lavaCurrent: -2
+  lavaCurrent: -0.49100026
   playerMask: {fileID: 874128881}
   lavaMask: {fileID: 12821512}
   gameOver: 0
@@ -1832,7 +1832,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &769340827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2061,7 +2061,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e3372f1568e6a204892deb15e86f437e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.394
+  m_Volume: 0.034
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -6195,6 +6195,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BackLava
+      objectReference: {fileID: 0}
+    - target: {fileID: 178501455261326206, guid: 72f5d7029a177e04aac9c80ef1013cae,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 662586099973849540, guid: 72f5d7029a177e04aac9c80ef1013cae,
         type: 3}
