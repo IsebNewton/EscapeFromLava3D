@@ -75,6 +75,16 @@ public class PowerupManager : MonoBehaviour
 
         }
 
+        if (other.tag == "PowerupWallRun")
+        {
+            Destroy(other.gameObject);
+            collectBingAudio.Play();
+            obstacleCollisionManager.invincibilityTimer = 1;
+            playerController.playerRb.useGravity = false;
+            playerController.transform.position = new Vector3(7.0f, playerController.transform.position.y, playerController.transform.position.z);
+            playerController.transform.Rotate(new Vector3(0, 0, 90));
+            Invoke("PowerupWallRunReturnNormal", 5);
+        }
 
         if (other.tag == "PowerupInvincibility")
         {
@@ -111,6 +121,13 @@ public class PowerupManager : MonoBehaviour
         playerController.playerMovementSpeed /= 1.5f;
         playerController.playerMovementSpeed = Mathf.Clamp(playerController.playerMovementSpeed / 2 * 1.5f, 10f, 40f);
 
+    }
+
+    private void PowerupWallRunReturnNormal()
+    {
+        playerController.playerRb.useGravity = true;
+        playerController.transform.Rotate(new Vector3(0, 0, -90));
+        playerController.transform.position = new Vector3(0.0f, playerController.transform.position.y, playerController.transform.position.z);
     }
 
 
