@@ -76,10 +76,10 @@ public class FollowingLava : MonoBehaviour
             distance = 5;
         }
 
-       
 
 
 
-        transform.position = new Vector3(0, 0, player.transform.position.z + offset.z - distance); //player.transform.position + offset;
+        transform.position = Vector3.Lerp(transform.position, new Vector3(player.transform.position.x, player.transform.position.y,player.transform.position.z - distance), Time.deltaTime * 3);
+        //transform.position = new Vector3(0, 0, player.transform.position.z + offset.z - distance); //player.transform.position + offset;
     }
 }

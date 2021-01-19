@@ -36,10 +36,14 @@ public class PlayerController : MonoBehaviour
     public AudioSource jump1Audio;
     public AudioSource jump2Audio;
 
+    public GameObject player;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.Find("Player");
+
         trail1.SetActive(false);
         trail2.SetActive(false);
 
@@ -72,6 +76,43 @@ public class PlayerController : MonoBehaviour
         if (onAndroid == false)
         {
             horizontalInput = Input.GetAxis("Horizontal");
+
+
+            //if(horizontalInput == 0)
+            //{
+            //    Debug.Log(player.transform.rotation.z);
+            //    if(player.transform.rotation.z > 0.0f)
+            //    {
+            //        player.transform.Rotate(new Vector3(0, 0, -0.1f));
+            //        Debug.Log("Ich drehe rechts");
+
+            //    }
+            //    if (player.transform.rotation.z < 0.0f)
+            //    {
+            //        player.transform.Rotate(new Vector3(0, 0, 0.1f));
+            //        Debug.Log("Ich drehe links");
+            //    }
+            //}
+            //if(horizontalInput == 1)
+            //{
+            //    //right
+            //    if (player.transform.rotation.z < 0.025f)
+            //    {
+            //        player.transform.Rotate(new Vector3(0, 0, -0.5f));
+            //    }
+            //}
+            //if (horizontalInput == -1)
+            //{
+            //    //left
+            //    if (player.transform.rotation.z > -0.025f)
+            //    {
+            //        player.transform.Rotate(new Vector3(0, 0, 0.5f));
+            //    }
+            //}
+            //Debug.Log(player.transform.rotation.z);
+
+
+
             HorizontalMovement(horizontalInput);
         }
 
