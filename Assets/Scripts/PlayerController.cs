@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     public bool jump = false;
     public bool jumpBlocking = false;
 
-    private Rigidbody playerRb;
+    public Rigidbody playerRb;
 
     private SplitManager splitManager;
     private PowerupManager powerupManager;
@@ -116,9 +116,8 @@ public class PlayerController : MonoBehaviour
             HorizontalMovement(horizontalInput);
         }
 
-        Vector3 newPos = new Vector3(Mathf.Clamp(transform.position.x, -4.5f, 4.5f),transform.position.y,transform.position.z);
+        Vector3 newPos = new Vector3(Mathf.Clamp(transform.position.x, -4.5f, 4.5f), Mathf.Clamp(transform.position.y, 0.0f, 6.0f), transform.position.z);
         transform.position = newPos;
-
         if (onAndroid == false)
         {
             Jump();
