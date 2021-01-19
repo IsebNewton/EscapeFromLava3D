@@ -5,6 +5,16 @@ TagManager:
   serializedVersion: 2
   tags:
   - Shootable
+  - Obstacle
+  - PowerupSpeed
+  - PowerupInvincibility
+  - SplitRight
+  - SplitLeft
+  - Ground
+  - Ending
+  - PowerupWallRun
+  - PowerupJump
+  - Explosion
   layers:
   - Default
   - TransparentFX

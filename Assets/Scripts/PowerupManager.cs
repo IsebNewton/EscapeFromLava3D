@@ -19,6 +19,8 @@ public class PowerupManager : MonoBehaviour
     public GameObject collectBingObject;
     public AudioSource collectBingAudio;
 
+    public ParticleSystem explosion;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -60,10 +62,24 @@ public class PowerupManager : MonoBehaviour
 
     public void ActivatePowerup(Collider other)
     {
+        if(other.tag == "PowerupJump")
+        {
+            
+            other.transform.Find("Explosion").gameObject.SetActive(true);
+            other.GetComponent<MeshRenderer>().enabled = false;
+            StartCoroutine(DestroyObject(other));
+            collectBingAudio.Play();
+            playerController.jumpStrength = 15;
+
+            Invoke("PowerupJumpReturnNormal", 5);
+
+        }
 
         if(other.tag == "PowerupSpeed")
         {
-            Destroy(other.gameObject);
+            other.transform.Find("Explosion").gameObject.SetActive(true);
+            other.GetComponent<MeshRenderer>().enabled = false;
+            StartCoroutine(DestroyObject(other));
             collectBingAudio.Play();
             clampSpeedFast = playerController.playerMovementSpeed * 1.5f;
             Mathf.Clamp(clampSpeedFast, 10, 12);
@@ -77,7 +93,9 @@ public class PowerupManager : MonoBehaviour
 
         if (other.tag == "PowerupWallRun")
         {
-            Destroy(other.gameObject);
+            other.transform.Find("Explosion").gameObject.SetActive(true);
+            other.GetComponent<MeshRenderer>().enabled = false;
+            StartCoroutine(DestroyObject(other));
             collectBingAudio.Play();
             obstacleCollisionManager.invincibilityTimer = 1;
             playerController.playerRb.useGravity = false;
@@ -88,7 +106,9 @@ public class PowerupManager : MonoBehaviour
 
         if (other.tag == "PowerupInvincibility")
         {
-            Destroy(other.gameObject);
+            other.transform.Find("Explosion").gameObject.SetActive(true);
+            other.GetComponent<MeshRenderer>().enabled = false;
+            StartCoroutine(DestroyObject(other));
             collectBingAudio.Play();
 
             obstacleCollisionManager.invincibilityTimer = 5;
@@ -130,25 +150,16 @@ public class PowerupManager : MonoBehaviour
         playerController.transform.position = new Vector3(0.0f, playerController.transform.position.y, playerController.transform.position.z);
     }
 
+    private void PowerupJumpReturnNormal()
+    {
+        playerController.jumpStrength = 12;
+    }
 
-
-    //private void PowerupInvincibilityReturnNormal()
-    //{ 
-    //    obstacleCollisionManager.invulnerability = false;
-    //    Debug.Log("Yes");
-    //    player.GetComponent<Renderer>().material = original;
-    //}
-
-
-
-    //private void SetInvincibiltyMaterialNormal()
-    //{
-    //    player.GetComponent<Renderer>().material = original;
-    //}
-    //private void SetInvincibiltyMaterialWhite()
-    //{
-    //    player.GetComponent<Renderer>().material = white;
-    //}
-
+    public IEnumerator DestroyObject(Collider other)
+    {
+        yield return new WaitForSeconds(1);
+        Destroy(other.gameObject);
+        Debug.Log("Destroyed");
+    }
 
 }

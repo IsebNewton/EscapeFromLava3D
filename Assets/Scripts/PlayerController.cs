@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public float playerZPosition;
 
     public float playerMovementSpeed = 10;
+    public float jumpStrength = 12;
     public float jumpVelocity = 150f;
 
     public Vector3 forward;
@@ -149,7 +150,7 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                playerRb.AddForce(new Vector3(0, 12, 0), ForceMode.Impulse);
+                playerRb.AddForce(new Vector3(0, jumpStrength, 0), ForceMode.Impulse);
 
                 float rand = Random.Range(1, 10);
                 if (rand <= 5)

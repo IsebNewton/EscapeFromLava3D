@@ -17,9 +17,7 @@ public class ObstacleCollisionManager : MonoBehaviour
     public Animator playerAnim;
     public float invincibilityTimer;
 
-    public GameObject obstacleBump1Object;
-    public GameObject obstacleBump2Object;
-    public AudioSource obstacleBump1Audio;
+    public GameObject obstacleBump2Object; 
     public AudioSource obstacleBump2Audio;
 
     // Start is called before the first frame update

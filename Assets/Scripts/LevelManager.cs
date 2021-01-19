@@ -8,6 +8,7 @@ public class LevelManager : MonoBehaviour
     private GameObject player;
     public int playerLevel = 1;
     public GameObject[] levels;
+    public GameObject[] levelsAlternative;
     public float levelPosition = 200;
     public float difLevel;
     public float hardLevel = 1;
@@ -15,6 +16,10 @@ public class LevelManager : MonoBehaviour
 
     public GameObject musicObject;
     public AudioSource musicAudio;
+
+    public bool mushroom = false;
+    public bool stopMushroom = false;
+    public float savedPitch;
 
     // Start is called before the first frame update
     void Start()
@@ -25,8 +30,9 @@ public class LevelManager : MonoBehaviour
         playerLevel = 1;
         Debug.Log(levels[28]);
 
-        musicAudio = musicObject.GetComponent<AudioSource>();
         musicAudio.Play();
+
+        
     }
 
     // Update is called once per frame
@@ -37,15 +43,58 @@ public class LevelManager : MonoBehaviour
         {
             Debug.Log("Level vorher =" + playerLevel);
             playerLevel++;
+            if(mushroom == true)
+            {
+                stopMushroom = true;
+            }
             Debug.Log("Level danach =" + playerLevel);
             Debug.Log(levels.Length);
             Debug.Log(playerLevel - 2);
             Debug.Log(levels[playerLevel - 2]);
-            Object.Instantiate(levels[playerLevel-2], new Vector3(0, 0, (levelPosition+100)), levels[playerLevel-2].transform.rotation);
+
+            float rand = Random.Range(0, 2);
+            if (rand == 0)
+            {
+                Object.Instantiate(levels[playerLevel - 2], new Vector3(0, 0, (levelPosition + 100)), levels[playerLevel - 2].transform.rotation);
+            }
+            else if (rand == 1)
+            {
+                Object.Instantiate(levelsAlternative[playerLevel - 2], new Vector3(0, 0, (levelPosition + 100)), levelsAlternative[playerLevel - 2].transform.rotation);
+            }
             levelPosition += 200;
             Debug.Log(playerLevel);
             splitManager.increased = false;
         }
+
+        if (playerLevel == 17 || playerLevel == 18 || playerLevel == 19)
+        {
+            if (mushroom == false)
+            {
+                savedPitch = musicAudio.pitch;
+            }
+            Debug.Log(savedPitch);
+            mushroom = true;
+            musicAudio.pitch = -1;
+        }
+        if (stopMushroom == true)
+        {
+            musicAudio.pitch = savedPitch;
+        }
+
+        if (difLevel == 4)
+        {
+            musicAudio.pitch = 1.04f;
+        }
+        if (difLevel == 6)
+        {
+            musicAudio.pitch = 1.08f;
+        }
+        if (difLevel == 8)
+        {
+            musicAudio.pitch = 1.12f;
+        }
+
+
 
         switch (playerLevel)
         {
