@@ -6,6 +6,7 @@ public class LevelManager : MonoBehaviour
 {
 
     private GameObject player;
+    private PlayerController playerController;
     public int playerLevel = 1;
     public GameObject[] levels;
     public GameObject[] levelsAlternative;
@@ -16,6 +17,7 @@ public class LevelManager : MonoBehaviour
 
     public GameObject musicObject;
     public AudioSource musicAudio;
+    public bool musicPlaying = false;
 
     public bool mushroom = false;
     public bool stopMushroom = false;
@@ -25,12 +27,13 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player");
+        playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         splitManager = GameObject.Find("SplitManager").GetComponent<SplitManager>();
         Debug.Log(splitManager);
         playerLevel = 1;
         Debug.Log(levels[28]);
 
-        musicAudio.Play();
+       
 
         
     }
@@ -38,6 +41,11 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if(playerController.playerMovementSpeed > 5 && musicPlaying == false)
+        {
+            musicAudio.Play();
+        }
          
         if(player.transform.position.z >= levelPosition)
         {

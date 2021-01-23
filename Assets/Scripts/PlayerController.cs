@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public float playerZPosition;
 
-    public float playerMovementSpeed = 10;
+    public float playerMovementSpeed;// = 10;
     public float jumpStrength = 12;
     public float jumpVelocity = 150f;
 
