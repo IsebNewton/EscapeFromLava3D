@@ -15,11 +15,15 @@ public class PowerupManager : MonoBehaviour
     public Material hitMaterial;
     public Material normalMaterial;
     public GameObject playerBodyForColorChange;
+    public GameObject playerJointsForColorChange;
+    public Material normaljointsMaterial;
 
     public GameObject collectBingObject;
     public AudioSource collectBingAudio;
 
     public ParticleSystem explosion;
+
+    public Material redMaterialJump;
 
     // Start is called before the first frame update
     void Start()
@@ -36,14 +40,15 @@ public class PowerupManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if(playerController.playerMovementSpeed > 12)
+      
+        if (playerController.playerMovementSpeed > 12)
         {
             playerController.trail1.SetActive(true);
             playerController.trail2.SetActive(true);
         }
         if (playerController.playerMovementSpeed < 12)
         {
+          
             playerController.trail1.SetActive(false);
             playerController.trail2.SetActive(false);
         }
@@ -64,14 +69,15 @@ public class PowerupManager : MonoBehaviour
     {
         if(other.tag == "PowerupJump")
         {
-            
+   
+            playerJointsForColorChange.GetComponent<Renderer>().material = redMaterialJump;
             other.transform.Find("Explosion").gameObject.SetActive(true);
             other.GetComponent<MeshRenderer>().enabled = false;
             StartCoroutine(DestroyObject(other));
             collectBingAudio.Play();
             playerController.jumpStrength = 15;
 
-            Invoke("PowerupJumpReturnNormal", 5);
+            Invoke("PowerupJumpReturnNormal", 10);
 
         }
 
@@ -153,7 +159,7 @@ public class PowerupManager : MonoBehaviour
 
     private void PowerupJumpReturnNormal()
     {
-        
+        playerJointsForColorChange.GetComponent<Renderer>().material = normaljointsMaterial;
         playerController.jumpStrength = 12;
     }
 

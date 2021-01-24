@@ -23,6 +23,8 @@ public class LevelManager : MonoBehaviour
     public bool stopMushroom = false;
     public float savedPitch;
 
+    public bool alternateLevel = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -60,14 +62,16 @@ public class LevelManager : MonoBehaviour
             Debug.Log(playerLevel - 2);
             Debug.Log(levels[playerLevel - 2]);
 
-            float rand = Random.Range(0, 2);
-            if (rand == 0)
+            float rand = Random.Range(0, 5);
+            if (rand < 4)
             {
                 Object.Instantiate(levels[playerLevel - 2], new Vector3(0, 0, (levelPosition + 100)), levels[playerLevel - 2].transform.rotation);
+                alternateLevel = false;
             }
-            else if (rand == 1)
+            else if (rand >= 4)
             {
                 Object.Instantiate(levelsAlternative[playerLevel - 2], new Vector3(0, 0, (levelPosition + 100)), levelsAlternative[playerLevel - 2].transform.rotation);
+                alternateLevel = true;
             }
             levelPosition += 200;
             Debug.Log(playerLevel);
