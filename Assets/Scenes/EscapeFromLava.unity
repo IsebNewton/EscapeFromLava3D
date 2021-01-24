@@ -897,12 +897,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41d0a4d2f444c5f4f8d41c8fa1b16519, type: 3}
---- !u!1 &267969339 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 267969339, guid: c242643ad062a1f498ce00514237f052,
-    type: 3}
-  m_PrefabInstance: {fileID: 8723549374715320556}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &274319026
 GameObject:
   m_ObjectHideFlags: 0
@@ -2091,7 +2085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximum: 100
   playerCurrent: -0.12467804
-  lavaCurrent: -1.8410001
+  lavaCurrent: -1.991
   playerMask: {fileID: 874128881}
   lavaMask: {fileID: 12821512}
   gameOver: 0
@@ -2978,12 +2972,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 14.2, y: 0, z: 0}
---- !u!1 &1053963101 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1053963101, guid: c242643ad062a1f498ce00514237f052,
-    type: 3}
-  m_PrefabInstance: {fileID: 8723549374715320556}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1131836808
 GameObject:
   m_ObjectHideFlags: 0
@@ -4003,6 +3991,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   started: 0
+  once: 0
   startingStoryScreen: {fileID: 1393998266}
   playerController: {fileID: 0}
   progressBar: {fileID: 0}
@@ -10314,21 +10303,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 8723549374918402304, guid: c242643ad062a1f498ce00514237f052,
+    - target: {fileID: 8723549374918402307, guid: c242643ad062a1f498ce00514237f052,
         type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8723549374918402305, guid: c242643ad062a1f498ce00514237f052,
-        type: 3}
-      propertyPath: trail1
+      propertyPath: m_Material
       value: 
-      objectReference: {fileID: 267969339}
-    - target: {fileID: 8723549374918402305, guid: c242643ad062a1f498ce00514237f052,
-        type: 3}
-      propertyPath: trail2
-      value: 
-      objectReference: {fileID: 1053963101}
+      objectReference: {fileID: 13400000, guid: 254ba279e72e5b74a84bae504ef0b244,
+        type: 2}
     - target: {fileID: 8723549374918402334, guid: c242643ad062a1f498ce00514237f052,
         type: 3}
       propertyPath: m_LocalPosition.x

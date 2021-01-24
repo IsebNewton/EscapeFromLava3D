@@ -76,6 +76,7 @@ public class LevelManager : MonoBehaviour
 
         if (playerLevel == 17 || playerLevel == 18 || playerLevel == 19)
         {
+            Debug.Log("Sollte kommen für music");
             if (mushroom == false)
             {
                 savedPitch = musicAudio.pitch;

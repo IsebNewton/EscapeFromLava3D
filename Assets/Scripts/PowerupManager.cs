@@ -77,6 +77,7 @@ public class PowerupManager : MonoBehaviour
 
         if(other.tag == "PowerupSpeed")
         {
+            other.GetComponent<SphereCollider>().enabled = false;
             other.transform.Find("Explosion").gameObject.SetActive(true);
             other.GetComponent<MeshRenderer>().enabled = false;
             StartCoroutine(DestroyObject(other));
@@ -152,6 +153,7 @@ public class PowerupManager : MonoBehaviour
 
     private void PowerupJumpReturnNormal()
     {
+        
         playerController.jumpStrength = 12;
     }
 

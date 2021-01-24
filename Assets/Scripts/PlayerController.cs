@@ -6,9 +6,10 @@ public class PlayerController : MonoBehaviour
 {
     public float playerZPosition;
 
-    public float playerMovementSpeed;// = 10;
+    public float playerMovementSpeed; //= 10;
     public float jumpStrength = 12;
     public float jumpVelocity = 150f;
+
 
     public Vector3 forward;
 
@@ -67,6 +68,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
+      
 
         playerMovementSpeed = Mathf.Clamp(playerMovementSpeed, 0f, 40f);
 

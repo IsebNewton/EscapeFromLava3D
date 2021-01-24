@@ -65,13 +65,14 @@ public class ObstacleCollisionManager : MonoBehaviour
 
 
                     obstacleBump2Audio.Play();
-                
 
 
+                Debug.Log("Kommt rein");
 
                 if (saved == false)
                 {
                     savedSpeed = playerController.playerMovementSpeed;
+                    Debug.Log(savedSpeed);
                     saved = true;
                 }
 

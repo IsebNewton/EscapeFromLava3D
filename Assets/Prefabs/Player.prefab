@@ -277,7 +277,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8723549374918402334
 Transform:
   m_ObjectHideFlags: 0
@@ -348,7 +348,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8723549374918402304}
-  m_Material: {fileID: 13400000, guid: 254ba279e72e5b74a84bae504ef0b244, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -384,11 +384,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerZPosition: 0
   playerMovementSpeed: 10
+  jumpStrength: 12
   jumpVelocity: 15
+  jumpHeight: 12
+  forward: {x: 0, y: 0, z: 0}
   playerStrafeSpeed: 7
   jump: 0
-  trail1: {fileID: 0}
-  trail2: {fileID: 0}
+  jumpBlocking: 0
+  playerRb: {fileID: 0}
+  trail1: {fileID: 267969339}
+  trail2: {fileID: 1053963101}
+  animator: {fileID: 0}
+  onAndroid: 0
+  jump1Object: {fileID: 0}
+  jump2Object: {fileID: 0}
+  jump1Audio: {fileID: 0}
+  jump2Audio: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &8723549374918402335
 MonoBehaviour:
   m_ObjectHideFlags: 0

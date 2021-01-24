@@ -6,6 +6,7 @@ public class StartingStoryManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public bool started = false;
+    public bool once = false;
 
     public GameObject startingStoryScreen;
     public PlayerController playerController;
@@ -24,10 +25,11 @@ public class StartingStoryManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(started == true)
+        if (started == true && once == false)
         {
             playerController.playerMovementSpeed = 10;
             progressBar.lavaSpeed = 0.45f;
+            once = true;
         }
     }
 
