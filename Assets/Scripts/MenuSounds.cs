@@ -24,6 +24,7 @@ public class MenuSounds : MonoBehaviour
     public void PlaySound()
     {
         hoverAudio.Play();
+        hoverAudio.Play();
     }
 
 

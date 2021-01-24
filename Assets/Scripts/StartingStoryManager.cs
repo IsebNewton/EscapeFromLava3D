@@ -11,12 +11,14 @@ public class StartingStoryManager : MonoBehaviour
     public GameObject startingStoryScreen;
     public PlayerController playerController;
     public ProgressBar progressBar;
+    public LevelManager levelManager;
 
 
     void Start()
     {
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         progressBar = GameObject.Find("ProgressBar").GetComponent<ProgressBar>();
+        levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
 
         playerController.playerMovementSpeed = 0;
         progressBar.lavaSpeed = 0;
@@ -30,6 +32,7 @@ public class StartingStoryManager : MonoBehaviour
             playerController.playerMovementSpeed = 10;
             progressBar.lavaSpeed = 0.45f;
             once = true;
+            levelManager.musicAudio.Play();
         }
     }
 

@@ -44,10 +44,10 @@ public class LevelManager : MonoBehaviour
     void Update()
     {
 
-        if(playerController.playerMovementSpeed > 5 && musicPlaying == false)
-        {
-            musicAudio.Play();
-        }
+        //if(playerController.playerMovementSpeed > 5 && musicPlaying == false)
+        //{
+        //    musicAudio.Play();
+        //}
          
         if(player.transform.position.z >= levelPosition)
         {
