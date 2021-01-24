@@ -40,6 +40,8 @@ public class PlayerController : MonoBehaviour
 
     public GameObject player;
 
+    public ParticleSystem dustExplosion;
+
 
     // Start is called before the first frame update
     void Start()
@@ -62,6 +64,8 @@ public class PlayerController : MonoBehaviour
 
         jump1Audio = jump1Object.GetComponent<AudioSource>();
         jump2Audio = jump2Object.GetComponent<AudioSource>();
+
+        dustExplosion.Stop();
 
     }
 

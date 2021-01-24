@@ -30,6 +30,8 @@ public class IsTouchingGround : MonoBehaviour
         if(other.tag == "Ground")
         {
             playerController.jump = false;
+            playerController.dustExplosion.Play();
+            Invoke("StopParticleSystem", 1);
         }
     }
 
@@ -41,6 +43,9 @@ public class IsTouchingGround : MonoBehaviour
         }
     }
 
-
+    public void StopParticleSystem()
+    {
+        playerController.dustExplosion.Stop();
+    }
 
 }
