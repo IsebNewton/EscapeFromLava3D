@@ -611,17 +611,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Bla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla
-    BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla
-    BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla
-    BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla
-    BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla
-    BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla
-    BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla
-    BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla
-    BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla
-    BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla BlaBla
-    BlaBla BlaBla BlaBla BlaBla Bla
+  m_Text: "Als Praktikant bei Team Magma hast du Informationen gesehen, die nicht
+    f\xFCr dein Auge bestimmt waren. Trotz deiner Versprechen, die Informationen
+    nicht weiterzugeben, wirst du bet\xE4ubt und wachst im inneren eines Vulkans
+    auf. Du befindest dich in einem der untersten Nebenschlote des Vulkans.\nVersuche
+    aus dem Vulkan zu entkommen bevor dich die Lava einholt!"
 --- !u!222 &189864515
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4388,8 +4382,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 32, y: 145.3}
-  m_SizeDelta: {x: 305.76553, y: 49.435455}
+  m_AnchoredPosition: {x: 9.7, y: 145.3}
+  m_SizeDelta: {x: 320.7655, y: 49.435455}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1632405988
 MonoBehaviour:
@@ -4423,7 +4417,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xDCberschrift"
+  m_Text: Escape from Lava
 --- !u!222 &1632405989
 CanvasRenderer:
   m_ObjectHideFlags: 0
