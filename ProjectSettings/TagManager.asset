@@ -15,6 +15,7 @@ TagManager:
   - PowerupWallRun
   - PowerupJump
   - Explosion
+  - Collectable
   layers:
   - Default
   - TransparentFX

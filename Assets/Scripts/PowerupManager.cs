@@ -18,6 +18,8 @@ public class PowerupManager : MonoBehaviour
     public GameObject playerJointsForColorChange;
     public Material normaljointsMaterial;
 
+    public ScoreDisplay scoreDisplay;
+
     public GameObject collectBingObject;
     public AudioSource collectBingAudio;
 
@@ -35,6 +37,9 @@ public class PowerupManager : MonoBehaviour
         clampSpeedSlow = 10;
 
         collectBingAudio = collectBingObject.GetComponent<AudioSource>();
+
+        scoreDisplay = GameObject.Find("ScoreText").GetComponent<ScoreDisplay>();
+
     }
 
     // Update is called once per frame
@@ -79,6 +84,8 @@ public class PowerupManager : MonoBehaviour
 
             Invoke("PowerupJumpReturnNormal", 10);
 
+            scoreDisplay.score += 10;
+
         }
 
         if(other.tag == "PowerupSpeed")
@@ -96,6 +103,7 @@ public class PowerupManager : MonoBehaviour
 
             Invoke("PowerupSpeedReturnNormal", 5);
 
+            scoreDisplay.score += 10;
         }
 
         if (other.tag == "PowerupWallRun")
@@ -109,6 +117,9 @@ public class PowerupManager : MonoBehaviour
             playerController.transform.position = new Vector3(7.0f, playerController.transform.position.y, playerController.transform.position.z);
             playerController.transform.Rotate(new Vector3(0, 0, 90));
             Invoke("PowerupWallRunReturnNormal", 5);
+
+            scoreDisplay.score += 10;
+
         }
 
         if (other.tag == "PowerupInvincibility")
@@ -137,7 +148,22 @@ public class PowerupManager : MonoBehaviour
             //Invoke("SetInvincibiltyMaterialWhite", 9.7f);
             //Invoke("SetInvincibiltyMaterialNormal", 9.8f);
             //Invoke("SetInvincibiltyMaterialWhite", 9.9f);
+
+            scoreDisplay.score += 10;
         }
+
+        if (other.tag == "Collectable")
+        {
+            other.transform.Find("Explosion").gameObject.SetActive(true);
+            other.GetComponent<MeshRenderer>().enabled = false;
+            StartCoroutine(DestroyObject(other));
+            collectBingAudio.Play();
+
+            scoreDisplay.score += 100;
+        }
+
+
+
 
 
     }
