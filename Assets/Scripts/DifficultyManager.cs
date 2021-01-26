@@ -56,7 +56,7 @@ public sealed class DifficultyManager
 
     public void DifficultyNightmare()
     {
-        difficulty = 3;
+        difficulty = 5;
     }
 
 

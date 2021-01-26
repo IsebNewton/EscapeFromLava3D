@@ -422,6 +422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e355dacc3ece77478d30331fa2cf5ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 0
   scoreText: {fileID: 78622240}
 --- !u!114 &78622240
 MonoBehaviour:
@@ -1092,166 +1093,171 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelOneObstacles:
-  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
-  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
-  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
-  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
-  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
+  - {fileID: 6540287936485399495, guid: 1b5320684af2452438f0d52a9acd4480, type: 3}
+  - {fileID: 3922127205526489132, guid: ed4d6f6ccbfa00140adff0b5a6d18346, type: 3}
+  - {fileID: 195509609390691247, guid: 6a139fdec6e2e0943875a62d349b77a4, type: 3}
+  - {fileID: 3922127205526489132, guid: ed4d6f6ccbfa00140adff0b5a6d18346, type: 3}
+  - {fileID: 6540287936485399495, guid: 1b5320684af2452438f0d52a9acd4480, type: 3}
   levelTwoObstacles:
-  - {fileID: 3456566360886079313, guid: 062c7e29d33f77444a1f58ecf1aceefb, type: 3}
-  - {fileID: 6540287936485399495, guid: 1b5320684af2452438f0d52a9acd4480, type: 3}
-  - {fileID: 6540287936485399495, guid: 1b5320684af2452438f0d52a9acd4480, type: 3}
+  - {fileID: 195509609390691247, guid: 6a139fdec6e2e0943875a62d349b77a4, type: 3}
+  - {fileID: 2199368531122191219, guid: 48212671ab9a48946b654dbb09ed85a8, type: 3}
+  - {fileID: 195509609390691247, guid: 6a139fdec6e2e0943875a62d349b77a4, type: 3}
   levelThreeObstacles:
   - {fileID: 1376555434418936797, guid: 61943f1f47bae9d41b7a2971e5cf4a58, type: 3}
   - {fileID: 6540287936485399495, guid: 1b5320684af2452438f0d52a9acd4480, type: 3}
   - {fileID: 6540287936485399495, guid: 1b5320684af2452438f0d52a9acd4480, type: 3}
   levelFourObstacles:
-  - {fileID: 6540287936485399495, guid: 1b5320684af2452438f0d52a9acd4480, type: 3}
+  - {fileID: 5636605890490333739, guid: 364fe4c42feca904abeddfb487e7ed00, type: 3}
   - {fileID: 3922127205526489132, guid: ed4d6f6ccbfa00140adff0b5a6d18346, type: 3}
   - {fileID: 1376555434418936797, guid: 61943f1f47bae9d41b7a2971e5cf4a58, type: 3}
   levelFiveObstacles:
-  - {fileID: 1795290904681281997, guid: 4a733fa66826600488cec5f0c83add85, type: 3}
-  - {fileID: 1509268402079820565, guid: 58cec89c6cd936044be6d58957bfb019, type: 3}
-  - {fileID: 3456566360886079313, guid: 062c7e29d33f77444a1f58ecf1aceefb, type: 3}
-  - {fileID: 430609613963474797, guid: f5a3010a0d900bb41ab538d7581e6a3c, type: 3}
-  levelSixObstacles:
+  - {fileID: 3922127205526489132, guid: ed4d6f6ccbfa00140adff0b5a6d18346, type: 3}
+  - {fileID: 6540287936485399495, guid: 1b5320684af2452438f0d52a9acd4480, type: 3}
   - {fileID: 1376555434418936797, guid: 61943f1f47bae9d41b7a2971e5cf4a58, type: 3}
-  - {fileID: 195509609390691247, guid: 6a139fdec6e2e0943875a62d349b77a4, type: 3}
+  - {fileID: 2199368531122191219, guid: 48212671ab9a48946b654dbb09ed85a8, type: 3}
+  levelSixObstacles:
   - {fileID: 2580366755814568833, guid: a4253bb832c1f9c49aff07076aec16eb, type: 3}
-  - {fileID: 3456566360886079313, guid: 062c7e29d33f77444a1f58ecf1aceefb, type: 3}
+  - {fileID: 6540287936485399495, guid: 1b5320684af2452438f0d52a9acd4480, type: 3}
+  - {fileID: 2199368531122191219, guid: 48212671ab9a48946b654dbb09ed85a8, type: 3}
+  - {fileID: 3922127205526489132, guid: ed4d6f6ccbfa00140adff0b5a6d18346, type: 3}
   levelSevenObstacles:
-  - {fileID: 7464547460916961338, guid: 5fd718ef1aab26a47b46bd2d52e954fb, type: 3}
-  - {fileID: 2173359537333915510, guid: 608a95c6e647b2a4281a23a6b397a291, type: 3}
-  - {fileID: 7024332578162855817, guid: 4125899b7d51ef04794c2db2de7a692d, type: 3}
-  - {fileID: 4523899969263564462, guid: 8bfb080b259e894409ad029378859584, type: 3}
+  - {fileID: 3456566360886079313, guid: 062c7e29d33f77444a1f58ecf1aceefb, type: 3}
+  - {fileID: 1795290904681281997, guid: 4a733fa66826600488cec5f0c83add85, type: 3}
+  - {fileID: 6540287936485399495, guid: 1b5320684af2452438f0d52a9acd4480, type: 3}
+  - {fileID: 5636605890490333739, guid: 364fe4c42feca904abeddfb487e7ed00, type: 3}
   levelEigthObstacles:
-  - {fileID: 7024332578162855817, guid: 4125899b7d51ef04794c2db2de7a692d, type: 3}
-  - {fileID: 2173359537333915510, guid: 608a95c6e647b2a4281a23a6b397a291, type: 3}
-  - {fileID: 7464547460916961338, guid: 5fd718ef1aab26a47b46bd2d52e954fb, type: 3}
-  - {fileID: 4523899969263564462, guid: 8bfb080b259e894409ad029378859584, type: 3}
+  - {fileID: 430609613963474797, guid: f5a3010a0d900bb41ab538d7581e6a3c, type: 3}
+  - {fileID: 5636605890490333739, guid: 364fe4c42feca904abeddfb487e7ed00, type: 3}
+  - {fileID: 2580366755814568833, guid: a4253bb832c1f9c49aff07076aec16eb, type: 3}
+  - {fileID: 3664362377625813172, guid: 0354d429a9d4bb145a9fb189209b998b, type: 3}
   levelNineObstacles:
-  - {fileID: 7024332578162855817, guid: 4125899b7d51ef04794c2db2de7a692d, type: 3}
-  - {fileID: 2173359537333915510, guid: 608a95c6e647b2a4281a23a6b397a291, type: 3}
-  - {fileID: 7464547460916961338, guid: 5fd718ef1aab26a47b46bd2d52e954fb, type: 3}
-  - {fileID: 4523899969263564462, guid: 8bfb080b259e894409ad029378859584, type: 3}
+  - {fileID: 2580366755814568833, guid: a4253bb832c1f9c49aff07076aec16eb, type: 3}
+  - {fileID: 195509609390691247, guid: 6a139fdec6e2e0943875a62d349b77a4, type: 3}
+  - {fileID: 2723141372396178148, guid: 8570c06bb63587743ad0c59030dbf246, type: 3}
+  - {fileID: 430609613963474797, guid: f5a3010a0d900bb41ab538d7581e6a3c, type: 3}
   levelTenObstacles:
-  - {fileID: 7836581124197223400, guid: 1b492e0965e954140817f98d0c904882, type: 3}
-  - {fileID: 7836581124197223400, guid: 1b492e0965e954140817f98d0c904882, type: 3}
-  - {fileID: 7836581124197223400, guid: 1b492e0965e954140817f98d0c904882, type: 3}
-  - {fileID: 7836581124197223400, guid: 1b492e0965e954140817f98d0c904882, type: 3}
-  - {fileID: 309190136866353834, guid: ccdc3aafd962c6144b8f33154f94949b, type: 3}
+  - {fileID: 3922127205526489132, guid: ed4d6f6ccbfa00140adff0b5a6d18346, type: 3}
+  - {fileID: 2199368531122191219, guid: 48212671ab9a48946b654dbb09ed85a8, type: 3}
+  - {fileID: 8487788087317074332, guid: 3683fa094e250ce4da082489a8c74e9a, type: 3}
+  - {fileID: 2580366755814568833, guid: a4253bb832c1f9c49aff07076aec16eb, type: 3}
+  - {fileID: 5636605890490333739, guid: 364fe4c42feca904abeddfb487e7ed00, type: 3}
   levelElevenObstacles:
-  - {fileID: 1734626492256109016, guid: 85545878532de1f4aadf9f87aa448e23, type: 3}
-  - {fileID: 7024332578162855817, guid: 4125899b7d51ef04794c2db2de7a692d, type: 3}
-  - {fileID: 753711214992152757, guid: 6ca422d70b91bad4fa2ab6949f509203, type: 3}
-  - {fileID: 9034724716288844941, guid: 2fbc36b0ef0a8334da35703d44fcf972, type: 3}
-  - {fileID: 5487549067976244467, guid: 5322f631206c62d4188830132031793b, type: 3}
-  - {fileID: 7464547460916961338, guid: 5fd718ef1aab26a47b46bd2d52e954fb, type: 3}
+  - {fileID: 3664362377625813172, guid: 0354d429a9d4bb145a9fb189209b998b, type: 3}
+  - {fileID: 1376555434418936797, guid: 61943f1f47bae9d41b7a2971e5cf4a58, type: 3}
+  - {fileID: 430609613963474797, guid: f5a3010a0d900bb41ab538d7581e6a3c, type: 3}
+  - {fileID: 2723141372396178148, guid: 8570c06bb63587743ad0c59030dbf246, type: 3}
+  - {fileID: 2199368531122191219, guid: 48212671ab9a48946b654dbb09ed85a8, type: 3}
+  - {fileID: 195509609390691247, guid: 6a139fdec6e2e0943875a62d349b77a4, type: 3}
   levelTwelveObstacles:
-  - {fileID: 7836581124197223400, guid: 1b492e0965e954140817f98d0c904882, type: 3}
-  - {fileID: 7836581124197223400, guid: 1b492e0965e954140817f98d0c904882, type: 3}
-  - {fileID: 7836581124197223400, guid: 1b492e0965e954140817f98d0c904882, type: 3}
-  - {fileID: 7836581124197223400, guid: 1b492e0965e954140817f98d0c904882, type: 3}
-  - {fileID: 4523899969263564462, guid: 8bfb080b259e894409ad029378859584, type: 3}
+  - {fileID: 1795290904681281997, guid: 4a733fa66826600488cec5f0c83add85, type: 3}
+  - {fileID: 3456566360886079313, guid: 062c7e29d33f77444a1f58ecf1aceefb, type: 3}
+  - {fileID: 5636605890490333739, guid: 364fe4c42feca904abeddfb487e7ed00, type: 3}
+  - {fileID: 2580366755814568833, guid: a4253bb832c1f9c49aff07076aec16eb, type: 3}
+  - {fileID: 3664362377625813172, guid: 0354d429a9d4bb145a9fb189209b998b, type: 3}
   levelThirteenObstacles:
-  - {fileID: 1734626492256109016, guid: 85545878532de1f4aadf9f87aa448e23, type: 3}
-  - {fileID: 7024332578162855817, guid: 4125899b7d51ef04794c2db2de7a692d, type: 3}
-  - {fileID: 9034724716288844941, guid: 2fbc36b0ef0a8334da35703d44fcf972, type: 3}
-  - {fileID: 753711214992152757, guid: 6ca422d70b91bad4fa2ab6949f509203, type: 3}
-  - {fileID: 5487549067976244467, guid: 5322f631206c62d4188830132031793b, type: 3}
-  - {fileID: 7464547460916961338, guid: 5fd718ef1aab26a47b46bd2d52e954fb, type: 3}
+  - {fileID: 1509268402079820565, guid: 58cec89c6cd936044be6d58957bfb019, type: 3}
+  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
+  - {fileID: 1376555434418936797, guid: 61943f1f47bae9d41b7a2971e5cf4a58, type: 3}
+  - {fileID: 3456566360886079313, guid: 062c7e29d33f77444a1f58ecf1aceefb, type: 3}
+  - {fileID: 195509609390691247, guid: 6a139fdec6e2e0943875a62d349b77a4, type: 3}
+  - {fileID: 5636605890490333739, guid: 364fe4c42feca904abeddfb487e7ed00, type: 3}
   levelFourteenObstacles:
-  - {fileID: 1734626492256109016, guid: 85545878532de1f4aadf9f87aa448e23, type: 3}
-  - {fileID: 9034724716288844941, guid: 2fbc36b0ef0a8334da35703d44fcf972, type: 3}
-  - {fileID: 753711214992152757, guid: 6ca422d70b91bad4fa2ab6949f509203, type: 3}
+  - {fileID: 3664362377625813172, guid: 0354d429a9d4bb145a9fb189209b998b, type: 3}
+  - {fileID: 1376555434418936797, guid: 61943f1f47bae9d41b7a2971e5cf4a58, type: 3}
+  - {fileID: 1795290904681281997, guid: 4a733fa66826600488cec5f0c83add85, type: 3}
   levelFifteenObstacles:
-  - {fileID: 1734626492256109016, guid: 85545878532de1f4aadf9f87aa448e23, type: 3}
-  - {fileID: 9034724716288844941, guid: 2fbc36b0ef0a8334da35703d44fcf972, type: 3}
-  - {fileID: 753711214992152757, guid: 6ca422d70b91bad4fa2ab6949f509203, type: 3}
+  - {fileID: 1376555434418936797, guid: 61943f1f47bae9d41b7a2971e5cf4a58, type: 3}
+  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
+  - {fileID: 5636605890490333739, guid: 364fe4c42feca904abeddfb487e7ed00, type: 3}
   levelSixteenObstacles:
-  - {fileID: 1734626492256109016, guid: 85545878532de1f4aadf9f87aa448e23, type: 3}
-  - {fileID: 9034724716288844941, guid: 2fbc36b0ef0a8334da35703d44fcf972, type: 3}
-  - {fileID: 753711214992152757, guid: 6ca422d70b91bad4fa2ab6949f509203, type: 3}
+  - {fileID: 3664362377625813172, guid: 0354d429a9d4bb145a9fb189209b998b, type: 3}
+  - {fileID: 7770306493781994078, guid: 041ba13a62adef2418fe7f28103a99ae, type: 3}
+  - {fileID: 1376555434418936797, guid: 61943f1f47bae9d41b7a2971e5cf4a58, type: 3}
   levelSeventeenObstacles:
   - {fileID: 8356609278853030237, guid: 19fe855c700b89847a019bb7bb57b126, type: 3}
   - {fileID: 1010350290383497264, guid: ef5abf1b521dd65498c459ac7a2abf4b, type: 3}
-  - {fileID: 3012740327892913328, guid: c3cf0988a86a1c64c9b012d59997acac, type: 3}
-  - {fileID: 839462537396310694, guid: b5edd135b37e22e4dade0a38dfcd163e, type: 3}
-  - {fileID: 2173359537333915510, guid: 608a95c6e647b2a4281a23a6b397a291, type: 3}
+  - {fileID: 1509268402079820565, guid: 58cec89c6cd936044be6d58957bfb019, type: 3}
+  - {fileID: 5636605890490333739, guid: 364fe4c42feca904abeddfb487e7ed00, type: 3}
+  - {fileID: 1376555434418936797, guid: 61943f1f47bae9d41b7a2971e5cf4a58, type: 3}
   levelEigthteenObstacles:
   - {fileID: 8356609278853030237, guid: 19fe855c700b89847a019bb7bb57b126, type: 3}
   - {fileID: 1010350290383497264, guid: ef5abf1b521dd65498c459ac7a2abf4b, type: 3}
-  - {fileID: 3012740327892913328, guid: c3cf0988a86a1c64c9b012d59997acac, type: 3}
-  - {fileID: 839462537396310694, guid: b5edd135b37e22e4dade0a38dfcd163e, type: 3}
-  - {fileID: 2173359537333915510, guid: 608a95c6e647b2a4281a23a6b397a291, type: 3}
+  - {fileID: 1509268402079820565, guid: 58cec89c6cd936044be6d58957bfb019, type: 3}
+  - {fileID: 1376555434418936797, guid: 61943f1f47bae9d41b7a2971e5cf4a58, type: 3}
+  - {fileID: 1795290904681281997, guid: 4a733fa66826600488cec5f0c83add85, type: 3}
   levelNineteenObstacles:
   - {fileID: 8356609278853030237, guid: 19fe855c700b89847a019bb7bb57b126, type: 3}
   - {fileID: 1010350290383497264, guid: ef5abf1b521dd65498c459ac7a2abf4b, type: 3}
-  - {fileID: 3012740327892913328, guid: c3cf0988a86a1c64c9b012d59997acac, type: 3}
-  - {fileID: 839462537396310694, guid: b5edd135b37e22e4dade0a38dfcd163e, type: 3}
-  - {fileID: 2173359537333915510, guid: 608a95c6e647b2a4281a23a6b397a291, type: 3}
+  - {fileID: 1795290904681281997, guid: 4a733fa66826600488cec5f0c83add85, type: 3}
+  - {fileID: 1509268402079820565, guid: 58cec89c6cd936044be6d58957bfb019, type: 3}
+  - {fileID: 3456566360886079313, guid: 062c7e29d33f77444a1f58ecf1aceefb, type: 3}
   levelTwentyObstacles:
   - {fileID: 8356609278853030237, guid: 19fe855c700b89847a019bb7bb57b126, type: 3}
   - {fileID: 1010350290383497264, guid: ef5abf1b521dd65498c459ac7a2abf4b, type: 3}
-  - {fileID: 1734626492256109016, guid: 85545878532de1f4aadf9f87aa448e23, type: 3}
-  - {fileID: 9034724716288844941, guid: 2fbc36b0ef0a8334da35703d44fcf972, type: 3}
-  - {fileID: 7464547460916961338, guid: 5fd718ef1aab26a47b46bd2d52e954fb, type: 3}
-  - {fileID: 309190136866353834, guid: ccdc3aafd962c6144b8f33154f94949b, type: 3}
+  - {fileID: 2580366755814568833, guid: a4253bb832c1f9c49aff07076aec16eb, type: 3}
+  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
+  - {fileID: 1509268402079820565, guid: 58cec89c6cd936044be6d58957bfb019, type: 3}
+  - {fileID: 3456566360886079313, guid: 062c7e29d33f77444a1f58ecf1aceefb, type: 3}
   levelTwentyoneObstacles:
   - {fileID: 8356609278853030237, guid: 19fe855c700b89847a019bb7bb57b126, type: 3}
-  - {fileID: 1010350290383497264, guid: ef5abf1b521dd65498c459ac7a2abf4b, type: 3}
-  - {fileID: 1734626492256109016, guid: 85545878532de1f4aadf9f87aa448e23, type: 3}
-  - {fileID: 9034724716288844941, guid: 2fbc36b0ef0a8334da35703d44fcf972, type: 3}
-  - {fileID: 7464547460916961338, guid: 5fd718ef1aab26a47b46bd2d52e954fb, type: 3}
-  - {fileID: 309190136866353834, guid: ccdc3aafd962c6144b8f33154f94949b, type: 3}
-  levelTwentytwoObstacles: []
+  - {fileID: 8487788087317074332, guid: 3683fa094e250ce4da082489a8c74e9a, type: 3}
+  - {fileID: 3456566360886079313, guid: 062c7e29d33f77444a1f58ecf1aceefb, type: 3}
+  - {fileID: 7770306493781994078, guid: 041ba13a62adef2418fe7f28103a99ae, type: 3}
+  - {fileID: 1509268402079820565, guid: 58cec89c6cd936044be6d58957bfb019, type: 3}
+  - {fileID: 5636605890490333739, guid: 364fe4c42feca904abeddfb487e7ed00, type: 3}
+  levelTwentytwoObstacles:
+  - {fileID: 1376555434418936797, guid: 61943f1f47bae9d41b7a2971e5cf4a58, type: 3}
+  - {fileID: 7770306493781994078, guid: 041ba13a62adef2418fe7f28103a99ae, type: 3}
+  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
+  - {fileID: 2580366755814568833, guid: a4253bb832c1f9c49aff07076aec16eb, type: 3}
+  - {fileID: 1795290904681281997, guid: 4a733fa66826600488cec5f0c83add85, type: 3}
   levelTwentythreeObstacles:
   - {fileID: 8356609278853030237, guid: 19fe855c700b89847a019bb7bb57b126, type: 3}
   - {fileID: 1010350290383497264, guid: ef5abf1b521dd65498c459ac7a2abf4b, type: 3}
-  - {fileID: 1734626492256109016, guid: 85545878532de1f4aadf9f87aa448e23, type: 3}
-  - {fileID: 9034724716288844941, guid: 2fbc36b0ef0a8334da35703d44fcf972, type: 3}
-  - {fileID: 7464547460916961338, guid: 5fd718ef1aab26a47b46bd2d52e954fb, type: 3}
-  - {fileID: 309190136866353834, guid: ccdc3aafd962c6144b8f33154f94949b, type: 3}
+  - {fileID: 5636605890490333739, guid: 364fe4c42feca904abeddfb487e7ed00, type: 3}
+  - {fileID: 1795290904681281997, guid: 4a733fa66826600488cec5f0c83add85, type: 3}
+  - {fileID: 1795290904681281997, guid: 4a733fa66826600488cec5f0c83add85, type: 3}
+  - {fileID: 1376555434418936797, guid: 61943f1f47bae9d41b7a2971e5cf4a58, type: 3}
   levelTwentyfourObstacles:
-  - {fileID: 839462537396310694, guid: b5edd135b37e22e4dade0a38dfcd163e, type: 3}
-  - {fileID: 3012740327892913328, guid: c3cf0988a86a1c64c9b012d59997acac, type: 3}
-  - {fileID: 5487549067976244467, guid: 5322f631206c62d4188830132031793b, type: 3}
-  - {fileID: 8366505842696185394, guid: 350a7a007746b844aa1c0dd0c45d7f62, type: 3}
-  - {fileID: 2173359537333915510, guid: 608a95c6e647b2a4281a23a6b397a291, type: 3}
+  - {fileID: 1376555434418936797, guid: 61943f1f47bae9d41b7a2971e5cf4a58, type: 3}
+  - {fileID: 3456566360886079313, guid: 062c7e29d33f77444a1f58ecf1aceefb, type: 3}
+  - {fileID: 1376555434418936797, guid: 61943f1f47bae9d41b7a2971e5cf4a58, type: 3}
+  - {fileID: 5636605890490333739, guid: 364fe4c42feca904abeddfb487e7ed00, type: 3}
+  - {fileID: 2580366755814568833, guid: a4253bb832c1f9c49aff07076aec16eb, type: 3}
   levelTwentyfiveObstacles:
-  - {fileID: 839462537396310694, guid: b5edd135b37e22e4dade0a38dfcd163e, type: 3}
-  - {fileID: 3012740327892913328, guid: c3cf0988a86a1c64c9b012d59997acac, type: 3}
-  - {fileID: 8366505842696185394, guid: 350a7a007746b844aa1c0dd0c45d7f62, type: 3}
-  - {fileID: 2173359537333915510, guid: 608a95c6e647b2a4281a23a6b397a291, type: 3}
-  - {fileID: 5487549067976244467, guid: 5322f631206c62d4188830132031793b, type: 3}
+  - {fileID: 1795290904681281997, guid: 4a733fa66826600488cec5f0c83add85, type: 3}
+  - {fileID: 2723141372396178148, guid: 8570c06bb63587743ad0c59030dbf246, type: 3}
+  - {fileID: 1010350290383497264, guid: ef5abf1b521dd65498c459ac7a2abf4b, type: 3}
+  - {fileID: 3664362377625813172, guid: 0354d429a9d4bb145a9fb189209b998b, type: 3}
+  - {fileID: 1795290904681281997, guid: 4a733fa66826600488cec5f0c83add85, type: 3}
   levelTwentysixObstacles:
-  - {fileID: 839462537396310694, guid: b5edd135b37e22e4dade0a38dfcd163e, type: 3}
-  - {fileID: 3012740327892913328, guid: c3cf0988a86a1c64c9b012d59997acac, type: 3}
-  - {fileID: 8366505842696185394, guid: 350a7a007746b844aa1c0dd0c45d7f62, type: 3}
-  - {fileID: 2173359537333915510, guid: 608a95c6e647b2a4281a23a6b397a291, type: 3}
-  - {fileID: 5487549067976244467, guid: 5322f631206c62d4188830132031793b, type: 3}
+  - {fileID: 1509268402079820565, guid: 58cec89c6cd936044be6d58957bfb019, type: 3}
+  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
+  - {fileID: 2199368531122191219, guid: 48212671ab9a48946b654dbb09ed85a8, type: 3}
+  - {fileID: 430609613963474797, guid: f5a3010a0d900bb41ab538d7581e6a3c, type: 3}
+  - {fileID: 1376555434418936797, guid: 61943f1f47bae9d41b7a2971e5cf4a58, type: 3}
   levelTwentysevenObstacles:
-  - {fileID: 309190136866353834, guid: ccdc3aafd962c6144b8f33154f94949b, type: 3}
-  - {fileID: 8366505842696185394, guid: 350a7a007746b844aa1c0dd0c45d7f62, type: 3}
-  - {fileID: 7836581124197223400, guid: 1b492e0965e954140817f98d0c904882, type: 3}
-  - {fileID: 5487549067976244467, guid: 5322f631206c62d4188830132031793b, type: 3}
+  - {fileID: 3922127205526489132, guid: ed4d6f6ccbfa00140adff0b5a6d18346, type: 3}
+  - {fileID: 2199368531122191219, guid: 48212671ab9a48946b654dbb09ed85a8, type: 3}
+  - {fileID: 3456566360886079313, guid: 062c7e29d33f77444a1f58ecf1aceefb, type: 3}
+  - {fileID: 1509268402079820565, guid: 58cec89c6cd936044be6d58957bfb019, type: 3}
   levelTwentyeigthObstacles:
-  - {fileID: 309190136866353834, guid: ccdc3aafd962c6144b8f33154f94949b, type: 3}
-  - {fileID: 8366505842696185394, guid: 350a7a007746b844aa1c0dd0c45d7f62, type: 3}
-  - {fileID: 7836581124197223400, guid: 1b492e0965e954140817f98d0c904882, type: 3}
-  - {fileID: 5487549067976244467, guid: 5322f631206c62d4188830132031793b, type: 3}
+  - {fileID: 6540287936485399495, guid: 1b5320684af2452438f0d52a9acd4480, type: 3}
+  - {fileID: 3664362377625813172, guid: 0354d429a9d4bb145a9fb189209b998b, type: 3}
+  - {fileID: 1509268402079820565, guid: 58cec89c6cd936044be6d58957bfb019, type: 3}
+  - {fileID: 1376555434418936797, guid: 61943f1f47bae9d41b7a2971e5cf4a58, type: 3}
   levelTwentynineObstacles:
-  - {fileID: 7836581124197223400, guid: 1b492e0965e954140817f98d0c904882, type: 3}
-  - {fileID: 8366505842696185394, guid: 350a7a007746b844aa1c0dd0c45d7f62, type: 3}
-  - {fileID: 5543589656036732008, guid: 03d2a1e5d8c441342b46b24ec161fac5, type: 3}
-  - {fileID: 5487549067976244467, guid: 5322f631206c62d4188830132031793b, type: 3}
-  - {fileID: 7024332578162855817, guid: 4125899b7d51ef04794c2db2de7a692d, type: 3}
+  - {fileID: 1795290904681281997, guid: 4a733fa66826600488cec5f0c83add85, type: 3}
+  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
+  - {fileID: 5636605890490333739, guid: 364fe4c42feca904abeddfb487e7ed00, type: 3}
+  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
+  - {fileID: 1509268402079820565, guid: 58cec89c6cd936044be6d58957bfb019, type: 3}
   levelThirtyObstacles:
-  - {fileID: 7836581124197223400, guid: 1b492e0965e954140817f98d0c904882, type: 3}
-  - {fileID: 8366505842696185394, guid: 350a7a007746b844aa1c0dd0c45d7f62, type: 3}
-  - {fileID: 5543589656036732008, guid: 03d2a1e5d8c441342b46b24ec161fac5, type: 3}
-  - {fileID: 5487549067976244467, guid: 5322f631206c62d4188830132031793b, type: 3}
-  - {fileID: 7024332578162855817, guid: 4125899b7d51ef04794c2db2de7a692d, type: 3}
+  - {fileID: 1509268402079820565, guid: 58cec89c6cd936044be6d58957bfb019, type: 3}
+  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
+  - {fileID: 1509268402079820565, guid: 58cec89c6cd936044be6d58957bfb019, type: 3}
+  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
+  - {fileID: 1509268402079820565, guid: 58cec89c6cd936044be6d58957bfb019, type: 3}
   levelOneObstaclesAlternative:
   - {fileID: 0}
   - {fileID: 0}
@@ -1388,7 +1394,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &340693092
 GameObject:
@@ -2170,7 +2176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximum: 100
   playerCurrent: -0.12467804
-  lavaCurrent: -0.12211415
+  lavaCurrent: -0.12097698
   playerMask: {fileID: 874128881}
   lavaMask: {fileID: 12821512}
   gameOver: 1
@@ -2363,7 +2369,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!198 &795529453 stripped
 ParticleSystem:
@@ -2401,11 +2407,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerups:
-  - {fileID: 2148601919809468878, guid: 41d0a4d2f444c5f4f8d41c8fa1b16519, type: 3}
-  - {fileID: 6238516969982905492, guid: 09b7c05fbe29ecb4d8e5a7e0e7bf44b2, type: 3}
-  - {fileID: 2148601919809468878, guid: 388b5dd6f6ec4e44b9e47bb76a333f5f, type: 3}
-  - {fileID: 3374421380179958193, guid: 06c80b8bbb91fbf4e892b10bf85fba46, type: 3}
-  powerupProbabilities: 64000000640000006400000064000000
+  - {fileID: 1939639410738294618, guid: 96c458ece8928bc44a7da65449deb72a, type: 3}
+  - {fileID: 299584201647459846, guid: d3fed98b11187ff44941fc498d84343a, type: 3}
+  - {fileID: 8618460869165766506, guid: e7d7a8bc52a8bac47a3ba5df7d707724, type: 3}
+  - {fileID: 4684037730257635963, guid: 99883a06789a96742b6d774dd963dde3, type: 3}
+  - {fileID: 6238516969982905492, guid: 7d4901851996ce74f875791756e1313c, type: 3}
+  powerupProbabilities: 3200000032000000320000003200000064000000
 --- !u!4 &796475253
 Transform:
   m_ObjectHideFlags: 0
@@ -2418,7 +2425,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 47
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &848628064
 GameObject:
@@ -2464,7 +2471,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &855832922
 GameObject:
@@ -2948,7 +2955,7 @@ Transform:
   m_Children:
   - {fileID: 855832923}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1052609069
 GameObject:
@@ -3064,7 +3071,7 @@ Transform:
   m_LocalScale: {x: 15, y: 0.5, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 45
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 14.2, y: 0, z: 0}
 --- !u!1 &1131836808
 GameObject:
@@ -3238,7 +3245,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 75
+  m_RootOrder: 76
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &1167154440 stripped
 ParticleSystem:
@@ -3421,7 +3428,7 @@ RectTransform:
   - {fileID: 1393998267}
   - {fileID: 58458595}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3754,7 +3761,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1416754559
 GameObject:
@@ -4156,7 +4163,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 74
+  m_RootOrder: 75
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1572427665 stripped
 GameObject:
@@ -4186,7 +4193,7 @@ PrefabInstance:
     - target: {fileID: 6238516969982905488, guid: 7d4901851996ce74f875791756e1313c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.26681322
+      value: -0.12
       objectReference: {fileID: 0}
     - target: {fileID: 6238516969982905488, guid: 7d4901851996ce74f875791756e1313c,
         type: 3}
@@ -4196,7 +4203,7 @@ PrefabInstance:
     - target: {fileID: 6238516969982905488, guid: 7d4901851996ce74f875791756e1313c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 38.6789
+      value: 39.28
       objectReference: {fileID: 0}
     - target: {fileID: 6238516969982905488, guid: 7d4901851996ce74f875791756e1313c,
         type: 3}
@@ -4713,7 +4720,7 @@ Transform:
   m_Children:
   - {fileID: 1456666510}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1879903511
 MonoBehaviour:
@@ -4948,7 +4955,7 @@ Transform:
   - {fileID: 1131836810}
   - {fileID: 423271688}
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2010712361 stripped
 GameObject:
@@ -5519,7 +5526,7 @@ PrefabInstance:
     - target: {fileID: 7984113457467560875, guid: 5dc312c6cde070d4a847b408a221e18f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 7984113457467560875, guid: 5dc312c6cde070d4a847b408a221e18f,
         type: 3}
@@ -5832,7 +5839,7 @@ PrefabInstance:
     - target: {fileID: 2450158670687982318, guid: df8e1d9a56ed01442aa40a1f1d90b427,
         type: 3}
       propertyPath: m_RootOrder
-      value: 43
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: 2450158670687982318, guid: df8e1d9a56ed01442aa40a1f1d90b427,
         type: 3}
@@ -5906,7 +5913,7 @@ PrefabInstance:
     - target: {fileID: 7514947878473375233, guid: e2d9522b7243d5c4cad675bfe1df25f4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 36
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 7514947878473375233, guid: e2d9522b7243d5c4cad675bfe1df25f4,
         type: 3}
@@ -6619,7 +6626,7 @@ PrefabInstance:
     - target: {fileID: 3417198721070934914, guid: b300e254cd35f0f4dbab92a1b7937e9e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 44
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 3417198721070934914, guid: b300e254cd35f0f4dbab92a1b7937e9e,
         type: 3}
@@ -6910,7 +6917,7 @@ PrefabInstance:
     - target: {fileID: 5298795977962147830, guid: 236cac5fcc50b27408b4dcd090d8e5cd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 5298795977962147830, guid: 236cac5fcc50b27408b4dcd090d8e5cd,
         type: 3}
@@ -7029,7 +7036,7 @@ PrefabInstance:
     - target: {fileID: 5053464521868501325, guid: cda51a38d7afc5a41864c2a5d819d4d0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 5053464521868501325, guid: cda51a38d7afc5a41864c2a5d819d4d0,
         type: 3}
@@ -7953,7 +7960,7 @@ PrefabInstance:
     - target: {fileID: 4336088317425293765, guid: 5aa17322d892aa747b31ad3180a7e46b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4336088317425293765, guid: 5aa17322d892aa747b31ad3180a7e46b,
         type: 3}
@@ -8491,7 +8498,7 @@ PrefabInstance:
     - target: {fileID: 3875393741988378724, guid: 74979f44941df1846b37410b36df74ab,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 3875393741988378724, guid: 74979f44941df1846b37410b36df74ab,
         type: 3}
@@ -9004,7 +9011,7 @@ PrefabInstance:
     - target: {fileID: 2756321943407837949, guid: 012d1ee0f955c2d44a13026d6f97a118,
         type: 3}
       propertyPath: m_RootOrder
-      value: 37
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 2756321943407837949, guid: 012d1ee0f955c2d44a13026d6f97a118,
         type: 3}
@@ -9459,7 +9466,7 @@ PrefabInstance:
     - target: {fileID: 2339696825328071868, guid: 2e921177abe314249a7773139d39fcab,
         type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2339696825328071868, guid: 2e921177abe314249a7773139d39fcab,
         type: 3}
