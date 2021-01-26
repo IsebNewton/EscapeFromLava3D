@@ -6,9 +6,8 @@ using UnityEngine.UI;
 public class ScoreDisplay : MonoBehaviour
 {
 
-    private int score = 0;
+    public int score = 0;
     public Text scoreText;
-
     private GameObject player;
 
     // Start is called before the first frame update
@@ -22,9 +21,6 @@ public class ScoreDisplay : MonoBehaviour
     {
 
         scoreText.text = "Score: " + score;
-
-        score = Mathf.RoundToInt(player.transform.position.z);
-
 
     }
 }
