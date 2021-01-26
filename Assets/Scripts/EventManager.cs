@@ -18,7 +18,7 @@ public class EventManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerLightUI.SetActive(false);
     }
 
     // Update is called once per frame
@@ -35,6 +35,7 @@ public class EventManager : MonoBehaviour
                 float eventRand =Random.Range(0, 2);
                 if(eventRand == 0)
                 {
+                    playerLightUI.SetActive(true);
                     playerLight.intensity = 0.1f;
 
                     float counter = 0;
@@ -87,6 +88,7 @@ public class EventManager : MonoBehaviour
             counter += Time.deltaTime;
             canvgroup.alpha = Mathf.Lerp(canvgroup.alpha, 0, counter / duration);
         }
+        playerLightUI.SetActive(false);
     }
 
 

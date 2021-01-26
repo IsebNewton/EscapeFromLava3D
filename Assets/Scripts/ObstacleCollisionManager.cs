@@ -17,8 +17,16 @@ public class ObstacleCollisionManager : MonoBehaviour
     public Animator playerAnim;
     public float invincibilityTimer;
 
+    public DifficultyManager difficultyManager;
+    public GeneralLevelsAndCoinsManager generalLevelsAndCoinsManager;
+    public ScoreDisplay scoreDisplay;
+    public LevelManager levelManager;
+
     public GameObject obstacleBump2Object; 
     public AudioSource obstacleBump2Audio;
+
+    public GameObject endingMusicObject;
+    public AudioSource endingMusicAudio;
 
     // Start is called before the first frame update
     void Start()
@@ -30,8 +38,13 @@ public class ObstacleCollisionManager : MonoBehaviour
         playerAnim = GameObject.Find("Player").GetComponent<Animator>();
         invincibilityTimer = 0;
 
+        difficultyManager = DifficultyManager.Instance;
+        generalLevelsAndCoinsManager = GeneralLevelsAndCoinsManager.Instance;
+        scoreDisplay = GameObject.Find("ScoreText").GetComponent<ScoreDisplay>();
+        levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
 
         obstacleBump2Audio = obstacleBump2Object.GetComponent<AudioSource>();
+        endingMusicAudio = endingMusicObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -102,8 +115,15 @@ public class ObstacleCollisionManager : MonoBehaviour
         {
             progressBar.lavaSpeed = 0;
             playerController.playerMovementSpeed = 0;
+            generalLevelsAndCoinsManager.LevelFinish(difficultyManager.difficulty, scoreDisplay.score);
             ending.SetActive(true);
-            Debug.Log("ending");
+
+            
+            levelManager.musicAudio.Stop();
+            endingMusicAudio.Play();
+
+           
+
         }
 
     }

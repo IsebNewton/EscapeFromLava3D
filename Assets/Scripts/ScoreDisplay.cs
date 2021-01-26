@@ -9,6 +9,7 @@ public class ScoreDisplay : MonoBehaviour
     public int score = 0;
     public Text scoreText;
     private GameObject player;
+    
 
     // Start is called before the first frame update
     void Start()

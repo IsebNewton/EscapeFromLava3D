@@ -19,6 +19,9 @@ public class ProgressBar : MonoBehaviour
     private GameObject player;
     public PlayerController playerController;
 
+    public GeneralLevelsAndCoinsManager generalLevelsAndCoinsManager;
+    public ScoreDisplay scoreDisplay;
+
     public float lavaSpeed;// = 0.45f;
 
     // Start is called before the first frame update
@@ -28,9 +31,10 @@ public class ProgressBar : MonoBehaviour
         player = GameObject.Find("Player");
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         lavaCurrent = -2;
-        
+        generalLevelsAndCoinsManager = GeneralLevelsAndCoinsManager.Instance;
+        scoreDisplay = GameObject.Find("ScoreText").GetComponent<ScoreDisplay>();
 
-     
+
         gameOverObject.SetActive(false);
     }
 
@@ -51,7 +55,7 @@ public class ProgressBar : MonoBehaviour
         if (gameOver == true)
         {
             playerController.playerMovementSpeed = 0;
-
+            generalLevelsAndCoinsManager.LevelDied(scoreDisplay.score);
             gameOverObject.SetActive(true);
         }
     }
