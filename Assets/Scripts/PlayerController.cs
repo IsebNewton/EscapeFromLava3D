@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
     public GameObject player;
 
     public ParticleSystem dustExplosion;
+    public ParticleSystem dirtParticle;
 
 
     // Start is called before the first frame update
