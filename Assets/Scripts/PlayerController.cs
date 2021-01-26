@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
     public GameObject player;
 
     public ParticleSystem dustExplosion;
+    public ParticleSystem dirtParticle;
 
 
     // Start is called before the first frame update
@@ -72,7 +73,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-      
+        
 
         playerMovementSpeed = Mathf.Clamp(playerMovementSpeed, 0f, 40f);
 
@@ -85,10 +86,10 @@ public class PlayerController : MonoBehaviour
             horizontalInput = Input.GetAxis("Horizontal");
 
 
-            //if(horizontalInput == 0)
+            //if (horizontalInput == 0)
             //{
             //    Debug.Log(player.transform.rotation.z);
-            //    if(player.transform.rotation.z > 0.0f)
+            //    if (player.transform.rotation.z > 0.0f)
             //    {
             //        player.transform.Rotate(new Vector3(0, 0, -0.1f));
             //        Debug.Log("Ich drehe rechts");
@@ -100,7 +101,7 @@ public class PlayerController : MonoBehaviour
             //        Debug.Log("Ich drehe links");
             //    }
             //}
-            //if(horizontalInput == 1)
+            //if (horizontalInput == 1)
             //{
             //    //right
             //    if (player.transform.rotation.z < 0.025f)
