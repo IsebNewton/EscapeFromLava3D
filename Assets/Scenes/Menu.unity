@@ -1216,10 +1216,21 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Music made by: Sirkoto51 on freesound
+  m_Text: 'Music made by: Sirkoto51 on freesound:
+
+    https://freesound.org/people/Sirkoto51/sounds/352171/
 
 
-    https://freesound.org/people/Sirkoto51/sounds/352171/'
+    Book
+    Prefab made by E.Dejnes onSketchfab:
+
+    https://sketchfab.com/3d-models/antique-leather-book-big-f62314240a0140a89e29119829aec000
+
+
+    PowerupSysmbols
+    Prefabs made by RunemarkStudio on Sketchfab :
+
+    https://sketchfab.com/3d-models/simple-free-powerup-icons-b57b96e9d44e46f3b7dfbb206f3aa734'
 --- !u!222 &556126233
 CanvasRenderer:
   m_ObjectHideFlags: 0

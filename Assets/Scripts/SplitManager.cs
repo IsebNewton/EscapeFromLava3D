@@ -23,7 +23,7 @@ public class SplitManager : MonoBehaviour
 
         if (player.transform.position.z > grenze)
         {
-            if (levelManager.playerLevel != 29 && levelManager.playerLevel != 28)
+            if (levelManager.playerLevel != 29 && levelManager.playerLevel != 30)
             {
                 Instantiate(split, new Vector3(0, 5, grenze + 195), split.transform.rotation);
                 grenze += 200;

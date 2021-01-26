@@ -489,7 +489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   preset:
-    brushSize: 25
+    brushSize: 100
     brushFallof: 0.6
     brushSpacing: 0.15
     downscale: 1
@@ -686,9 +686,9 @@ MonoBehaviour:
   paint: 1
   wasPaint: 1
   moveDown: 0
-  moveTfm: {fileID: 0}
+  moveTfm: {fileID: 1461184014}
   gen: 0
-  undo: 0
+  undo: 1
   guiApplyIterations: 1
   guiChannels: 
   guiChannelNames: []
@@ -709,6 +709,36 @@ MonoBehaviour:
   guiMaxBrushSize: 100
   guiSelectPresetsUsingNumkeys: 1
   allowUndo: 1
+--- !u!1 &1461184013
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1461184014}
+  m_Layer: 0
+  m_Name: New Game Object
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1461184014
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461184013}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 259.02545, y: 138.44029, z: 438.89987}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1504921271
 GameObject:
   m_ObjectHideFlags: 0
