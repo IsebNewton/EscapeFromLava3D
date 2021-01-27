@@ -40,6 +40,7 @@ public class PowerupManager : MonoBehaviour
 
         scoreDisplay = GameObject.Find("ScoreText").GetComponent<ScoreDisplay>();
 
+        normalMaterial = playerController.playerMaterial;
     }
 
     // Update is called once per frame

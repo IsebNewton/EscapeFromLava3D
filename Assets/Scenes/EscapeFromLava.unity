@@ -2219,12 +2219,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximum: 100
   playerCurrent: -0.12467804
-  lavaCurrent: -1.8148811
+  lavaCurrent: -0.9410002
   playerMask: {fileID: 874128881}
   lavaMask: {fileID: 12821512}
   gameOver: 0
   gameOverObject: {fileID: 1592965205}
   playerController: {fileID: 1575273918}
+  generalLevelsAndCoinsManager: {fileID: 0}
+  scoreDisplay: {fileID: 446257404}
   lavaSpeed: 0.45
 --- !u!1 &748492887
 GameObject:
@@ -10460,6 +10462,32 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8723549374918402305, guid: c242643ad062a1f498ce00514237f052,
+        type: 3}
+      propertyPath: beeMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 41e3d30365cf8f54fa7cb041b9aca397, type: 2}
+    - target: {fileID: 8723549374918402305, guid: c242643ad062a1f498ce00514237f052,
+        type: 3}
+      propertyPath: starsMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: e4cfc629132109e4287de651bd68ac30, type: 2}
+    - target: {fileID: 8723549374918402305, guid: c242643ad062a1f498ce00514237f052,
+        type: 3}
+      propertyPath: golemMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 082afc47379aa95458231b1b55f352a6, type: 2}
+    - target: {fileID: 8723549374918402305, guid: c242643ad062a1f498ce00514237f052,
+        type: 3}
+      propertyPath: astralMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: e9faabb41a4344d44907750ea220a81a, type: 2}
+    - target: {fileID: 8723549374918402305, guid: c242643ad062a1f498ce00514237f052,
+        type: 3}
+      propertyPath: normalMaterial
+      value: 
+      objectReference: {fileID: -4565884009001823619, guid: 9f6510faf9da6d44cb877f8006504146,
+        type: 3}
     - target: {fileID: 8723549374918402307, guid: c242643ad062a1f498ce00514237f052,
         type: 3}
       propertyPath: m_Material

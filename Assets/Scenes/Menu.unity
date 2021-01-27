@@ -412,7 +412,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 75408874}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 916761945}
+        m_MethodName: EquipAstral
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &75408874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -486,7 +497,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -329.1, y: -110}
+  m_AnchoredPosition: {x: -327.2, y: -109}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &139473578
@@ -531,7 +542,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 139473579}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 916761945}
+        m_MethodName: EquipBee
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &139473579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -723,7 +745,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Equip
 --- !u!222 &184152886
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -971,7 +993,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Equip
 --- !u!222 &205445357
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1469,7 +1491,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 308544047}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 916761945}
+        m_MethodName: BuyStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &308544047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1926,7 +1959,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Equip
 --- !u!222 &359792797
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2004,7 +2037,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Buy
 --- !u!222 &383513584
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3194,7 +3227,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 663376313}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 916761945}
+        m_MethodName: EquipAstral
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &663376313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4172,6 +4216,19 @@ MonoBehaviour:
   mediumButtonCover: {fileID: 1467637593}
   hardButtonCover: {fileID: 583515210}
   nightmareButtonCover: {fileID: 1775570695}
+  beeBuy: {fileID: 2034191137}
+  beeEquip: {fileID: 139473578}
+  starsBuy: {fileID: 308544046}
+  starsEquip: {fileID: 1726262756}
+  golemBuy: {fileID: 1962395080}
+  golemEquip: {fileID: 2078077867}
+  astralBuy: {fileID: 663376312}
+  astralEquip: {fileID: 75408873}
+  beeText: {fileID: 2010788498}
+  starsText: {fileID: 878472570}
+  golemText: {fileID: 446457315}
+  astralText: {fileID: 347617276}
+  coinsText: {fileID: 1721355345}
 --- !u!4 &916761946
 Transform:
   m_ObjectHideFlags: 0
@@ -4373,7 +4430,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Buy
 --- !u!222 &1097404363
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5107,7 +5164,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1339053319
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6056,7 +6113,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Equip
 --- !u!222 &1605755335
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6437,6 +6494,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1706401873}
   m_CullTransparentMesh: 0
+--- !u!1 &1721355343
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1721355344}
+  - component: {fileID: 1721355346}
+  - component: {fileID: 1721355345}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1721355344
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721355343}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1921986532}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 2.4, y: 139.2}
+  m_SizeDelta: {x: 211.59695, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1721355345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721355343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 23
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Your Coins :'
+--- !u!222 &1721355346
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721355343}
+  m_CullTransparentMesh: 0
 --- !u!1 &1726262754
 GameObject:
   m_ObjectHideFlags: 0
@@ -6518,7 +6653,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1726262757}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 916761945}
+        m_MethodName: EquipStars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1726262757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6803,7 +6949,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1921986532
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6837,6 +6983,7 @@ RectTransform:
   - {fileID: 878472569}
   - {fileID: 446457314}
   - {fileID: 347617275}
+  - {fileID: 1721355344}
   m_Father: {fileID: 721622975}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6988,7 +7135,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Buy
 --- !u!222 &1945299990
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7066,7 +7213,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Buy
 --- !u!222 &1955571030
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7156,7 +7303,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1962395081}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 916761945}
+        m_MethodName: BuyGolem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1962395081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7431,7 +7589,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2034191138}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 916761945}
+        m_MethodName: BuyBee
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2034191138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7632,7 +7801,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2078077868}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 916761945}
+        m_MethodName: EquipGolem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2078077868
 MonoBehaviour:
   m_ObjectHideFlags: 0

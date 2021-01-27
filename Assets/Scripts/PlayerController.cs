@@ -43,10 +43,43 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem dustExplosion;
     public ParticleSystem dirtParticle;
 
+    public Material beeMaterial;
+    public Material starsMaterial;
+    public Material golemMaterial;
+    public Material astralMaterial;
+    public Material normalMaterial;
+
+    public Material playerMaterial;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        string skin = PlayerPrefs.GetString("Skin");
+        if(skin == "Bee")
+        {
+            playerMaterial = beeMaterial;
+        }
+        else if (skin == "Stars")
+        {
+            playerMaterial = starsMaterial;
+        }
+        else if (skin == "Golem")
+        {
+            playerMaterial = golemMaterial;
+        }
+        else if (skin == "Astral")
+        {
+            playerMaterial = astralMaterial;
+        }
+        else if (skin == "Normal")
+        {
+            playerMaterial = normalMaterial;
+        }
+
+        
+
+
         player = GameObject.Find("Player");
 
         trail1.SetActive(false);
@@ -68,6 +101,7 @@ public class PlayerController : MonoBehaviour
 
         dustExplosion.Stop();
 
+        player.GetComponent<Renderer>().material = playerMaterial;
     }
 
     // Update is called once per frame
