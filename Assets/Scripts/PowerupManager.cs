@@ -114,7 +114,7 @@ public class PowerupManager : MonoBehaviour
             collectBingAudio.Play();
             obstacleCollisionManager.invincibilityTimer = 1;
             playerController.playerRb.useGravity = false;
-            playerController.transform.position = new Vector3(7.0f, playerController.transform.position.y, playerController.transform.position.z);
+            playerController.transform.position = new Vector3(8.0f, playerController.transform.position.y, playerController.transform.position.z);
             playerController.transform.Rotate(new Vector3(0, 0, 90));
             Invoke("PowerupWallRunReturnNormal", 5);
 
