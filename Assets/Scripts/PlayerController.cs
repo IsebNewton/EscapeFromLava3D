@@ -72,7 +72,7 @@ public class PlayerController : MonoBehaviour
         {
             playerMaterial = astralMaterial;
         }
-        else if (skin == "Normal")
+        else
         {
             playerMaterial = normalMaterial;
         }
@@ -107,7 +107,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        
+
+        Debug.Log(playerMaterial);
 
         playerMovementSpeed = Mathf.Clamp(playerMovementSpeed, 0f, 40f);
 

@@ -2219,7 +2219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximum: 100
   playerCurrent: -0.12467804
-  lavaCurrent: -0.9410002
+  lavaCurrent: -2
   playerMask: {fileID: 874128881}
   lavaMask: {fileID: 12821512}
   gameOver: 0
@@ -5567,6 +5567,32 @@ PrefabInstance:
       propertyPath: dirtParticle
       value: 
       objectReference: {fileID: 1167154440}
+    - target: {fileID: 1196003460061514736, guid: 081eb6d683cf010478104a423ed9bcae,
+        type: 3}
+      propertyPath: beeMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 41e3d30365cf8f54fa7cb041b9aca397, type: 2}
+    - target: {fileID: 1196003460061514736, guid: 081eb6d683cf010478104a423ed9bcae,
+        type: 3}
+      propertyPath: starsMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: e4cfc629132109e4287de651bd68ac30, type: 2}
+    - target: {fileID: 1196003460061514736, guid: 081eb6d683cf010478104a423ed9bcae,
+        type: 3}
+      propertyPath: golemMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 082afc47379aa95458231b1b55f352a6, type: 2}
+    - target: {fileID: 1196003460061514736, guid: 081eb6d683cf010478104a423ed9bcae,
+        type: 3}
+      propertyPath: astralMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: e9faabb41a4344d44907750ea220a81a, type: 2}
+    - target: {fileID: 1196003460061514736, guid: 081eb6d683cf010478104a423ed9bcae,
+        type: 3}
+      propertyPath: normalMaterial
+      value: 
+      objectReference: {fileID: -4565884009001823619, guid: 9f6510faf9da6d44cb877f8006504146,
+        type: 3}
     - target: {fileID: 1662874663711037766, guid: 081eb6d683cf010478104a423ed9bcae,
         type: 3}
       propertyPath: m_LocalPosition.x

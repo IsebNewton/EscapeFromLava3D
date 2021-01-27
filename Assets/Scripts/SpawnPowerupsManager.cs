@@ -6,10 +6,12 @@ using UnityEngine;
 public class SpawnPowerupsManager : MonoBehaviour
 {
     public GameObject[] powerups;
-    public int[] powerupProbabilities;
+    public float[] powerupProbabilities;
 
     private PlayerController playerController;
     private List<GameObject> visiblePowerups;
+
+    public DifficultyManager difficultyManager;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +23,27 @@ public class SpawnPowerupsManager : MonoBehaviour
         {
             throw new System.Exception("Die Länge des powerups-Arrays stimmt nicht mit der Länge des powerupAmounts-Arrays überein. Stelle die Mengen entsprechend der Powerups ein.");
         }
+
+        difficultyManager = DifficultyManager.Instance;
+
+        if(difficultyManager.difficulty == 1)
+        {
+            powerupProbabilities[4] = powerupProbabilities[4] * 0.5f;
+        }
+        if (difficultyManager.difficulty == 1.25)
+        {
+            powerupProbabilities[4] = powerupProbabilities[4] * 0.8f;
+        }
+        if (difficultyManager.difficulty == 1.5)
+        {
+            powerupProbabilities[4] = powerupProbabilities[4] * 1.0f;
+        }
+        if (difficultyManager.difficulty == 5)
+        {
+            powerupProbabilities[4] = powerupProbabilities[4] * 1.0f;
+        }
+
+
     }
 
     // Update is called once per frame
