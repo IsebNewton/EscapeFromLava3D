@@ -76,6 +76,7 @@ public class LevelManager : MonoBehaviour
             levelPosition += 200;
             Debug.Log(playerLevel);
             splitManager.increased = false;
+            Invoke("ActivateDirtParticle", 1);
         }
 
         if (playerLevel == 17 || playerLevel == 18 || playerLevel == 19)
@@ -239,5 +240,10 @@ public class LevelManager : MonoBehaviour
 
 
 
+    }
+
+    public void ActivateDirtParticle()
+    {
+        playerController.dirtParticle.Play();
     }
 }
