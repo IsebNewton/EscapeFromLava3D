@@ -40,7 +40,7 @@ public class SpawnPowerupsManager : MonoBehaviour
         }
         if (difficultyManager.difficulty == 5)
         {
-            powerupProbabilities[4] = powerupProbabilities[4] * 1.0f;
+            powerupProbabilities[4] = powerupProbabilities[4] * 2.0f;
         }
 
 
