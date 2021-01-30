@@ -18,7 +18,9 @@ public class PowerupManager : MonoBehaviour
     public GameObject playerJointsForColorChange;
     public Material normaljointsMaterial;
 
-    public ScoreDisplay scoreDisplay;
+    public ScoreDisplay scoreDisplayText;
+    public ScoreDisplay scoreDisplayEnding;
+    public GameObject gameOver;
 
     public GameObject collectBingObject;
     public AudioSource collectBingAudio;
@@ -38,7 +40,12 @@ public class PowerupManager : MonoBehaviour
 
         collectBingAudio = collectBingObject.GetComponent<AudioSource>();
 
-        scoreDisplay = GameObject.Find("ScoreText").GetComponent<ScoreDisplay>();
+        gameOver.SetActive(true);
+
+        scoreDisplayText = GameObject.Find("ScoreText").GetComponent<ScoreDisplay>();
+        scoreDisplayEnding = GameObject.Find("EndScore").GetComponent<ScoreDisplay>();
+
+        gameOver.SetActive(false);
 
         normalMaterial = playerController.playerMaterial;
     }
@@ -85,7 +92,9 @@ public class PowerupManager : MonoBehaviour
 
             Invoke("PowerupJumpReturnNormal", 10);
 
-            scoreDisplay.score += 10;
+            scoreDisplayText.score += 10;
+            scoreDisplayEnding.score += 10;
+
 
         }
 
@@ -104,7 +113,8 @@ public class PowerupManager : MonoBehaviour
 
             Invoke("PowerupSpeedReturnNormal", 5);
 
-            scoreDisplay.score += 10;
+            scoreDisplayText.score += 10;
+            scoreDisplayEnding.score += 10;
         }
 
         if (other.tag == "PowerupWallRun")
@@ -119,7 +129,8 @@ public class PowerupManager : MonoBehaviour
             playerController.transform.Rotate(new Vector3(0, 0, 90));
             Invoke("PowerupWallRunReturnNormal", 5);
 
-            scoreDisplay.score += 10;
+            scoreDisplayText.score += 10;
+            scoreDisplayEnding.score += 10;
 
         }
 
@@ -150,7 +161,8 @@ public class PowerupManager : MonoBehaviour
             //Invoke("SetInvincibiltyMaterialNormal", 9.8f);
             //Invoke("SetInvincibiltyMaterialWhite", 9.9f);
 
-            scoreDisplay.score += 10;
+            scoreDisplayText.score += 10;
+            scoreDisplayEnding.score += 10;
         }
 
         if (other.tag == "Collectable")
@@ -160,7 +172,8 @@ public class PowerupManager : MonoBehaviour
             StartCoroutine(DestroyObject(other));
             collectBingAudio.Play();
 
-            scoreDisplay.score += 100;
+            scoreDisplayText.score += 100;
+            scoreDisplayEnding.score += 100;
         }
 
 

@@ -113,6 +113,7 @@ public class ObstacleCollisionManager : MonoBehaviour
         }
         if (Other.tag == "Ending")
         {
+
             progressBar.lavaSpeed = 0;
             playerController.playerMovementSpeed = 0;
             generalLevelsAndCoinsManager.LevelFinish(difficultyManager.difficulty, scoreDisplay.score);

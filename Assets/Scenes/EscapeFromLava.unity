@@ -2219,7 +2219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximum: 100
   playerCurrent: -0.12467804
-  lavaCurrent: -1.1685426
+  lavaCurrent: -2
   playerMask: {fileID: 874128881}
   lavaMask: {fileID: 12821512}
   gameOver: 0
@@ -4927,7 +4927,9 @@ MonoBehaviour:
   playerJointsForColorChange: {fileID: 2010712361}
   normaljointsMaterial: {fileID: -840037777384891287, guid: 9f6510faf9da6d44cb877f8006504146,
     type: 3}
-  scoreDisplay: {fileID: 0}
+  scoreDisplayText: {fileID: 0}
+  scoreDisplayEnding: {fileID: 0}
+  gameOver: {fileID: 1592965205}
   collectBingObject: {fileID: 1456666508}
   collectBingAudio: {fileID: 0}
   explosion: {fileID: 0}

@@ -64,6 +64,7 @@ public class GeneralLevelsAndCoinsManager : MonoBehaviour
     public void LevelDied(float score) 
     {
         float generalCoins = PlayerPrefs.GetFloat("GeneralCoins");
+        Debug.Log(PlayerPrefs.GetFloat("GeneralCoins"));
         generalCoins += score;
 
         PlayerPrefs.SetFloat("GeneralCoins", generalCoins);

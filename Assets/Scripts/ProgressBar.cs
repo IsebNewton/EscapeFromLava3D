@@ -24,6 +24,8 @@ public class ProgressBar : MonoBehaviour
 
     public float lavaSpeed;// = 0.45f;
 
+    public bool once = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,7 +57,11 @@ public class ProgressBar : MonoBehaviour
         if (gameOver == true)
         {
             playerController.playerMovementSpeed = 0;
-            generalLevelsAndCoinsManager.LevelDied(scoreDisplay.score);
+            if (once == true)
+            {
+                generalLevelsAndCoinsManager.LevelDied(scoreDisplay.score);
+                once = false;
+            }
             gameOverObject.SetActive(true);
         }
     }
