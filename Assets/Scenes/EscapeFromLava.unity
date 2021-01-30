@@ -2219,7 +2219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximum: 100
   playerCurrent: -0.12467804
-  lavaCurrent: -2
+  lavaCurrent: -1.1685426
   playerMask: {fileID: 874128881}
   lavaMask: {fileID: 12821512}
   gameOver: 0
@@ -2457,7 +2457,12 @@ MonoBehaviour:
   - {fileID: 8618460869165766506, guid: e7d7a8bc52a8bac47a3ba5df7d707724, type: 3}
   - {fileID: 4684037730257635963, guid: 99883a06789a96742b6d774dd963dde3, type: 3}
   - {fileID: 6686637062803314918, guid: 7d4901851996ce74f875791756e1313c, type: 3}
-  powerupProbabilities: []
+  powerupProbabilities:
+  - 50
+  - 50
+  - 50
+  - 50
+  - 100
 --- !u!4 &796475253
 Transform:
   m_ObjectHideFlags: 0
@@ -3785,7 +3790,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4807de11cd586db4bb75b01fb1063008, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.202
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5121,7 +5126,7 @@ MonoBehaviour:
   levelManager: {fileID: 0}
   obstacleBump2Object: {fileID: 423271686}
   obstacleBump2Audio: {fileID: 0}
-  endingMusicObject: {fileID: 0}
+  endingMusicObject: {fileID: 1399165825}
   endingMusicAudio: {fileID: 0}
 --- !u!4 &1964203948
 Transform:
