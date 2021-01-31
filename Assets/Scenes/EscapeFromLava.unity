@@ -2485,10 +2485,8 @@ MonoBehaviour:
   - {fileID: 1939639410738294618, guid: 96c458ece8928bc44a7da65449deb72a, type: 3}
   - {fileID: 299584201647459846, guid: d3fed98b11187ff44941fc498d84343a, type: 3}
   - {fileID: 8618460869165766506, guid: e7d7a8bc52a8bac47a3ba5df7d707724, type: 3}
-  - {fileID: 4684037730257635963, guid: 99883a06789a96742b6d774dd963dde3, type: 3}
   - {fileID: 6686637062803314918, guid: 7d4901851996ce74f875791756e1313c, type: 3}
   powerupProbabilities:
-  - 50
   - 50
   - 50
   - 50

@@ -96,7 +96,7 @@ public class ObstacleCollisionManager : MonoBehaviour
                 playerController.jumpBlocking = true;
                 player.GetComponent<Renderer>().material = white;
                 playerAnim.SetBool("HitObstacle", true);
-
+                playerController.dirtParticle.Stop();
                 Invoke("ResetHitObstacle", 1);
                 Invoke("Resume", 4);
 
@@ -138,7 +138,8 @@ public class ObstacleCollisionManager : MonoBehaviour
         playerController.playerStrafeSpeed = 7;
         playerController.jumpBlocking = false;
         saved = false;
-        
+        playerController.dirtParticle.Play();
+
 
         //Invoke("SetVulnerability", 5);
     }
