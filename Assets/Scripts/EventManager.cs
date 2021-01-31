@@ -27,9 +27,9 @@ public class EventManager : MonoBehaviour
 
         if (eventCooldown == false)
         {
-            float rand = Random.Range(0, 1000);
+            float rand = Random.Range(0, 10000);
     
-            if (rand >= 999)
+            if (rand >= 9999)
             {
 
                 float eventRand =Random.Range(0, 2);

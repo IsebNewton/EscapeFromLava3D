@@ -79,13 +79,56 @@ public class PowerupManager : MonoBehaviour
         {
             playerBodyForColorChange.GetComponent<Renderer>().material = normalMaterial;
         }
-
-
-  
-        if (obstacleCollisionManager.invincibilityTimer < 0.1f)
+        if (obstacleCollisionManager.invincibilityTimer > 2.5f && obstacleCollisionManager.invincibilityTimer < 2.6f)
+        {
+            playerBodyForColorChange.GetComponent<Renderer>().material = hitMaterial;
+        }
+        if (obstacleCollisionManager.invincibilityTimer > 1.7f && obstacleCollisionManager.invincibilityTimer < 1.8f)
         {
             playerBodyForColorChange.GetComponent<Renderer>().material = normalMaterial;
         }
+        if (obstacleCollisionManager.invincibilityTimer > 1.3f && obstacleCollisionManager.invincibilityTimer < 1.4f)
+        {
+            playerBodyForColorChange.GetComponent<Renderer>().material = hitMaterial;
+        }
+        if (obstacleCollisionManager.invincibilityTimer > 0.7f && obstacleCollisionManager.invincibilityTimer < 0.8f)
+        {
+            playerBodyForColorChange.GetComponent<Renderer>().material = normalMaterial;
+        }
+        if (obstacleCollisionManager.invincibilityTimer > 0.5f && obstacleCollisionManager.invincibilityTimer < 0.6f)
+        {
+            playerBodyForColorChange.GetComponent<Renderer>().material = hitMaterial;
+        }
+        if (obstacleCollisionManager.invincibilityTimer > 0.45f && obstacleCollisionManager.invincibilityTimer < 0.5f)
+        {
+            playerBodyForColorChange.GetComponent<Renderer>().material = normalMaterial;
+        }
+        if (obstacleCollisionManager.invincibilityTimer > 0.35f && obstacleCollisionManager.invincibilityTimer < 0.4f)
+        {
+            playerBodyForColorChange.GetComponent<Renderer>().material = hitMaterial;
+        }
+        if (obstacleCollisionManager.invincibilityTimer > 0.25f && obstacleCollisionManager.invincibilityTimer < 0.3f)
+        {
+            playerBodyForColorChange.GetComponent<Renderer>().material = normalMaterial;
+        }
+        if (obstacleCollisionManager.invincibilityTimer > 0.2f && obstacleCollisionManager.invincibilityTimer < 0.25f)
+        {
+            playerBodyForColorChange.GetComponent<Renderer>().material = hitMaterial;
+        }
+        if (obstacleCollisionManager.invincibilityTimer > 0.0f && obstacleCollisionManager.invincibilityTimer < 0.1f)
+        {
+            playerBodyForColorChange.GetComponent<Renderer>().material = normalMaterial;
+        }
+        //if (obstacleCollisionManager.invincibilityTimer > 2.5f && obstacleCollisionManager.invincibilityTimer < f)
+        //{
+        //    playerBodyForColorChange.GetComponent<Renderer>().material = hitMaterial;
+        //}
+
+
+        //if (obstacleCollisionManager.invincibilityTimer < 0.1f)
+        //{
+        //    playerBodyForColorChange.GetComponent<Renderer>().material = normalMaterial;
+        //}
 
     }
 
