@@ -28,19 +28,19 @@ public class SpawnPowerupsManager : MonoBehaviour
 
         if(difficultyManager.difficulty == 1)
         {
-            powerupProbabilities[4] = powerupProbabilities[4] * 0.5f;
+            powerupProbabilities[3] *= 0.5f;
         }
         if (difficultyManager.difficulty == 1.25)
         {
-            powerupProbabilities[4] = powerupProbabilities[4] * 0.8f;
+            powerupProbabilities[3] *= 0.8f;
         }
         if (difficultyManager.difficulty == 1.5)
         {
-            powerupProbabilities[4] = powerupProbabilities[4] * 1.0f;
+            powerupProbabilities[3] *= 1.0f;
         }
         if (difficultyManager.difficulty == 5)
         {
-            powerupProbabilities[4] = powerupProbabilities[4] * 2.0f;
+            powerupProbabilities[3] *= 2.0f;
         }
 
 
