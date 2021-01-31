@@ -66,10 +66,22 @@ public class PowerupManager : MonoBehaviour
             playerController.trail2.SetActive(false);
         }
 
-        if(obstacleCollisionManager.invincibilityTimer > 0.1f)
+
+
+
+
+
+        if(obstacleCollisionManager.invincibilityTimer > 5.5f)
         {
             playerBodyForColorChange.GetComponent<Renderer>().material = hitMaterial;
         }
+        if (obstacleCollisionManager.invincibilityTimer > 3.0f && obstacleCollisionManager.invincibilityTimer < 3.1f)
+        {
+            playerBodyForColorChange.GetComponent<Renderer>().material = normalMaterial;
+        }
+
+
+  
         if (obstacleCollisionManager.invincibilityTimer < 0.1f)
         {
             playerBodyForColorChange.GetComponent<Renderer>().material = normalMaterial;
@@ -141,7 +153,7 @@ public class PowerupManager : MonoBehaviour
             StartCoroutine(DestroyObject(other));
             collectBingAudio.Play();
 
-            obstacleCollisionManager.invincibilityTimer = 5;
+            obstacleCollisionManager.invincibilityTimer = 6;
             //player.GetComponent<Renderer>().material = white;
 
             //Invoke("PowerupInvincibilityReturnNormal", 10);

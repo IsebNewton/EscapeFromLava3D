@@ -133,7 +133,7 @@ public class ObstacleCollisionManager : MonoBehaviour
     public void Resume()
     {
 
-        invincibilityTimer = 5;
+        invincibilityTimer = 6;
         playerController.playerMovementSpeed = 10;
         playerController.playerStrafeSpeed = 7;
         playerController.jumpBlocking = false;
