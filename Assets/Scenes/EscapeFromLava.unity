@@ -1302,125 +1302,154 @@ MonoBehaviour:
   - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
   - {fileID: 1509268402079820565, guid: 58cec89c6cd936044be6d58957bfb019, type: 3}
   levelOneObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1795290904681281997, guid: 4a733fa66826600488cec5f0c83add85, type: 3}
+  - {fileID: 1376555434418936797, guid: 61943f1f47bae9d41b7a2971e5cf4a58, type: 3}
+  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
+  - {fileID: 1795290904681281997, guid: 4a733fa66826600488cec5f0c83add85, type: 3}
   levelTwoObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2723141372396178148, guid: 8570c06bb63587743ad0c59030dbf246, type: 3}
+  - {fileID: 2199368531122191219, guid: 48212671ab9a48946b654dbb09ed85a8, type: 3}
+  - {fileID: 7770306493781994078, guid: 041ba13a62adef2418fe7f28103a99ae, type: 3}
+  - {fileID: 8487788087317074332, guid: 3683fa094e250ce4da082489a8c74e9a, type: 3}
   levelThreeObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 7770306493781994078, guid: 041ba13a62adef2418fe7f28103a99ae, type: 3}
+  - {fileID: 1795290904681281997, guid: 4a733fa66826600488cec5f0c83add85, type: 3}
+  - {fileID: 8487788087317074332, guid: 3683fa094e250ce4da082489a8c74e9a, type: 3}
+  - {fileID: 3664362377625813172, guid: 0354d429a9d4bb145a9fb189209b998b, type: 3}
   levelFourObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 7770306493781994078, guid: 041ba13a62adef2418fe7f28103a99ae, type: 3}
+  - {fileID: 8487788087317074332, guid: 3683fa094e250ce4da082489a8c74e9a, type: 3}
+  - {fileID: 2723141372396178148, guid: 8570c06bb63587743ad0c59030dbf246, type: 3}
+  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
   levelFiveObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
+  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
+  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
+  - {fileID: 1376555434418936797, guid: 61943f1f47bae9d41b7a2971e5cf4a58, type: 3}
   levelSixObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 3922127205526489132, guid: ed4d6f6ccbfa00140adff0b5a6d18346, type: 3}
+  - {fileID: 6540287936485399495, guid: 1b5320684af2452438f0d52a9acd4480, type: 3}
+  - {fileID: 5636605890490333739, guid: 364fe4c42feca904abeddfb487e7ed00, type: 3}
+  - {fileID: 3664362377625813172, guid: 0354d429a9d4bb145a9fb189209b998b, type: 3}
   levelSevenObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
+  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
+  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
   levelEigthObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1509268402079820565, guid: 58cec89c6cd936044be6d58957bfb019, type: 3}
+  - {fileID: 1376555434418936797, guid: 61943f1f47bae9d41b7a2971e5cf4a58, type: 3}
+  - {fileID: 1795290904681281997, guid: 4a733fa66826600488cec5f0c83add85, type: 3}
+  - {fileID: 3456566360886079313, guid: 062c7e29d33f77444a1f58ecf1aceefb, type: 3}
+  - {fileID: 5636605890490333739, guid: 364fe4c42feca904abeddfb487e7ed00, type: 3}
   levelNineObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 195509609390691247, guid: 6a139fdec6e2e0943875a62d349b77a4, type: 3}
+  - {fileID: 1376555434418936797, guid: 61943f1f47bae9d41b7a2971e5cf4a58, type: 3}
+  - {fileID: 1509268402079820565, guid: 58cec89c6cd936044be6d58957bfb019, type: 3}
+  - {fileID: 3456566360886079313, guid: 062c7e29d33f77444a1f58ecf1aceefb, type: 3}
   levelTenObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 6540287936485399495, guid: 1b5320684af2452438f0d52a9acd4480, type: 3}
+  - {fileID: 3922127205526489132, guid: ed4d6f6ccbfa00140adff0b5a6d18346, type: 3}
+  - {fileID: 8487788087317074332, guid: 3683fa094e250ce4da082489a8c74e9a, type: 3}
+  - {fileID: 2723141372396178148, guid: 8570c06bb63587743ad0c59030dbf246, type: 3}
   levelElevenObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2723141372396178148, guid: 8570c06bb63587743ad0c59030dbf246, type: 3}
+  - {fileID: 7770306493781994078, guid: 041ba13a62adef2418fe7f28103a99ae, type: 3}
+  - {fileID: 8487788087317074332, guid: 3683fa094e250ce4da082489a8c74e9a, type: 3}
   levelTwelveObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1010350290383497264, guid: ef5abf1b521dd65498c459ac7a2abf4b, type: 3}
+  - {fileID: 7770306493781994078, guid: 041ba13a62adef2418fe7f28103a99ae, type: 3}
+  - {fileID: 2580366755814568833, guid: a4253bb832c1f9c49aff07076aec16eb, type: 3}
+  - {fileID: 3456566360886079313, guid: 062c7e29d33f77444a1f58ecf1aceefb, type: 3}
   levelThirteenObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2723141372396178148, guid: 8570c06bb63587743ad0c59030dbf246, type: 3}
+  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
+  - {fileID: 7770306493781994078, guid: 041ba13a62adef2418fe7f28103a99ae, type: 3}
+  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
   levelFourteenObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8356609278853030237, guid: 19fe855c700b89847a019bb7bb57b126, type: 3}
+  - {fileID: 6540287936485399495, guid: 1b5320684af2452438f0d52a9acd4480, type: 3}
+  - {fileID: 1795290904681281997, guid: 4a733fa66826600488cec5f0c83add85, type: 3}
+  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
   levelFifteenObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1509268402079820565, guid: 58cec89c6cd936044be6d58957bfb019, type: 3}
+  - {fileID: 6540287936485399495, guid: 1b5320684af2452438f0d52a9acd4480, type: 3}
+  - {fileID: 1376555434418936797, guid: 61943f1f47bae9d41b7a2971e5cf4a58, type: 3}
+  - {fileID: 6540287936485399495, guid: 1b5320684af2452438f0d52a9acd4480, type: 3}
   levelSixteenObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8356609278853030237, guid: 19fe855c700b89847a019bb7bb57b126, type: 3}
+  - {fileID: 7770306493781994078, guid: 041ba13a62adef2418fe7f28103a99ae, type: 3}
+  - {fileID: 3922127205526489132, guid: ed4d6f6ccbfa00140adff0b5a6d18346, type: 3}
+  - {fileID: 1010350290383497264, guid: ef5abf1b521dd65498c459ac7a2abf4b, type: 3}
   levelSeventeenObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1010350290383497264, guid: ef5abf1b521dd65498c459ac7a2abf4b, type: 3}
+  - {fileID: 7770306493781994078, guid: 041ba13a62adef2418fe7f28103a99ae, type: 3}
+  - {fileID: 8356609278853030237, guid: 19fe855c700b89847a019bb7bb57b126, type: 3}
+  - {fileID: 8356609278853030237, guid: 19fe855c700b89847a019bb7bb57b126, type: 3}
   levelEigthteenObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1010350290383497264, guid: ef5abf1b521dd65498c459ac7a2abf4b, type: 3}
+  - {fileID: 3922127205526489132, guid: ed4d6f6ccbfa00140adff0b5a6d18346, type: 3}
+  - {fileID: 7770306493781994078, guid: 041ba13a62adef2418fe7f28103a99ae, type: 3}
+  - {fileID: 8356609278853030237, guid: 19fe855c700b89847a019bb7bb57b126, type: 3}
   levelNineteenObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1010350290383497264, guid: ef5abf1b521dd65498c459ac7a2abf4b, type: 3}
+  - {fileID: 1509268402079820565, guid: 58cec89c6cd936044be6d58957bfb019, type: 3}
+  - {fileID: 8487788087317074332, guid: 3683fa094e250ce4da082489a8c74e9a, type: 3}
+  - {fileID: 8356609278853030237, guid: 19fe855c700b89847a019bb7bb57b126, type: 3}
   levelTwentyObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8487788087317074332, guid: 3683fa094e250ce4da082489a8c74e9a, type: 3}
+  - {fileID: 8356609278853030237, guid: 19fe855c700b89847a019bb7bb57b126, type: 3}
+  - {fileID: 1010350290383497264, guid: ef5abf1b521dd65498c459ac7a2abf4b, type: 3}
+  - {fileID: 1376555434418936797, guid: 61943f1f47bae9d41b7a2971e5cf4a58, type: 3}
   levelTwentyoneObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8356609278853030237, guid: 19fe855c700b89847a019bb7bb57b126, type: 3}
+  - {fileID: 8487788087317074332, guid: 3683fa094e250ce4da082489a8c74e9a, type: 3}
+  - {fileID: 6540287936485399495, guid: 1b5320684af2452438f0d52a9acd4480, type: 3}
+  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
   levelTwentytwoObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 6540287936485399495, guid: 1b5320684af2452438f0d52a9acd4480, type: 3}
+  - {fileID: 1010350290383497264, guid: ef5abf1b521dd65498c459ac7a2abf4b, type: 3}
+  - {fileID: 7770306493781994078, guid: 041ba13a62adef2418fe7f28103a99ae, type: 3}
+  - {fileID: 3922127205526489132, guid: ed4d6f6ccbfa00140adff0b5a6d18346, type: 3}
   levelTwentythreeObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1795290904681281997, guid: 4a733fa66826600488cec5f0c83add85, type: 3}
+  - {fileID: 2861221105421774988, guid: 8fbd024b1055d6948a8d08af8f98d3fd, type: 3}
+  - {fileID: 3922127205526489132, guid: ed4d6f6ccbfa00140adff0b5a6d18346, type: 3}
+  - {fileID: 3664362377625813172, guid: 0354d429a9d4bb145a9fb189209b998b, type: 3}
   levelTwentyfourObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1010350290383497264, guid: ef5abf1b521dd65498c459ac7a2abf4b, type: 3}
+  - {fileID: 1376555434418936797, guid: 61943f1f47bae9d41b7a2971e5cf4a58, type: 3}
+  - {fileID: 430609613963474797, guid: f5a3010a0d900bb41ab538d7581e6a3c, type: 3}
+  - {fileID: 1509268402079820565, guid: 58cec89c6cd936044be6d58957bfb019, type: 3}
   levelTwentyfiveObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2723141372396178148, guid: 8570c06bb63587743ad0c59030dbf246, type: 3}
+  - {fileID: 6540287936485399495, guid: 1b5320684af2452438f0d52a9acd4480, type: 3}
+  - {fileID: 7770306493781994078, guid: 041ba13a62adef2418fe7f28103a99ae, type: 3}
+  - {fileID: 8487788087317074332, guid: 3683fa094e250ce4da082489a8c74e9a, type: 3}
   levelTwentysixObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 430609613963474797, guid: f5a3010a0d900bb41ab538d7581e6a3c, type: 3}
+  - {fileID: 1376555434418936797, guid: 61943f1f47bae9d41b7a2971e5cf4a58, type: 3}
+  - {fileID: 1509268402079820565, guid: 58cec89c6cd936044be6d58957bfb019, type: 3}
+  - {fileID: 6540287936485399495, guid: 1b5320684af2452438f0d52a9acd4480, type: 3}
   levelTwentysevenObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 7770306493781994078, guid: 041ba13a62adef2418fe7f28103a99ae, type: 3}
+  - {fileID: 8487788087317074332, guid: 3683fa094e250ce4da082489a8c74e9a, type: 3}
+  - {fileID: 8356609278853030237, guid: 19fe855c700b89847a019bb7bb57b126, type: 3}
+  - {fileID: 2723141372396178148, guid: 8570c06bb63587743ad0c59030dbf246, type: 3}
   levelTwentyeigthObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 3456566360886079313, guid: 062c7e29d33f77444a1f58ecf1aceefb, type: 3}
+  - {fileID: 3922127205526489132, guid: ed4d6f6ccbfa00140adff0b5a6d18346, type: 3}
+  - {fileID: 8356609278853030237, guid: 19fe855c700b89847a019bb7bb57b126, type: 3}
+  - {fileID: 1509268402079820565, guid: 58cec89c6cd936044be6d58957bfb019, type: 3}
   levelTwentynineObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 3664362377625813172, guid: 0354d429a9d4bb145a9fb189209b998b, type: 3}
+  - {fileID: 430609613963474797, guid: f5a3010a0d900bb41ab538d7581e6a3c, type: 3}
+  - {fileID: 8356609278853030237, guid: 19fe855c700b89847a019bb7bb57b126, type: 3}
+  - {fileID: 2723141372396178148, guid: 8570c06bb63587743ad0c59030dbf246, type: 3}
   levelThirtyObstaclesAlternative:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 7770306493781994078, guid: 041ba13a62adef2418fe7f28103a99ae, type: 3}
+  - {fileID: 2199368531122191219, guid: 48212671ab9a48946b654dbb09ed85a8, type: 3}
+  - {fileID: 1376555434418936797, guid: 61943f1f47bae9d41b7a2971e5cf4a58, type: 3}
+  - {fileID: 6540287936485399495, guid: 1b5320684af2452438f0d52a9acd4480, type: 3}
   obstacleDistance: 0
   startDifficulty: 1
   difficulty: 0
@@ -2219,7 +2248,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximum: 100
   playerCurrent: -0.12467804
+<<<<<<< HEAD
   lavaCurrent: -0.00621604
+=======
+  lavaCurrent: -0.019990927
+>>>>>>> 767bf90bbf3a5dc60f1988e2a3f2525247d4b101
   playerMask: {fileID: 874128881}
   lavaMask: {fileID: 12821512}
   gameOver: 1
