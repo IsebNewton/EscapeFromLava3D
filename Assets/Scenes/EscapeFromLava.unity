@@ -2248,11 +2248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximum: 100
   playerCurrent: -0.12467804
-<<<<<<< HEAD
   lavaCurrent: -0.00621604
-=======
-  lavaCurrent: -0.019990927
->>>>>>> 767bf90bbf3a5dc60f1988e2a3f2525247d4b101
   playerMask: {fileID: 874128881}
   lavaMask: {fileID: 12821512}
   gameOver: 1
