@@ -41,15 +41,17 @@ ________________________________________________________
 <summary> Invincibility-Powerup </summary>
 <br>
 -Fügt beim Einsammeln 10 Scorepunkte hinzu<br>
--Sorgt dafür, dass der Charakter 6 Sekunden lang nicht von Hindernissen beeinträchtigt wird.<br>
-![alt text](https://github.com/IsebNewton/EscapeFromLava3D/blob/Experimental/Dokumentation/Powerups/Invincibility%20Powerup.PNG?raw=true)
+-Sorgt dafür, dass der Charakter 6 Sekunden lang nicht von Hindernissen beeinträchtigt wird.
+  
+![alt text](https://github.com/IsebNewton/EscapeFromLava3D/blob/main/Dokumentation/Powerups/Invincibility%20Powerup.PNG)
 </details>
 
 <details>
 <summary> Jump-Powerup </summary>
 <br>
 -Fügt beim Einsammeln 10 Scorepunkte hinzu<br>
--Sorgt dafür, dass der Charakter 10 Sekunden lang höher springen kann.<br>
+-Sorgt dafür, dass der Charakter 10 Sekunden lang höher springen kann.
+  
 ![alt text](https://github.com/IsebNewton/EscapeFromLava3D/blob/Experimental/Dokumentation/Powerups/Jump%20Powerup.PNG?raw=true)
 </details>
 
@@ -57,7 +59,8 @@ ________________________________________________________
 <summary> Speed-Powerup </summary>
 <br>
 -Fügt beim Einsammeln 10 Scorepunkte hinzu<br>
--Sorgt dafür, dass der Charakter 5 Sekunden lang sich schneller fortbewegt.<br>
+-Sorgt dafür, dass der Charakter 5 Sekunden lang sich schneller fortbewegt.
+  
 ![alt text](https://github.com/IsebNewton/EscapeFromLava3D/blob/Experimental/Dokumentation/Powerups/Speed%20Powerup.PNG?raw=true)
 </details>
 
@@ -65,6 +68,7 @@ ________________________________________________________
 <summary> Wallrun-Powerup </summary>
 <br>
 -Fügt beim Einsammeln 10 Scorepunkte hinzu<br>
--Sorgt dafür, dass der Charakter 5 Sekunden sich an einer Wand fortbewegen kann.<br>
+-Sorgt dafür, dass der Charakter 5 Sekunden sich an einer Wand fortbewegen kann.
+  
 ![alt text](https://github.com/IsebNewton/EscapeFromLava3D/blob/Experimental/Dokumentation/Powerups/Wallrun%20Powerup.PNG?raw=true)
 </details>
