@@ -2248,10 +2248,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximum: 100
   playerCurrent: -0.12467804
-  lavaCurrent: -0.022855705
+  lavaCurrent: -2
   playerMask: {fileID: 874128881}
   lavaMask: {fileID: 12821512}
-  gameOver: 1
+  gameOver: 0
   gameOverObject: {fileID: 1592965205}
   playerController: {fileID: 1575273918}
   generalLevelsAndCoinsManager: {fileID: 0}
@@ -3695,8 +3695,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.2, y: -2.1}
-  m_SizeDelta: {x: 1634.3181, y: 880.1616}
+  m_AnchoredPosition: {x: -2.2, y: -31}
+  m_SizeDelta: {x: 1634.3181, y: 937.978}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1393676212
 MonoBehaviour:
@@ -4356,6 +4356,16 @@ MonoBehaviour:
   playerController: {fileID: 0}
   progressBar: {fileID: 0}
   levelManager: {fileID: 0}
+  beginningStoryDescription: {fileID: 189864514}
+  beginningStoryButton: {fileID: 1203287166}
+  scoreText: {fileID: 446257405}
+  progressbarPlayerText: {fileID: 1921263252}
+  progressbarLavaText: {fileID: 909120770}
+  endingScore: {fileID: 78622240}
+  backToMenuButton: {fileID: 249086861}
+  escapedheading: {fileID: 1617391570}
+  escapedBackToMenuButton: {fileID: 748492889}
+  awesomeText: {fileID: 340693094}
 --- !u!4 &1510698222
 Transform:
   m_ObjectHideFlags: 0
@@ -4477,7 +4487,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1592965206
 Transform:
   m_ObjectHideFlags: 0
@@ -5074,8 +5084,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 664.1389, y: 284.24518}
-  m_SizeDelta: {x: 2000, y: 1000}
+  m_AnchoredPosition: {x: 664.1389, y: 230}
+  m_SizeDelta: {x: 2000, y: 1108.406}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1960868931
 MonoBehaviour:

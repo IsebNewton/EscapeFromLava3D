@@ -20,8 +20,13 @@ public class ScoreDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        scoreText.text = "Score: " + score;
-
+        if (PlayerPrefs.GetString("Language") == "German")
+        {
+            scoreText.text = "Punkte : " + score;
+        }
+        else if (PlayerPrefs.GetString("Language") == "English")
+        {
+            scoreText.text = "Score: " + score;
+        }
     }
 }
