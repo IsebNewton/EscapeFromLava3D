@@ -56,13 +56,13 @@ public class MenuManager : MonoBehaviour
             hardButtonCover.enabled = true;
             nightmareButtonCover.enabled = true;
         }
-        if (maxLevel > 1.2)//Hard freigeschaltet
+        if (maxLevel > 2.4)//Hard freigeschaltet
         {
             mediumButtonCover.enabled = false;
             hardButtonCover.enabled = false;
             nightmareButtonCover.enabled = true;
         }
-        if (maxLevel > 1.4)//Nightmare Freigeschaltet
+        if (maxLevel > 3.9)//Nightmare Freigeschaltet
         {
             mediumButtonCover.enabled = false;
             hardButtonCover.enabled = false;

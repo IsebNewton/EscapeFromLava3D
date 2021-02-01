@@ -13,7 +13,7 @@ public class StartingStoryManager : MonoBehaviour
     public PlayerController playerController;
     public ProgressBar progressBar;
     public LevelManager levelManager;
-    public float lavaSpeed;
+   
 
     public Text beginningStoryDescription;
     public Text beginningStoryButton;
@@ -26,6 +26,11 @@ public class StartingStoryManager : MonoBehaviour
     public Text escapedBackToMenuButton;
     public Text awesomeText;
 
+    public Text mediumUnlock;
+    public Text hardUnlock;
+    public Text nightmareUnlock;
+
+    public DifficultyManager difficultyManager;
 
     void Start()
     {
@@ -36,7 +41,9 @@ public class StartingStoryManager : MonoBehaviour
         playerController.playerMovementSpeed = 0;
         progressBar.lavaSpeed = 0;
 
-        if(PlayerPrefs.GetString("Language") == "German")
+        difficultyManager = DifficultyManager.Instance;
+
+        if (PlayerPrefs.GetString("Language") == "German")
         {
             beginningStoryDescription.text = "Als Praktikant bei Team Magma hast du Informationen gesehen, die nicht für dein Auge bestimmt waren. Trotz deiner Versprechen, die Informationen nicht weiterzugeben, wirst du betäubt und wachst im inneren eines Vulkans auf. Du befindest dich in einem der untersten Nebenschlote des Vulkans. Versuche aus dem Vulkan zu entkommen bevor dich die Lava einholt. Weiche dabei Hindernissen und der sofort tödlichen Lava aus! Während du schon dabei bist, warum sammelst du nicht die Bücher vollen geheimer Informationen auf welche Team Magma hinterlassen hat?";
             beginningStoryButton.text = "Start";
@@ -48,6 +55,10 @@ public class StartingStoryManager : MonoBehaviour
             escapedheading.text = "DU BIST ENTKOMMEN";
             escapedBackToMenuButton.text = "Zurück zum Menu";
             awesomeText.text = "Du geile Sau";
+            mediumUnlock.text = "Du hast die Schwierigkeit 'Mittel' freigeschaltet!";
+            hardUnlock.text = "Du hast die Schwierigkeit 'Schwer' freigeschaltet!";
+            nightmareUnlock.text = "Du hast die Schwierigkeit 'Albtraum' freigeschaltet!";
+
         }
         else if(PlayerPrefs.GetString("Language") == "English")
         {
@@ -61,16 +72,37 @@ public class StartingStoryManager : MonoBehaviour
             escapedheading.text = "YOU ESCAPED";
             escapedBackToMenuButton.text = "Back to menu";
             awesomeText.text = "You awesome person";
+            mediumUnlock.text = "You unlocked medium difficulty!";
+            hardUnlock.text = "You unlocked hard difficulty!";
+            nightmareUnlock.text = "You unlocked nightmare difficulty!";
         }
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         if (started == true && once == false)
         {
             playerController.playerMovementSpeed = 10;
-            progressBar.lavaSpeed = lavaSpeed;
+
+            if(difficultyManager.difficulty == 1)
+            {
+                progressBar.lavaSpeed = 0.45f;
+            }
+            if (difficultyManager.difficulty == 2.5)
+            {
+                progressBar.lavaSpeed = 0.47f;
+            }
+            if (difficultyManager.difficulty == 4)
+            {
+                progressBar.lavaSpeed = 0.485f;
+            }
+            if (difficultyManager.difficulty == 6)
+            {
+                progressBar.lavaSpeed = 0.5f;
+            }
+
             once = true;
             levelManager.musicAudio.Play();
         }

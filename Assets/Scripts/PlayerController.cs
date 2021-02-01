@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     public float jumpStrength = 12;
     public float jumpVelocity = 150f;
 
-
     public Vector3 forward;
 
     public float playerStrafeSpeed = 7;
@@ -102,13 +101,14 @@ public class PlayerController : MonoBehaviour
         dustExplosion.Stop();
 
         player.GetComponent<Renderer>().material = playerMaterial;
+
     }
 
     // Update is called once per frame
-    public void Update()
+    void Update()
     {
 
-        Debug.Log(playerMaterial);
+       
 
         playerMovementSpeed = Mathf.Clamp(playerMovementSpeed, 0f, 40f);
 
