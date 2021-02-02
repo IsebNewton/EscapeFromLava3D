@@ -88,7 +88,7 @@ public class LevelManager : MonoBehaviour
             }
             Debug.Log(savedPitch);
             mushroom = true;
-            musicAudio.pitch = -1;
+            musicAudio.pitch = -0.7f;
         }
         if (stopMushroom == true)
         {

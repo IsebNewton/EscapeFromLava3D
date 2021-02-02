@@ -101,7 +101,7 @@ public class SpawnObstaclesManager : MonoBehaviour
 
         startDifficulty = difficultyManager.difficulty;
 
-        Debug.Log("difficulty: " + startDifficulty);
+    
 
 
 
@@ -192,7 +192,7 @@ public class SpawnObstaclesManager : MonoBehaviour
                 
                 DestroyAllVisibleObstacles();
                 SpawnObstaclesForLevel(currentPlayerLevel-1);
-                Debug.Log("Aufruf Test");
+                
                 spawnPowerupsManager.DestroyAllVisiblePowerups();
                 spawnPowerupsManager.SpawnPowerupsForLevel(levelLength);
                 spawned = true;
@@ -217,7 +217,7 @@ public class SpawnObstaclesManager : MonoBehaviour
                     int rand = Random.Range(0, currentLevelObstacles.Length);
                     float randX = Random.Range(-4.5f, 4.5f);
                     visibleObstacles.Add(Instantiate(currentLevelObstacles[rand], new Vector3(randX, 1.5f, i), currentLevelObstacles[rand].transform.rotation));
-                    Debug.Log(currentLevelObstacles[rand]);
+                  
                 }
 
             }
@@ -231,7 +231,7 @@ public class SpawnObstaclesManager : MonoBehaviour
                     int rand = Random.Range(0, currentLevelObstacles.Length);
                     float randX = Random.Range(-4.5f, 4.5f);
                     visibleObstacles.Add(Instantiate(currentLevelObstacles[rand], new Vector3(randX, 1.5f, i), currentLevelObstacles[rand].transform.rotation));
-                    Debug.Log(currentLevelObstacles[rand]);
+                   
                 }
 
             }

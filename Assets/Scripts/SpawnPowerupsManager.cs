@@ -30,15 +30,15 @@ public class SpawnPowerupsManager : MonoBehaviour
         {
             powerupProbabilities[3] *= 0.5f;
         }
-        if (difficultyManager.difficulty == 1.25)
+        if (difficultyManager.difficulty == 2.5)
         {
             powerupProbabilities[3] *= 0.8f;
         }
-        if (difficultyManager.difficulty == 1.5)
+        if (difficultyManager.difficulty == 4)
         {
             powerupProbabilities[3] *= 1.0f;
         }
-        if (difficultyManager.difficulty == 5)
+        if (difficultyManager.difficulty == 6)
         {
             powerupProbabilities[3] *= 2.0f;
         }

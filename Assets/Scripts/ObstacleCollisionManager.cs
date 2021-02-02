@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ObstacleCollisionManager : MonoBehaviour
 {
@@ -27,6 +28,12 @@ public class ObstacleCollisionManager : MonoBehaviour
 
     public GameObject endingMusicObject;
     public AudioSource endingMusicAudio;
+
+    public GameObject levelUnlock;
+
+    public GameObject mediumUnlock;
+    public GameObject hardUnlock;
+    public GameObject nightmareUnlock;
 
     // Start is called before the first frame update
     void Start()
@@ -80,7 +87,7 @@ public class ObstacleCollisionManager : MonoBehaviour
                     obstacleBump2Audio.Play();
 
 
-                Debug.Log("Kommt rein");
+        
 
                 if (saved == false)
                 {
@@ -123,7 +130,29 @@ public class ObstacleCollisionManager : MonoBehaviour
             levelManager.musicAudio.Stop();
             endingMusicAudio.Play();
 
-           
+           if(difficultyManager.difficulty == 1)
+            {
+                if(PlayerPrefs.GetFloat("MaxLevel") == 1)
+                {
+                    mediumUnlock.SetActive(true);
+                }
+            }
+
+            if (difficultyManager.difficulty == 2.5f)
+            {
+                if (PlayerPrefs.GetFloat("MaxLevel") == 2.5f)
+                {
+                    hardUnlock.SetActive(true);
+                }
+            }
+
+            if (difficultyManager.difficulty == 4)
+            {
+                if (PlayerPrefs.GetFloat("MaxLevel") == 4)
+                {
+                    nightmareUnlock.SetActive(true);
+                }
+            }
 
         }
 

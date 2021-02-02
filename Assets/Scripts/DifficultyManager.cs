@@ -6,6 +6,8 @@ public sealed class DifficultyManager
 {
     private static readonly DifficultyManager instance = new DifficultyManager();
 
+    public StartingStoryManager startingStoryManager;
+
     static DifficultyManager()
     {
     }
@@ -42,21 +44,25 @@ public sealed class DifficultyManager
     public void DifficultyEasy()
     {
         difficulty = 1;
+        
     }
 
     public void DifficultyMedium()
     {
-        difficulty = 1.25f;
+        difficulty = 2.5f;
+      
     }
 
     public void DifficultyHard()
     {
-        difficulty = 1.5f;
+        difficulty = 4f;
+        
     }
 
     public void DifficultyNightmare()
     {
-        difficulty = 5;
+        difficulty = 6;
+      
     }
 
 
