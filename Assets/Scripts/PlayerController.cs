@@ -209,6 +209,17 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void playDustExplosion()
+    {
+        Instantiate(dustExplosion, new Vector3(transform.position.x, 0.5f, transform.position.z), transform.rotation);
+        dustExplosion.Play();
+    }
+
+    public void stopDustExplosion()
+    {
+        dustExplosion.Stop();
+    }
+
 }
 
 
