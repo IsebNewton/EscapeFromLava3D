@@ -601,7 +601,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 17
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -2442,7 +2442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximum: 100
   playerCurrent: -0.12467804
-  lavaCurrent: -1.3549438
+  lavaCurrent: -2
   playerMask: {fileID: 874128881}
   lavaMask: {fileID: 12821512}
   gameOver: 0
@@ -2576,7 +2576,7 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.9098039, b: 0.8352941, a: 1}
   m_Intensity: 1.5
   m_Range: 80
   m_SpotAngle: 70
