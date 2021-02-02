@@ -2442,7 +2442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maximum: 100
   playerCurrent: -0.12467804
-  lavaCurrent: -2
+  lavaCurrent: -1.991
   playerMask: {fileID: 874128881}
   lavaMask: {fileID: 12821512}
   gameOver: 0
@@ -6223,6 +6223,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -4565884009001823619, guid: 9f6510faf9da6d44cb877f8006504146,
         type: 3}
+    - target: {fileID: 1196003460061514736, guid: 081eb6d683cf010478104a423ed9bcae,
+        type: 3}
+      propertyPath: playerBodyForColorChange
+      value: 
+      objectReference: {fileID: 1572427665}
     - target: {fileID: 1662874663711037766, guid: 081eb6d683cf010478104a423ed9bcae,
         type: 3}
       propertyPath: m_LocalPosition.x
