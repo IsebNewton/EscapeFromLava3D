@@ -231,7 +231,16 @@ public class PowerupManager : MonoBehaviour
             scoreDisplayEnding.score += 100;
         }
 
+        if (other.tag == "Collectable2")
+        {
+            other.transform.Find("Explosion").gameObject.SetActive(true);
+            other.GetComponent<MeshRenderer>().enabled = false;
+            StartCoroutine(DestroyObject(other));
+            collectBingAudio.Play();
 
+            scoreDisplayText.score += 50;
+            scoreDisplayEnding.score += 50;
+        }
 
 
 

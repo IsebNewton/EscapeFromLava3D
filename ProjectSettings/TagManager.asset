@@ -16,6 +16,8 @@ TagManager:
   - PowerupJump
   - Explosion
   - Collectable
+  - Lava
+  - Collectable2
   layers:
   - Default
   - TransparentFX

@@ -2832,7 +2832,13 @@ MonoBehaviour:
     Victory
     sound made by rezyma on freesound:
 
-    https://freesound.org/people/rezyma/sounds/475148/'
+    https://freesound.org/people/rezyma/sounds/475148/
+
+
+    manure
+    Heap height map by projectnature on sketchfab:
+
+    https://sketchfab.com/3d-models/manure-heap-material-ii-a583c7f112db4fdb93cf552a536f3366'
 --- !u!222 &556126233
 CanvasRenderer:
   m_ObjectHideFlags: 0

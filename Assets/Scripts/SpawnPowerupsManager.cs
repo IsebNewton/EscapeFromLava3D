@@ -13,11 +13,14 @@ public class SpawnPowerupsManager : MonoBehaviour
 
     public DifficultyManager difficultyManager;
 
+    public LevelManager levelManager;
+
     // Start is called before the first frame update
     void Start()
     {
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         visiblePowerups = new List<GameObject>();
+        levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
 
         if (powerups != null && powerupProbabilities != null && powerups.Length != powerupProbabilities.Length)
         {
@@ -25,22 +28,39 @@ public class SpawnPowerupsManager : MonoBehaviour
         }
 
         difficultyManager = DifficultyManager.Instance;
-
+        //Buch
         if(difficultyManager.difficulty == 1)
         {
-            powerupProbabilities[3] *= 0.5f;
+            powerupProbabilities[3] *= 0.3f * (levelManager.playerLevel*0.2f);
         }
         if (difficultyManager.difficulty == 2.5)
         {
-            powerupProbabilities[3] *= 0.8f;
+            powerupProbabilities[3] *= 0.5f * (levelManager.playerLevel * 0.2f);
         }
         if (difficultyManager.difficulty == 4)
         {
-            powerupProbabilities[3] *= 1.0f;
+            powerupProbabilities[3] *= 0.7f * (levelManager.playerLevel * 0.2f);
         }
         if (difficultyManager.difficulty == 6)
         {
-            powerupProbabilities[3] *= 2.0f;
+            powerupProbabilities[3] *= 1.0f * (levelManager.playerLevel * 0.2f);
+        }
+        //Blatt
+        if (difficultyManager.difficulty == 1)
+        {
+            powerupProbabilities[4] *= 0.7f - (levelManager.playerLevel * 0.025f);
+        }
+        if (difficultyManager.difficulty == 2.5)
+        {
+            powerupProbabilities[4] *= 1.0f - (levelManager.playerLevel * 0.05f);
+        }
+        if (difficultyManager.difficulty == 4)
+        {
+            powerupProbabilities[4] *= 1.2f - (levelManager.playerLevel * 0.06f);
+        }
+        if (difficultyManager.difficulty == 6)
+        {
+            powerupProbabilities[4] *= 2.5f - (levelManager.playerLevel * 0.1f);
         }
 
 
