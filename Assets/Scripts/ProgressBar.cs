@@ -36,6 +36,7 @@ public class ProgressBar : MonoBehaviour
         generalLevelsAndCoinsManager = GeneralLevelsAndCoinsManager.Instance;
         scoreDisplay = GameObject.Find("ScoreText").GetComponent<ScoreDisplay>();
 
+        once = true;
 
         gameOverObject.SetActive(false);
     }
@@ -56,10 +57,12 @@ public class ProgressBar : MonoBehaviour
         }
         if (gameOver == true)
         {
+            
             playerController.playerMovementSpeed = 0;
-            if (once == true)
+            if(once == true)
             {
                 generalLevelsAndCoinsManager.LevelDied(scoreDisplay.score);
+               
                 once = false;
             }
             gameOverObject.SetActive(true);
