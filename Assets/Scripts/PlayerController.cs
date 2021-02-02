@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour
     public AudioSource jump2Audio;
 
     public GameObject player;
+    public GameObject playerBodyForColorChange;
 
     public ParticleSystem dustExplosion;
     public ParticleSystem dirtParticle;
@@ -100,7 +101,7 @@ public class PlayerController : MonoBehaviour
 
         dustExplosion.Stop();
 
-        player.GetComponent<Renderer>().material = playerMaterial;
+        playerBodyForColorChange.GetComponent<Renderer>().material = playerMaterial;
 
     }
 
