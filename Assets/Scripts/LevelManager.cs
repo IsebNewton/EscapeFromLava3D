@@ -65,12 +65,12 @@ public class LevelManager : MonoBehaviour
             float rand = Random.Range(0, 5);
             if (rand < 3)
             {
-                Object.Instantiate(levels[playerLevel - 2], new Vector3(0, 3.5f, (levelPosition + 100)), levels[playerLevel - 2].transform.rotation);
+                Object.Instantiate(levels[playerLevel - 2], new Vector3(0, 3.8f, (levelPosition + 100)), levels[playerLevel - 2].transform.rotation);
                 alternateLevel = false;
             }
             else if (rand >= 3)
             {
-                Object.Instantiate(levelsAlternative[playerLevel - 2], new Vector3(0, 3.5f, (levelPosition + 100)), levelsAlternative[playerLevel - 2].transform.rotation);
+                Object.Instantiate(levelsAlternative[playerLevel - 2], new Vector3(0, 3.8f, (levelPosition + 100)), levelsAlternative[playerLevel - 2].transform.rotation);
                 alternateLevel = true;
             }
             levelPosition += 200;

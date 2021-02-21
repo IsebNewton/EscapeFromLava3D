@@ -73,53 +73,53 @@ public class MenuManager : MonoBehaviour
 
         if (beeBaught >= 1)
         {
-            beeEquip.enabled = true;
-            beeBuy.enabled = false;
+            beeEquip.interactable = true;
+            beeBuy.interactable = false;
             beeText.text = "Baught";
         }
         else
         {
-            beeEquip.enabled = false;
-            beeBuy.enabled = true;
+            beeEquip.interactable = false;
+            beeBuy.interactable = true;
             beeText.text = "1000";
         }
 
         if(starsBaught >= 1)
         {
-            starsEquip.enabled = true;
-            starsBuy.enabled = false;
+            starsEquip.interactable = true;
+            starsBuy.interactable = false;
             starsText.text = "Baught";
         }
         else
         {
-            starsEquip.enabled = false;
-            starsBuy.enabled = true;
+            starsEquip.interactable = false;
+            starsBuy.interactable = true;
             starsText.text = "3000";
         }
 
         if (golemBaught >= 1)
         {
-            golemEquip.enabled = true;
-            golemBuy.enabled = false;
+            golemEquip.interactable = true;
+            golemBuy.interactable = false;
             golemText.text = "Baught";
         }
         else
         {
-            golemEquip.enabled = false;
-            golemBuy.enabled = true;
+            golemEquip.interactable = false;
+            golemBuy.interactable = true;
             golemText.text = "5000";
         }
 
         if (astralBaught >= 1)
         {
-            astralEquip.enabled = true;
-            astralBuy.enabled = false;
+            astralEquip.interactable = true;
+            astralBuy.interactable = false;
             astralText.text = "Baught";
         }
         else
         {
-            astralEquip.enabled = false;
-            astralBuy.enabled = true;
+            astralEquip.interactable = false;
+            astralBuy.interactable = true;
             astralText.text = "10000";
         }
 
@@ -139,8 +139,8 @@ public class MenuManager : MonoBehaviour
         if (generalCoins >= 1000)
         {
             PlayerPrefs.SetFloat("BeeBaught", 1);
-            beeEquip.enabled = true;
-            beeBuy.enabled = false;
+            beeEquip.interactable = true;
+            beeBuy.interactable = false;
             beeText.text = "Baught";
             generalCoins -= 1000;
             PlayerPrefs.SetFloat("GeneralCoins", generalCoins);
@@ -173,8 +173,8 @@ public class MenuManager : MonoBehaviour
         if (generalCoins >= 3000)
         {
             PlayerPrefs.SetFloat("StarsBaught", 1);
-            starsEquip.enabled = true;
-            starsBuy.enabled = false;
+            starsEquip.interactable = true;
+            starsBuy.interactable = false;
             starsText.text = "Baught";
             generalCoins -= 3000;
             PlayerPrefs.SetFloat("GeneralCoins", generalCoins);
@@ -207,8 +207,8 @@ public class MenuManager : MonoBehaviour
         if (generalCoins >= 5000)
         {
             PlayerPrefs.SetFloat("GolemBaught", 1);
-            golemEquip.enabled = true;
-            golemBuy.enabled = false;
+            golemEquip.interactable = true;
+            golemBuy.interactable = false;
             golemText.text = "Baught";
             generalCoins -= 5000;
             PlayerPrefs.SetFloat("GeneralCoins", generalCoins);
@@ -241,8 +241,8 @@ public class MenuManager : MonoBehaviour
         if (generalCoins >= 10000)
         {
             PlayerPrefs.SetFloat("AstralBaught", 1);
-            astralEquip.enabled = true;
-            astralBuy.enabled = false;
+            astralEquip.interactable = true;
+            astralBuy.interactable = false;
             astralText.text = "Baught";
             generalCoins -= 10000;
             PlayerPrefs.SetFloat("GeneralCoins", generalCoins);
