@@ -270,8 +270,11 @@ public class PowerupManager : MonoBehaviour
     public IEnumerator DestroyObject(Collider other)
     {
         yield return new WaitForSeconds(1);
-        Destroy(other.gameObject);
-        Debug.Log("Destroyed");
+        if (other != null)
+        {
+            Destroy(other.gameObject);
+            Debug.Log("Destroyed");
+        }
     }
 
 }

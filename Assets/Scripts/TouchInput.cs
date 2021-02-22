@@ -12,7 +12,7 @@ public class TouchInput : PlayerController
 
 #if UNITY_ANDROID
     // Update is called once per frame
-    void Update()
+    new void Update()
     {
 
         base.Update();
