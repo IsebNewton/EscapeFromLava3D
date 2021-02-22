@@ -13,8 +13,62 @@ ________________________________________________________
 <br>
 Für das Modul <b>ITIG</b> entwickeln wir in unserem Team eine Unity-Applikation namens EscapeFromLava3D, dabei handelt es sich um eine "Singleplayer-Runner" für PC und Android Geräte. Das Spiel ist endlich, aber fordert den Spieler durch ein Shopsystem und verschiedene Schwierigkeitsmodi auf weiteren Fortschritt im Spiel zu erzielen.
 </details>
-
 ________________________________________________________
+<details>
+<summary> Spielkonzept</summary>
+<br>
+EscapeFromLava3D ist ein Adventure "Singleplayer-Runner" mit endlich vielen Leveln. Das Spiel ist endlich, aber fordert den Spieler durch ein Shopsystem und verschiedene Schwierigkeitsmodi auf weiteren Fortschritt im Spiel zu erzielen. Bei der Zielgruppe werden eher die "Casual-Gamer" aufgefordert zu spielen, welche ein endliches Spielerlebnis mit verschiedenen Schwierigkeitsgraden und einer hohen Reaktionsfreudigkeit erleben wollen. Das Spiel ist inspiriert von einer endless "Singleplayer-Runner" Spieleserie names "Temple Run".
+</details>
+________________________________________________________
+<details>
+<summary> Installationshinweise, Systemanforderungen</summary>
+<br>
+CPU: Intel® Core™ 2 Duo E6600 oder AMD Phenom™ X3 8750 Prozessor oder besser
+RAM: 2 GB
+OS: Windows® 7/Vista/XP/10
+GPU: 256 MB oder mehr mit DirectX 10
+Festplattenspeicher: 1 GB
+VRam: 256 MB
+</details>
+________________________________________________________
+<details>
+<summary> Levels, Design, Look</summary>
+<br>
+Levelaufbau:<br>
+-Grundsätzlich röhrenförmig <br>
+-Ist durch 1 von 26 Texturen texturiert <br>
+![alt text](TUNNELBILD)
+  
+Design und Look:<br>
+Es handelt sich um einen Fantasystlye mit teilweise realistischen Grafiken. <br>
+![alt text](Spielerbild)
+</details>
+________________________________________________________
+<details>
+<summary>Assets und Quellen</summary>
+<br>
+Assets mit Quellen:<br>
+  
+* [Tunneltexturen](https://www.textures.com/category/rock/349)
+* 
+
+</details>
+________________________________________________________
+<details>
+<summary>Projektmanagement</summary>
+<br>
+
+
+</details>
+________________________________________________________
+<details>
+<summary>Reaktionen von Testern</summary>
+<br>
+
+
+</details>
+________________________________________________________
+
 <details>
 <summary> genutzte Programme </summary>
 <br>
@@ -28,6 +82,7 @@ ________________________________________________________
 </details>
 
 ________________________________________________________
+
 ### Powerups
 <details>
 <summary> Collectable </summary>
