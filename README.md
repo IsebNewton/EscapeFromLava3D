@@ -23,12 +23,23 @@ ________________________________________________________
 <details>
 <summary> Installationshinweise, Systemanforderungen</summary>
 <br>
-CPU: Intel® Core™ 2 Duo E6600 oder AMD Phenom™ X3 8750 Prozessor oder besser
-RAM: 2 GB
-OS: Windows® 7/Vista/XP/10
-GPU: 256 MB oder mehr mit DirectX 10
-Festplattenspeicher: 1 GB
-VRam: 256 MB
+CPU: Intel® Core™ 2 Duo E6600 oder AMD Phenom™ X3 8750 Prozessor oder besser<br>
+RAM: 2 GB<br>
+OS: Windows® 7/Vista/XP/10<br>
+GPU: 256 MB oder mehr mit DirectX 10<br>
+Festplattenspeicher: 1 GB<br>
+VRam: 256 MB<br>
+</details>
+________________________________________________________
+<details>
+<summary> Bedienungsanleitung</summary>
+<br>
+Bewegung:<br>
+Links(A,←) <br>
+Rechs(D,→) <br>
+Sprung(SPACE)<br>
+  
+Für weitere Details siehe "Powerups"
 </details>
 ________________________________________________________
 <details>
