@@ -26,7 +26,7 @@ ________________________________________________________
 CPU: Intel® Core™ 2 Duo E6600 oder AMD Phenom™ X3 8750 Prozessor oder besser<br>
 RAM: 2 GB<br>
 OS: Windows® 7/Vista/XP/10<br>
-GPU: 256 MB oder mehr mit DirectX 10<br>
+GPU: 256 MB oder mehr mit DirectX 11<br>
 Festplattenspeicher: 1 GB<br>
 VRam: 256 MB<br>
 </details>
@@ -60,22 +60,50 @@ ________________________________________________________
 <br>
 Assets mit Quellen:<br>
   
-* [Tunneltexturen](https://www.textures.com/category/rock/349)
-* 
+* [Tunneltexturen](https://www.textures.com/category/rock/349) - +Eigene Bearbeitung
+* [Tunnelform] - Selfmade in Blender
+* [Boxen] - Selfmade in 3DsMax
+* [Pilze] - Selfmade in Unity
+* [Powerups] - 
 
 </details>
 ________________________________________________________
 <details>
 <summary>Projektmanagement</summary>
 <br>
+Arbeitsteilung:<br>
+John: Assets, Modeling und Meshes, Leveldesign<br>
+Sebastian und Nico: Programmierung und Umsetzung<br>
+ 
+Arbeitsaufwand:<br>
+John: 30%<br>
+Sebastian: 30%<br>
+Nico: 40%<br>
 
+Reflektion des eigenen Vorgehens:<br>
+-Bei jeder neuerung etc. 3 schritte<br>
+-Beginn:  Überlegen was wir haben wollen<br>
+-Mitte: naiver direkter versuch des Umsetztens<br>
+-Ende: Bei Problemen unity docs nachschauen und dann polishen<br>
+-Ein wenig mehr vorrausplanen wäre nicht schlecht gewesen, aber es hat gut funktioniert<br>
 
 </details>
 ________________________________________________________
 <details>
 <summary>Reaktionen von Testern</summary>
 <br>
+Reaktionen von Testern:<br>
+-Anfangs war die schwierigkeit zu niedrig, welche deswegen angehoben wurde<br>
+-Spieler motivierung hatte gefehlt, weswegen das Shopsystem und collectables eingeführt wurden<br>
+-Zu wenig beschreibung und verständnis, weswegen erklärungen verbessert und ein sprach wechsel eingebracht wurde<br>
 
+</details>
+________________________________________________________
+<details>
+<summary>Ideen für Weiterentwicklung und Offen ToDos</summary>
+<br>
+Ideen für Weiterentwicklung und Offen ToDos:<br>
+Nur noch kleines weiteres polishen, vielleicht mehr diverse Assets.<br>
 
 </details>
 ________________________________________________________
