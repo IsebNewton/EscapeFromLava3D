@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Assets.Scripts;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -112,5 +113,6 @@ public class StartingStoryManager : MonoBehaviour
     {
         started = true;
         startingStoryScreen.SetActive(false);
+        StateManager.SetCurrentState(StateManager.State.PlayState);
     }
 }
