@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
 
     public bool jump = false;
     public bool jumpBlocking = false;
+    private bool isJumping = false;
 
     public Rigidbody playerRb;
 
@@ -50,6 +51,9 @@ public class PlayerController : MonoBehaviour
     public Material normalMaterial;
 
     public Material playerMaterial;
+
+    private Vector2 startTouchPosition;
+    private Vector2 endTouchPosition;
 
 
     // Start is called before the first frame update
@@ -108,9 +112,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-
-       
-
         playerMovementSpeed = Mathf.Clamp(playerMovementSpeed, 0f, 40f);
 
         playerZPosition = transform.position.z;
@@ -159,6 +160,37 @@ public class PlayerController : MonoBehaviour
 
             HorizontalMovement(horizontalInput);
         }
+        else
+        {
+            if (Input.touchCount > 0)
+            {
+                if (Input.GetTouch(0).position.y < Screen.height / 3)
+                {
+                    if (!isJumping)
+                    {
+                        isJumping = true;
+                        Jump();
+                        Invoke("InvokeJumpFlag", 0.5f);
+                    }
+                    else
+                    {
+                        HorizontalMovement(0f);
+                    }
+                }
+                else if (Input.GetTouch(0).position.x > Screen.width / 2)
+                {
+                    HorizontalMovement(1f);
+                }
+                else
+                {
+                    HorizontalMovement(-1f);
+                }
+            }
+            else
+            {
+                HorizontalMovement(0f);
+            }
+        }
 
         Vector3 newPos = new Vector3(Mathf.Clamp(transform.position.x, -4.5f, 4.5f), Mathf.Clamp(transform.position.y, 0.0f, 6.0f), transform.position.z);
         transform.position = newPos;
@@ -170,6 +202,10 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("JumpVelocity", playerRb.velocity.y);
     }
 
+    private void InvokeJumpFlag()
+    {
+        isJumping = false;
+    }
 
     public void OnTriggerEnter(Collider other)
     {
@@ -191,7 +227,7 @@ public class PlayerController : MonoBehaviour
     {
         if (jump == false && jumpBlocking == false)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) || onAndroid)
             {
                 playerRb.AddForce(new Vector3(0, jumpStrength, 0), ForceMode.Impulse);
 

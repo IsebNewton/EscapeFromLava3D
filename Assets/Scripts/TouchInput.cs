@@ -14,7 +14,7 @@ public class TouchInput : PlayerController
     // Update is called once per frame
     new void Update()
     {
-
+        Debug.Log("AndroidUpdate");
         base.Update();
 
         if(Input.touchCount > 0)
