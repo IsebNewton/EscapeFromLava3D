@@ -48,11 +48,13 @@ ________________________________________________________
 Levelaufbau:<br>
 -Grundsätzlich röhrenförmig <br>
 -Ist durch 1 von 26 Texturen texturiert <br>
-![alt text](https://github.com/IsebNewton/EscapeFromLava3D/blob/main/Dokumentation/Levelaufbau.PNG?raw=true)
+
+![alt text](https://github.com/IsebNewton/EscapeFromLava3D/blob/main/Dokumentation/Levelaufbau.PNG)
+
 
 Design und Look:<br>
 Es handelt sich um einen Fantasystlye mit teilweise realistischen Grafiken. <br>
-![alt text](Spielerbild)
+![alt text](https://github.com/IsebNewton/EscapeFromLava3D/blob/main/Dokumentation/Spieler.PNG)
 </details>
 ________________________________________________________
 <details>
