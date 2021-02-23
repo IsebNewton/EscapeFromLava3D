@@ -48,8 +48,8 @@ ________________________________________________________
 Levelaufbau:<br>
 -Grundsätzlich röhrenförmig <br>
 -Ist durch 1 von 26 Texturen texturiert <br>
-![alt text](TUNNELBILD)
-  
+![alt text](https://github.com/IsebNewton/EscapeFromLava3D/blob/main/Dokumentation/Levelaufbau.PNG?raw=true)
+
 Design und Look:<br>
 Es handelt sich um einen Fantasystlye mit teilweise realistischen Grafiken. <br>
 ![alt text](Spielerbild)
@@ -64,7 +64,9 @@ Assets mit Quellen:<br>
 * [Tunnelform] - Selfmade in Blender
 * [Boxen] - Selfmade in 3DsMax
 * [Pilze] - Selfmade in Unity
-* [Powerups] - 
+* [Powerups](https://assetstore.unity.com) 
+* [Charakter und Animationen](https://www.mixamo.com/#/)
+* 
 
 </details>
 ________________________________________________________
